@@ -1,0 +1,1 @@
+CONFIG_ENV=prod python app.py

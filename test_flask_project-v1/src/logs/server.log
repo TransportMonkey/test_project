@@ -1,0 +1,1663 @@
+[2025-08-06 17:22:09]-p81889-MainThread{migration:211}INFO-Context impl SQLiteImpl.
+[2025-08-06 17:22:09]-p81889-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-06 17:22:09]-p81889-MainThread{compare:190}INFO-Detected added table 'user'
+[2025-08-06 17:22:09]-p81889-MainThread{compare:685}INFO-Detected added index 'ix_user_email' on '('email',)'
+[2025-08-06 17:22:09]-p81889-MainThread{compare:685}INFO-Detected added index 'ix_user_name' on '('name',)'
+[2025-08-06 17:22:09]-p81889-MainThread{compare:685}INFO-Detected added index 'ix_user_password' on '('password',)'
+[2025-08-06 17:28:03]-p82164-MainThread{migration:211}INFO-Context impl SQLiteImpl.
+[2025-08-06 17:28:03]-p82164-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-06 17:28:03]-p82164-MainThread{migration:622}INFO-Running upgrade  -> f06d0360070a, empty message
+[2025-08-06 17:31:17]-p82304-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-06 17:31:17]-p82304-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-06 17:31:24]-p82304-Thread-1 (process_request_thread){app:1744}ERROR-Exception on /user/1/ [GET]
+Traceback (most recent call last):
+  File "/Users/chenzesen/coding/czs/test_fask_project/venv/lib/python3.12/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chenzesen/coding/czs/test_fask_project/venv/lib/python3.12/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chenzesen/coding/czs/test_fask_project/venv/lib/python3.12/site-packages/flask_restx/api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chenzesen/coding/czs/test_fask_project/venv/lib/python3.12/site-packages/flask/views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chenzesen/coding/czs/test_fask_project/venv/lib/python3.12/site-packages/flask_restx/resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chenzesen/coding/czs/test_fask_project/src/services/user/views.py", line 43, in get
+    user = self.model.find_or_fail(user_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chenzesen/coding/czs/test_fask_project/venv/lib/python3.12/site-packages/sqlalchemy_mixins/activerecord.py", line 100, in find_or_fail
+    raise ModelNotFoundError("{} with id '{}' was not found"
+sqlalchemy_mixins.activerecord.ModelNotFoundError: User with id '1' was not found
+[2025-08-06 17:31:24]-p82304-Thread-1 (process_request_thread){_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 17:31:24] "[35m[1mGET /user/1/ HTTP/1.1[0m" 500 -
+[2025-08-06 17:31:27]-p82304-Thread-2 (process_request_thread){_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 17:31:27] "GET /user/ HTTP/1.1" 200 -
+[2025-08-06 17:32:57]-p82422-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-06 17:32:57]-p82422-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-06 18:03:00]-p84511-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-06 18:03:00]-p84511-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-06 18:59:10]-p21308-MainThread{migration:211}INFO-Context impl SQLiteImpl.
+[2025-08-06 18:59:10]-p21308-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-06 18:59:10]-p21308-MainThread{messaging:71}ERROR-Can't locate revision identified by 'f06d0360070a'
+[2025-08-06 19:04:10]-p3948-MainThread{migration:211}INFO-Context impl SQLiteImpl.
+[2025-08-06 19:04:10]-p3948-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-06 19:04:10]-p3948-MainThread{messaging:71}ERROR-Can't locate revision identified by 'f06d0360070a'
+[2025-08-06 19:08:44]-p11924-MainThread{migration:211}INFO-Context impl SQLiteImpl.
+[2025-08-06 19:08:44]-p11924-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-06 19:14:23]-p23500-MainThread{migration:211}INFO-Context impl SQLiteImpl.
+[2025-08-06 19:14:23]-p23500-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-06 19:15:15]-p3896-MainThread{migration:211}INFO-Context impl SQLiteImpl.
+[2025-08-06 19:15:15]-p3896-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-06 19:15:15]-p3896-MainThread{migration:622}INFO-Running upgrade  -> 179edd58b1e8, empty message
+[2025-08-06 19:15:47]-p13864-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-06 19:15:47]-p13864-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-06 19:16:12]-p13864-Thread-1{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:16:12] "GET / HTTP/1.1" 200 -
+[2025-08-06 19:16:13]-p13864-Thread-3{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:16:13] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+[2025-08-06 19:16:13]-p13864-Thread-4{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:16:13] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+[2025-08-06 19:16:13]-p13864-Thread-5{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:16:13] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+[2025-08-06 19:16:13]-p13864-Thread-2{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:16:13] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+[2025-08-06 19:16:13]-p13864-Thread-6{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:16:13] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-06 19:16:13]-p13864-Thread-7{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:16:13] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+[2025-08-06 19:49:02]-p13864-Thread-8{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:49:02] "GET / HTTP/1.1" 200 -
+[2025-08-06 19:49:02]-p13864-Thread-9{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:49:02] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-06 19:49:02]-p13864-Thread-10{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:49:02] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-06 19:49:02]-p13864-Thread-11{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:49:02] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-06 19:49:02]-p13864-Thread-12{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:49:02] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-06 19:49:03]-p13864-Thread-13{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:49:03] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-06 19:49:03]-p13864-Thread-14{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:49:03] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-06 19:49:03]-p13864-Thread-15{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:49:03] "GET / HTTP/1.1" 200 -
+[2025-08-06 19:49:03]-p13864-Thread-16{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:49:03] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-06 19:49:03]-p13864-Thread-17{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:49:03] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-06 19:49:03]-p13864-Thread-18{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:49:03] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-06 19:49:03]-p13864-Thread-19{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:49:03] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-06 19:49:04]-p13864-Thread-20{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:49:04] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-06 19:49:04]-p13864-Thread-21{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:49:04] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-06 19:51:26]-p13864-Thread-22{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:51:26] "[31m[1mPOST /user/ HTTP/1.1[0m" 400 -
+[2025-08-06 19:51:29]-p13864-Thread-23{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:51:29] "[31m[1mPOST /user/ HTTP/1.1[0m" 400 -
+[2025-08-06 19:52:34]-p13864-Thread-24{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:52:34] "GET /user/ HTTP/1.1" 200 -
+[2025-08-06 19:52:38]-p13864-Thread-25{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:52:38] "GET /user/ HTTP/1.1" 200 -
+[2025-08-06 19:52:41]-p13864-Thread-26{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:52:41] "GET /user/ HTTP/1.1" 200 -
+[2025-08-06 19:52:50]-p13864-Thread-27{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:52:50] "GET / HTTP/1.1" 200 -
+[2025-08-06 19:52:50]-p13864-Thread-28{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:52:50] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-06 19:52:50]-p13864-Thread-29{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:52:50] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-06 19:52:50]-p13864-Thread-30{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:52:50] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-06 19:52:50]-p13864-Thread-31{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:52:50] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-06 19:52:50]-p13864-Thread-32{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:52:50] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-06 19:52:51]-p13864-Thread-33{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:52:51] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:10]-p13864-Thread-34{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:10] "GET / HTTP/1.1" 200 -
+[2025-08-06 19:55:10]-p13864-Thread-35{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:10] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:10]-p13864-Thread-36{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:10] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:10]-p13864-Thread-37{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:10] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:10]-p13864-Thread-38{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:10] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:10]-p13864-Thread-39{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:10] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-06 19:55:10]-p13864-Thread-40{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:10] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:11]-p13864-Thread-41{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:11] "GET / HTTP/1.1" 200 -
+[2025-08-06 19:55:11]-p13864-Thread-42{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:11] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:11]-p13864-Thread-43{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:11] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:11]-p13864-Thread-44{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:11] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:11]-p13864-Thread-45{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:11] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:11]-p13864-Thread-46{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:11] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-06 19:55:11]-p13864-Thread-47{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:11] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:12]-p13864-Thread-48{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:12] "GET / HTTP/1.1" 200 -
+[2025-08-06 19:55:12]-p13864-Thread-49{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:12] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:12]-p13864-Thread-50{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:12] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:12]-p13864-Thread-51{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:12] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:12]-p13864-Thread-52{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:12] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:12]-p13864-Thread-53{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:12] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-06 19:55:12]-p13864-Thread-54{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:12] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:12]-p13864-Thread-55{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:12] "GET / HTTP/1.1" 200 -
+[2025-08-06 19:55:12]-p13864-Thread-56{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:12] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:12]-p13864-Thread-57{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:12] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:12]-p13864-Thread-58{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:12] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:12]-p13864-Thread-59{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:12] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:12]-p13864-Thread-60{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:12] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-06 19:55:12]-p13864-Thread-61{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:12] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:13]-p13864-Thread-62{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:13] "GET / HTTP/1.1" 200 -
+[2025-08-06 19:55:13]-p13864-Thread-63{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:13] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:13]-p13864-Thread-64{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:13] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:13]-p13864-Thread-65{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:13] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:13]-p13864-Thread-66{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:13] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:13]-p13864-Thread-67{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:13] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-06 19:55:13]-p13864-Thread-68{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:13] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:13]-p13864-Thread-69{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:13] "GET / HTTP/1.1" 200 -
+[2025-08-06 19:55:13]-p13864-Thread-70{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:13] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:13]-p13864-Thread-71{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:13] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:13]-p13864-Thread-72{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:13] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:13]-p13864-Thread-73{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:13] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:13]-p13864-Thread-74{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:13] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-06 19:55:13]-p13864-Thread-75{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:13] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:14]-p13864-Thread-76{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:14] "GET / HTTP/1.1" 200 -
+[2025-08-06 19:55:14]-p13864-Thread-77{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:14] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:14]-p13864-Thread-79{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:14] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:14]-p13864-Thread-80{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:14] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:14]-p13864-Thread-78{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:14] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:14]-p13864-Thread-81{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:14] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-06 19:55:14]-p13864-Thread-82{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:14] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:14]-p13864-Thread-83{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:14] "GET / HTTP/1.1" 200 -
+[2025-08-06 19:55:14]-p13864-Thread-84{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:14] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:14]-p13864-Thread-85{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:14] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:14]-p13864-Thread-86{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:14] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:14]-p13864-Thread-87{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:14] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:14]-p13864-Thread-88{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:14] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-06 19:55:14]-p13864-Thread-89{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:14] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-06 19:55:21]-p13864-Thread-90{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:21] "[31m[1mPOST /user/ HTTP/1.1[0m" 400 -
+[2025-08-06 19:55:22]-p13864-Thread-91{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:22] "[31m[1mPOST /user/ HTTP/1.1[0m" 400 -
+[2025-08-06 19:55:23]-p13864-Thread-92{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:23] "[31m[1mPOST /user/ HTTP/1.1[0m" 400 -
+[2025-08-06 19:55:23]-p13864-Thread-93{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 19:55:23] "[31m[1mPOST /user/ HTTP/1.1[0m" 400 -
+[2025-08-06 20:14:42]-p19496-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-06 20:14:42]-p19496-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-06 20:14:56]-p19496-Thread-1{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 20:14:56] "GET / HTTP/1.1" 200 -
+[2025-08-06 20:14:56]-p19496-Thread-2{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 20:14:56] "GET / HTTP/1.1" 200 -
+[2025-08-06 20:14:57]-p19496-Thread-5{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 20:14:57] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-06 20:14:57]-p19496-Thread-4{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 20:14:57] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-06 20:14:57]-p19496-Thread-3{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 20:14:57] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-06 20:14:57]-p19496-Thread-7{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 20:14:57] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-06 20:14:57]-p19496-Thread-8{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 20:14:57] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-06 20:14:57]-p19496-Thread-9{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 20:14:57] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-06 20:14:57]-p19496-Thread-6{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 20:14:57] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-06 20:14:57]-p19496-Thread-10{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 20:14:57] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-06 20:14:58]-p19496-Thread-11{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 20:14:58] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-06 20:14:58]-p19496-Thread-12{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 20:14:58] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-06 20:16:00]-p19496-Thread-13{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 20:16:00] "[31m[1mPOST /user/ HTTP/1.1[0m" 400 -
+[2025-08-06 20:16:03]-p19496-Thread-14{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 20:16:03] "[31m[1mPOST /user/ HTTP/1.1[0m" 400 -
+[2025-08-06 20:16:16]-p19496-Thread-15{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 20:16:16] "GET /user/ HTTP/1.1" 200 -
+[2025-08-06 20:16:16]-p19496-Thread-16{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 20:16:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-08-06 20:16:41]-p19496-Thread-17{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 20:16:41] "GET /user/ HTTP/1.1" 200 -
+[2025-08-06 21:56:27]-p2340-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-06 21:56:27]-p2340-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-06 21:56:30]-p2340-Thread-1{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 21:56:30] "GET / HTTP/1.1" 200 -
+[2025-08-06 21:56:31]-p2340-Thread-2{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 21:56:31] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-06 21:56:31]-p2340-Thread-5{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 21:56:31] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-06 21:56:31]-p2340-Thread-4{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 21:56:31] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-06 21:56:31]-p2340-Thread-3{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 21:56:31] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-06 21:56:31]-p2340-Thread-6{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 21:56:31] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-06 21:56:40]-p2340-Thread-7{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 21:56:40] "GET /user/ HTTP/1.1" 200 -
+[2025-08-06 21:57:07]-p2340-Thread-8{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 21:57:07] "[31m[1mPOST /user/ HTTP/1.1[0m" 400 -
+[2025-08-06 21:57:55]-p2340-Thread-9{user:23}INFO-create user args name='sds' age=43 gender=2 email='fdsfds' password='dfdsf3'
+[2025-08-06 21:57:55]-p2340-Thread-9{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 21:57:55] "POST /user/ HTTP/1.1" 200 -
+[2025-08-06 21:58:09]-p2340-Thread-10{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 21:58:09] "GET /user/ HTTP/1.1" 200 -
+[2025-08-06 21:58:17]-p2340-Thread-11{user:23}INFO-create user args name='sds' age=43 gender=2 email='fdsfds' password='dfdsf3'
+[2025-08-06 21:58:17]-p2340-Thread-11{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 21:58:17] "[31m[1mPOST /user/ HTTP/1.1[0m" 400 -
+[2025-08-06 21:58:29]-p2340-Thread-12{user:23}INFO-create user args name='sds1' age=43 gender=2 email='fdsfds' password='dfdsf3'
+[2025-08-06 21:58:29]-p2340-Thread-12{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 21:58:29] "POST /user/ HTTP/1.1" 200 -
+[2025-08-06 21:58:33]-p2340-Thread-13{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 21:58:33] "GET /user/ HTTP/1.1" 200 -
+[2025-08-06 21:58:45]-p2340-Thread-14{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 21:58:45] "DELETE /user/2/ HTTP/1.1" 200 -
+[2025-08-06 21:58:53]-p2340-Thread-15{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 21:58:53] "GET /user/ HTTP/1.1" 200 -
+[2025-08-06 21:59:29]-p2340-Thread-16{user:34}INFO-update user[1-sds] args {'name': 'gtry'}
+[2025-08-06 21:59:29]-p2340-Thread-16{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 21:59:29] "PATCH /user/1/ HTTP/1.1" 200 -
+[2025-08-06 22:00:40]-p2340-Thread-17{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 22:00:40] "GET /user/1/ HTTP/1.1" 200 -
+[2025-08-06 22:00:59]-p2340-Thread-18{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 22:00:59] "[31m[1mPUT /user/1/ HTTP/1.1[0m" 400 -
+[2025-08-06 22:18:54]-p12080-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-06 22:18:54]-p12080-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-06 22:39:27]-p12080-Thread-5{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 22:39:27] "GET /user/ HTTP/1.1" 200 -
+[2025-08-06 22:39:41]-p7104-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-06 22:39:41]-p7104-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-06 22:40:27]-p7104-Thread-5{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 22:40:27] "GET /user/ HTTP/1.1" 200 -
+[2025-08-06 23:01:54]-p7104-Thread-9{_internal:97}INFO-127.0.0.1 - - [06/Aug/2025 23:01:54] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-06 23:25:17]-p17036-MainThread{migration:211}INFO-Context impl SQLiteImpl.
+[2025-08-06 23:25:17]-p17036-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-06 23:25:17]-p17036-MainThread{messaging:71}ERROR-Target database is not up to date.
+[2025-08-06 23:25:55]-p29100-MainThread{migration:211}INFO-Context impl SQLiteImpl.
+[2025-08-06 23:25:55]-p29100-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-06 23:25:55]-p29100-MainThread{messaging:71}ERROR-Target database is not up to date.
+[2025-08-06 23:30:09]-p21292-MainThread{migration:211}INFO-Context impl SQLiteImpl.
+[2025-08-06 23:30:09]-p21292-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-06 23:30:09]-p21292-MainThread{messaging:71}ERROR-Target database is not up to date.
+[2025-08-06 23:31:52]-p19384-MainThread{migration:211}INFO-Context impl SQLiteImpl.
+[2025-08-06 23:31:52]-p19384-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-06 23:31:52]-p19384-MainThread{compare:190}INFO-Detected added table 'user'
+[2025-08-06 23:31:52]-p19384-MainThread{compare:685}INFO-Detected added index 'ix_user_email' on '('email',)'
+[2025-08-06 23:31:52]-p19384-MainThread{compare:685}INFO-Detected added index 'ix_user_name' on '('name',)'
+[2025-08-06 23:31:52]-p19384-MainThread{compare:685}INFO-Detected added index 'ix_user_password' on '('password',)'
+[2025-08-06 23:32:28]-p10020-MainThread{migration:211}INFO-Context impl SQLiteImpl.
+[2025-08-06 23:32:28]-p10020-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-06 23:32:28]-p10020-MainThread{migration:622}INFO-Running upgrade  -> ba481d8bb701, empty message
+[2025-08-06 23:36:04]-p30500-MainThread{migration:211}INFO-Context impl SQLiteImpl.
+[2025-08-06 23:36:04]-p30500-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-06 23:36:04]-p30500-MainThread{compare:190}INFO-Detected added table 'todo'
+[2025-08-06 23:36:04]-p30500-MainThread{compare:685}INFO-Detected added index 'ix_todo_done' on '('done',)'
+[2025-08-06 23:36:04]-p30500-MainThread{compare:685}INFO-Detected added index 'ix_todo_name' on '('name',)'
+[2025-08-06 23:36:04]-p30500-MainThread{compare:685}INFO-Detected added index 'ix_todo_user_id' on '('user_id',)'
+[2025-08-06 23:36:40]-p31344-MainThread{migration:211}INFO-Context impl SQLiteImpl.
+[2025-08-06 23:36:40]-p31344-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-06 23:36:40]-p31344-MainThread{migration:622}INFO-Running upgrade ba481d8bb701 -> c920c6313dfc, empty message
+[2025-08-07 13:44:56]-p8120-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-07 13:44:56]-p8120-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-07 13:45:01]-p8120-Thread-1{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 13:45:01] "GET / HTTP/1.1" 200 -
+[2025-08-07 13:45:01]-p8120-Thread-2{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 13:45:01] "GET / HTTP/1.1" 200 -
+[2025-08-07 13:45:03]-p8120-Thread-5{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 13:45:03] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-07 13:45:03]-p8120-Thread-4{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 13:45:03] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-07 13:45:03]-p8120-Thread-3{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 13:45:03] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-07 13:45:03]-p8120-Thread-7{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 13:45:03] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-07 13:45:03]-p8120-Thread-8{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 13:45:03] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-07 13:45:03]-p8120-Thread-9{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 13:45:03] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-07 13:45:03]-p8120-Thread-6{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 13:45:03] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-07 13:45:03]-p8120-Thread-10{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 13:45:03] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-07 13:45:03]-p8120-Thread-11{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 13:45:03] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-07 13:45:03]-p8120-Thread-12{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 13:45:03] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-07 13:45:03]-p8120-Thread-13{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 13:45:03] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-07 13:45:03]-p8120-Thread-14{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 13:45:03] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-07 13:47:33]-p8120-Thread-15{user:23}INFO-create user args name='小吴' age=24 gender=1 email='sadsdf@163.com' password='123456'
+[2025-08-07 13:47:33]-p8120-Thread-15{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 13:47:33] "POST /user/ HTTP/1.1" 200 -
+[2025-08-07 13:49:51]-p8120-Thread-16{user:23}INFO-create user args name='小王' age=43 gender=1 email='dsdsf@qq.com' password='123456'
+[2025-08-07 13:49:51]-p8120-Thread-16{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 13:49:51] "POST /user/ HTTP/1.1" 200 -
+[2025-08-07 13:50:28]-p8120-Thread-17{user:23}INFO-create user args name='小莉' age=18 gender=2 email='dsfdgfh@qq.com' password='123456'
+[2025-08-07 13:50:28]-p8120-Thread-17{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 13:50:28] "POST /user/ HTTP/1.1" 200 -
+[2025-08-07 13:50:55]-p8120-Thread-18{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 13:50:55] "GET /user/ HTTP/1.1" 200 -
+[2025-08-07 13:57:37]-p10780-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-07 13:57:37]-p10780-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-07 13:57:44]-p10780-Thread-1{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 13:57:44] "GET / HTTP/1.1" 200 -
+[2025-08-07 13:57:44]-p10780-Thread-2{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 13:57:44] "GET / HTTP/1.1" 200 -
+[2025-08-07 13:57:45]-p10780-Thread-5{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 13:57:45] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-07 13:57:45]-p10780-Thread-3{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 13:57:45] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-07 13:57:45]-p10780-Thread-4{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 13:57:45] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-07 13:57:45]-p10780-Thread-7{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 13:57:45] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-07 13:57:45]-p10780-Thread-8{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 13:57:45] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-07 13:57:45]-p10780-Thread-9{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 13:57:45] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-07 13:57:45]-p10780-Thread-6{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 13:57:45] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-07 13:57:45]-p10780-Thread-10{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 13:57:45] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-07 13:57:45]-p10780-Thread-11{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 13:57:45] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-07 13:57:45]-p10780-Thread-12{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 13:57:45] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-07 13:58:02]-p10780-Thread-13{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 13:58:02] "GET /user/ HTTP/1.1" 200 -
+[2025-08-07 13:58:44]-p10780-Thread-14{todo:23}INFO-create todo args name='打扫房间' done=True user_id=1
+[2025-08-07 13:58:44]-p10780-Thread-14{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 13:58:44] "POST /todo/ HTTP/1.1" 200 -
+[2025-08-07 14:00:25]-p10780-Thread-15{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:00:25] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 14:00:56]-p10780-Thread-16{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:00:56] "GET /user/1/ HTTP/1.1" 200 -
+[2025-08-07 14:06:54]-p25016-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-07 14:06:54]-p25016-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-07 14:06:56]-p25016-Thread-1{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:06:56] "GET / HTTP/1.1" 200 -
+[2025-08-07 14:06:56]-p25016-Thread-2{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:06:56] "GET / HTTP/1.1" 200 -
+[2025-08-07 14:06:57]-p25016-Thread-4{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:06:57] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-07 14:06:57]-p25016-Thread-5{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:06:57] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-07 14:06:57]-p25016-Thread-3{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:06:57] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-07 14:06:57]-p25016-Thread-7{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:06:57] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-07 14:06:57]-p25016-Thread-8{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:06:57] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-07 14:06:57]-p25016-Thread-9{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:06:57] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-07 14:06:57]-p25016-Thread-6{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:06:57] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-07 14:06:57]-p25016-Thread-10{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:06:57] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-07 14:06:57]-p25016-Thread-11{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:06:57] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-07 14:06:57]-p25016-Thread-12{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:06:57] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-07 14:07:04]-p25016-Thread-13{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:07:04] "GET /user/ HTTP/1.1" 200 -
+[2025-08-07 14:07:36]-p25016-Thread-14{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:07:36] "GET /user/2/ HTTP/1.1" 200 -
+[2025-08-07 14:08:06]-p25016-Thread-15{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:08:06] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 14:08:29]-p25016-Thread-16{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:08:29] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 14:08:48]-p25016-Thread-17{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:08:48] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 14:08:49]-p25016-Thread-18{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:08:49] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 14:08:53]-p25016-Thread-19{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:08:53] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 14:18:43]-p34056-MainThread{migration:211}INFO-Context impl SQLiteImpl.
+[2025-08-07 14:18:43]-p34056-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-07 14:18:43]-p34056-MainThread{compare:190}INFO-Detected added table 'todo'
+[2025-08-07 14:18:43]-p34056-MainThread{compare:685}INFO-Detected added index 'ix_todo_done' on '('done',)'
+[2025-08-07 14:18:43]-p34056-MainThread{compare:685}INFO-Detected added index 'ix_todo_name' on '('name',)'
+[2025-08-07 14:18:43]-p34056-MainThread{compare:190}INFO-Detected added table 'user'
+[2025-08-07 14:18:43]-p34056-MainThread{compare:685}INFO-Detected added index 'ix_user_email' on '('email',)'
+[2025-08-07 14:18:43]-p34056-MainThread{compare:685}INFO-Detected added index 'ix_user_name' on '('name',)'
+[2025-08-07 14:18:43]-p34056-MainThread{compare:685}INFO-Detected added index 'ix_user_password' on '('password',)'
+[2025-08-07 14:19:28]-p34660-MainThread{migration:211}INFO-Context impl SQLiteImpl.
+[2025-08-07 14:19:28]-p34660-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-07 14:19:28]-p34660-MainThread{messaging:71}ERROR-Target database is not up to date.
+[2025-08-07 14:22:15]-p32080-MainThread{migration:211}INFO-Context impl SQLiteImpl.
+[2025-08-07 14:22:15]-p32080-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-07 14:22:15]-p32080-MainThread{compare:190}INFO-Detected added table 'todo'
+[2025-08-07 14:22:15]-p32080-MainThread{compare:685}INFO-Detected added index 'ix_todo_done' on '('done',)'
+[2025-08-07 14:22:15]-p32080-MainThread{compare:685}INFO-Detected added index 'ix_todo_name' on '('name',)'
+[2025-08-07 14:22:15]-p32080-MainThread{compare:190}INFO-Detected added table 'user'
+[2025-08-07 14:22:15]-p32080-MainThread{compare:685}INFO-Detected added index 'ix_user_email' on '('email',)'
+[2025-08-07 14:22:15]-p32080-MainThread{compare:685}INFO-Detected added index 'ix_user_name' on '('name',)'
+[2025-08-07 14:22:15]-p32080-MainThread{compare:685}INFO-Detected added index 'ix_user_password' on '('password',)'
+[2025-08-07 14:22:53]-p6252-MainThread{migration:211}INFO-Context impl SQLiteImpl.
+[2025-08-07 14:22:53]-p6252-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-07 14:22:53]-p6252-MainThread{migration:622}INFO-Running upgrade  -> 18d8ede90809, empty message
+[2025-08-07 14:23:28]-p34432-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-07 14:23:28]-p34432-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-07 14:23:30]-p34432-Thread-1{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:23:30] "GET / HTTP/1.1" 200 -
+[2025-08-07 14:23:30]-p34432-Thread-2{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:23:30] "GET / HTTP/1.1" 200 -
+[2025-08-07 14:23:31]-p34432-Thread-4{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:23:31] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-07 14:23:31]-p34432-Thread-5{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:23:31] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-07 14:23:31]-p34432-Thread-3{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:23:31] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-07 14:23:31]-p34432-Thread-7{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:23:31] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-07 14:23:31]-p34432-Thread-8{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:23:31] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-07 14:23:31]-p34432-Thread-9{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:23:31] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-07 14:23:31]-p34432-Thread-6{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:23:31] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-07 14:23:31]-p34432-Thread-10{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:23:31] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-07 14:23:32]-p34432-Thread-11{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:23:32] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-07 14:23:32]-p34432-Thread-12{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:23:32] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-07 14:23:40]-p34432-Thread-13{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:23:40] "GET / HTTP/1.1" 200 -
+[2025-08-07 14:23:40]-p34432-Thread-14{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:23:40] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-07 14:23:40]-p34432-Thread-15{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:23:40] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-07 14:23:40]-p34432-Thread-16{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:23:40] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-07 14:23:40]-p34432-Thread-17{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:23:40] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-07 14:23:40]-p34432-Thread-18{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:23:40] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-07 14:23:40]-p34432-Thread-19{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:23:40] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-07 14:24:17]-p34432-Thread-20{user:23}INFO-create user args name='小林' age=24 gender=1 email='dsfssdsa@123.com' password='123456'
+[2025-08-07 14:24:17]-p34432-Thread-20{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:24:17] "POST /user/ HTTP/1.1" 200 -
+[2025-08-07 14:24:49]-p34432-Thread-21{user:23}INFO-create user args name='小吴' age=17 gender=1 email='fdsgfhg@123.com' password='123456'
+[2025-08-07 14:24:49]-p34432-Thread-21{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:24:49] "POST /user/ HTTP/1.1" 200 -
+[2025-08-07 14:25:15]-p34432-Thread-22{user:23}INFO-create user args name='小芳' age=20 gender=2 email='fdsfdfgf@123.com' password='123456'
+[2025-08-07 14:25:15]-p34432-Thread-22{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:25:15] "POST /user/ HTTP/1.1" 200 -
+[2025-08-07 14:25:25]-p34432-Thread-23{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:25:25] "GET /user/ HTTP/1.1" 200 -
+[2025-08-07 14:25:41]-p34432-Thread-24{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:25:41] "GET /user/1/ HTTP/1.1" 200 -
+[2025-08-07 14:26:03]-p34432-Thread-25{todo:23}INFO-create todo args name='打扫房间' done=True
+[2025-08-07 14:26:03]-p34432-Thread-25{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:26:03] "POST /todo/ HTTP/1.1" 200 -
+[2025-08-07 14:28:51]-p34432-Thread-26{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:28:51] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 14:29:20]-p34432-Thread-27{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:29:20] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 14:29:34]-p34432-Thread-28{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:29:34] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 14:29:57]-p34432-Thread-29{todo:23}INFO-create todo args name='洗碗' done=True
+[2025-08-07 14:29:57]-p34432-Thread-29{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:29:57] "POST /todo/ HTTP/1.1" 200 -
+[2025-08-07 14:30:21]-p34432-Thread-30{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:30:21] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 14:45:22]-p16020-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-07 14:45:22]-p16020-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-07 14:45:25]-p16020-Thread-1{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:45:25] "GET / HTTP/1.1" 200 -
+[2025-08-07 14:45:26]-p16020-Thread-3{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:45:26] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-07 14:45:26]-p16020-Thread-4{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:45:26] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-07 14:45:26]-p16020-Thread-2{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:45:26] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-07 14:45:26]-p16020-Thread-5{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:45:26] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-07 14:45:26]-p16020-Thread-6{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:45:26] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-07 14:45:34]-p16020-Thread-7{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:45:34] "GET /user/ HTTP/1.1" 200 -
+[2025-08-07 14:46:18]-p16020-Thread-8{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:46:18] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 14:47:53]-p21644-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-07 14:47:53]-p21644-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-07 14:47:55]-p21644-Thread-1{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:47:55] "GET / HTTP/1.1" 200 -
+[2025-08-07 14:47:55]-p21644-Thread-2{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:47:55] "GET / HTTP/1.1" 200 -
+[2025-08-07 14:47:56]-p21644-Thread-4{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:47:56] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-07 14:47:56]-p21644-Thread-6{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:47:56] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-07 14:47:56]-p21644-Thread-5{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:47:56] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-07 14:47:56]-p21644-Thread-7{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:47:56] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-07 14:47:56]-p21644-Thread-8{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:47:56] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-07 14:47:56]-p21644-Thread-9{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:47:56] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-07 14:47:56]-p21644-Thread-3{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:47:56] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-07 14:47:56]-p21644-Thread-10{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:47:56] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-07 14:47:57]-p21644-Thread-11{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:47:57] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-07 14:47:57]-p21644-Thread-12{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:47:57] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-07 14:47:59]-p21644-Thread-13{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:47:59] "GET / HTTP/1.1" 200 -
+[2025-08-07 14:47:59]-p21644-Thread-14{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:47:59] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-07 14:47:59]-p21644-Thread-15{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:47:59] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-07 14:47:59]-p21644-Thread-16{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:47:59] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-07 14:47:59]-p21644-Thread-17{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:47:59] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-07 14:47:59]-p21644-Thread-18{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:47:59] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-07 14:48:00]-p21644-Thread-19{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:48:00] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-07 14:48:14]-p21644-Thread-20{todo:23}INFO-create todo args name='吃饭' done=True
+[2025-08-07 14:48:14]-p21644-Thread-20{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:48:14] "POST /todo/ HTTP/1.1" 200 -
+[2025-08-07 14:53:21]-p20868-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-07 14:53:21]-p20868-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-07 14:53:23]-p20868-Thread-1{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:53:23] "GET / HTTP/1.1" 200 -
+[2025-08-07 14:53:23]-p20868-Thread-2{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:53:23] "GET / HTTP/1.1" 200 -
+[2025-08-07 14:53:24]-p20868-Thread-4{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:53:24] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-07 14:53:24]-p20868-Thread-5{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:53:24] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-07 14:53:24]-p20868-Thread-3{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:53:24] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-07 14:53:24]-p20868-Thread-7{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:53:24] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-07 14:53:24]-p20868-Thread-8{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:53:24] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-07 14:53:24]-p20868-Thread-9{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:53:24] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-07 14:53:24]-p20868-Thread-6{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:53:24] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-07 14:53:24]-p20868-Thread-10{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:53:24] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-07 14:53:24]-p20868-Thread-11{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:53:24] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-07 14:53:24]-p20868-Thread-12{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:53:24] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-07 14:53:27]-p20868-Thread-13{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:53:27] "GET / HTTP/1.1" 200 -
+[2025-08-07 14:53:27]-p20868-Thread-14{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:53:27] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-07 14:53:27]-p20868-Thread-15{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:53:27] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-07 14:53:27]-p20868-Thread-16{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:53:27] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-07 14:53:27]-p20868-Thread-17{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:53:27] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-07 14:53:27]-p20868-Thread-18{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:53:27] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-07 14:53:27]-p20868-Thread-19{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:53:27] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-07 14:53:33]-p20868-Thread-20{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:53:33] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 14:53:53]-p20868-Thread-21{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:53:53] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 14:53:53]-p20868-Thread-22{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 14:53:53] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 15:03:27]-p33440-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-07 15:03:27]-p33440-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-07 15:03:29]-p33440-Thread-1{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:03:29] "GET / HTTP/1.1" 200 -
+[2025-08-07 15:03:30]-p33440-Thread-2{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:03:30] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-07 15:03:30]-p33440-Thread-3{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:03:30] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-07 15:03:30]-p33440-Thread-5{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:03:30] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-07 15:03:30]-p33440-Thread-4{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:03:30] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-07 15:03:30]-p33440-Thread-6{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:03:30] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-07 15:03:51]-p33440-Thread-7{todo:23}INFO-create todo args name='睡觉' done=False
+[2025-08-07 15:03:51]-p33440-Thread-7{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:03:51] "POST /todo/ HTTP/1.1" 200 -
+[2025-08-07 15:04:02]-p33440-Thread-8{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:04:02] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 15:04:11]-p33440-Thread-9{todo:23}INFO-create todo args name='睡觉' done=False
+[2025-08-07 15:04:11]-p33440-Thread-9{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:04:11] "[31m[1mPOST /todo/ HTTP/1.1[0m" 400 -
+[2025-08-07 15:05:39]-p33440-Thread-10{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:05:39] "DELETE /todo/1/ HTTP/1.1" 200 -
+[2025-08-07 15:05:48]-p33440-Thread-11{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:05:48] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 15:06:52]-p33440-Thread-12{todo:34}INFO-update todo[2-洗碗] args {'name': '洗澡', 'done': False}
+[2025-08-07 15:06:52]-p33440-Thread-12{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:06:52] "PUT /todo/2/ HTTP/1.1" 200 -
+[2025-08-07 15:07:14]-p33440-Thread-13{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:07:14] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 15:07:41]-p33440-Thread-14{todo:34}INFO-update todo[2-洗澡] args {'name': '洗澡', 'done': True}
+[2025-08-07 15:07:41]-p33440-Thread-14{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:07:41] "PATCH /todo/2/ HTTP/1.1" 200 -
+[2025-08-07 15:07:46]-p33440-Thread-15{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:07:46] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 15:07:53]-p33440-Thread-16{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:07:53] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 15:13:00]-p10420-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-07 15:13:00]-p10420-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-07 15:13:02]-p10420-Thread-1{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:13:02] "GET / HTTP/1.1" 200 -
+[2025-08-07 15:13:03]-p10420-Thread-5{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:13:03] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-07 15:13:03]-p10420-Thread-4{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:13:03] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-07 15:13:03]-p10420-Thread-3{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:13:03] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-07 15:13:03]-p10420-Thread-2{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:13:03] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-07 15:13:03]-p10420-Thread-6{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:13:03] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-07 15:13:25]-p10420-Thread-7{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:13:25] "GET /user/1/ HTTP/1.1" 200 -
+[2025-08-07 15:14:00]-p10420-Thread-8{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:14:00] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 15:14:08]-p10420-Thread-9{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:14:08] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 15:18:58]-p18512-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-07 15:18:58]-p18512-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-07 15:19:00]-p18512-Thread-1{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:19:00] "GET / HTTP/1.1" 200 -
+[2025-08-07 15:19:01]-p18512-Thread-5{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:19:01] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-07 15:19:01]-p18512-Thread-4{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:19:01] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-07 15:19:01]-p18512-Thread-3{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:19:01] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-07 15:19:01]-p18512-Thread-2{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:19:01] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-07 15:19:01]-p18512-Thread-6{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:19:01] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-07 15:19:13]-p18512-Thread-7{app:875}ERROR-Exception on /todo/1/ [GET]
+Traceback (most recent call last):
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\test_flask_project\venv\lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\test_flask_project-v1\src\services\todo\views.py", line 40, in get
+    todo = self.model.find_or_fail(todo_id)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy_mixins\activerecord.py", line 100, in find_or_fail
+    raise ModelNotFoundError("{} with id '{}' was not found"
+sqlalchemy_mixins.activerecord.ModelNotFoundError: Todo with id '1' was not found
+[2025-08-07 15:19:13]-p18512-Thread-7{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:19:13] "[35m[1mGET /todo/1/ HTTP/1.1[0m" 500 -
+[2025-08-07 15:19:21]-p18512-Thread-8{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:19:21] "GET /todo/2/ HTTP/1.1" 200 -
+[2025-08-07 15:19:25]-p18512-Thread-9{app:875}ERROR-Exception on /todo/5/ [GET]
+Traceback (most recent call last):
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\test_flask_project\venv\lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\test_flask_project-v1\src\services\todo\views.py", line 40, in get
+    todo = self.model.find_or_fail(todo_id)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy_mixins\activerecord.py", line 100, in find_or_fail
+    raise ModelNotFoundError("{} with id '{}' was not found"
+sqlalchemy_mixins.activerecord.ModelNotFoundError: Todo with id '5' was not found
+[2025-08-07 15:19:25]-p18512-Thread-9{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:19:25] "[35m[1mGET /todo/5/ HTTP/1.1[0m" 500 -
+[2025-08-07 15:19:33]-p18512-Thread-10{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:19:33] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 15:22:13]-p35284-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-07 15:22:13]-p35284-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-07 15:22:20]-p35284-Thread-1{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:22:20] "GET / HTTP/1.1" 200 -
+[2025-08-07 15:22:20]-p35284-Thread-2{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:22:20] "GET / HTTP/1.1" 200 -
+[2025-08-07 15:22:22]-p35284-Thread-4{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:22:22] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-07 15:22:22]-p35284-Thread-3{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:22:22] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-07 15:22:22]-p35284-Thread-5{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:22:22] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-07 15:22:22]-p35284-Thread-7{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:22:22] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-07 15:22:22]-p35284-Thread-8{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:22:22] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-07 15:22:22]-p35284-Thread-9{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:22:22] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-07 15:22:22]-p35284-Thread-6{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:22:22] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-07 15:22:22]-p35284-Thread-10{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:22:22] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-07 15:22:22]-p35284-Thread-11{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:22:22] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-07 15:22:22]-p35284-Thread-12{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:22:22] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-07 15:34:48]-p31432-MainThread{migration:211}INFO-Context impl SQLiteImpl.
+[2025-08-07 15:34:48]-p31432-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-07 15:34:48]-p31432-MainThread{compare:190}INFO-Detected added table 'todo'
+[2025-08-07 15:34:48]-p31432-MainThread{compare:685}INFO-Detected added index 'ix_todo_done' on '('done',)'
+[2025-08-07 15:34:48]-p31432-MainThread{compare:685}INFO-Detected added index 'ix_todo_name' on '('name',)'
+[2025-08-07 15:34:48]-p31432-MainThread{compare:685}INFO-Detected added index 'ix_todo_user_id' on '('user_id',)'
+[2025-08-07 15:34:48]-p31432-MainThread{compare:190}INFO-Detected added table 'user'
+[2025-08-07 15:34:48]-p31432-MainThread{compare:685}INFO-Detected added index 'ix_user_email' on '('email',)'
+[2025-08-07 15:34:48]-p31432-MainThread{compare:685}INFO-Detected added index 'ix_user_name' on '('name',)'
+[2025-08-07 15:34:48]-p31432-MainThread{compare:685}INFO-Detected added index 'ix_user_password' on '('password',)'
+[2025-08-07 15:35:26]-p33344-MainThread{migration:211}INFO-Context impl SQLiteImpl.
+[2025-08-07 15:35:26]-p33344-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-07 15:35:26]-p33344-MainThread{migration:622}INFO-Running upgrade  -> 3aaafaeac2f2, empty message
+[2025-08-07 15:35:47]-p30372-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-07 15:35:47]-p30372-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-07 15:35:49]-p30372-Thread-1{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:35:49] "GET / HTTP/1.1" 200 -
+[2025-08-07 15:35:50]-p30372-Thread-3{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:35:50] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-07 15:35:50]-p30372-Thread-4{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:35:50] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-07 15:35:50]-p30372-Thread-2{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:35:50] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-07 15:35:50]-p30372-Thread-5{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:35:50] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-07 15:35:50]-p30372-Thread-6{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:35:50] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-07 15:35:50]-p30372-Thread-7{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:35:50] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-07 15:35:57]-p30372-Thread-8{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:35:57] "GET /user/ HTTP/1.1" 200 -
+[2025-08-07 15:36:11]-p30372-Thread-9{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:36:11] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 15:36:53]-p30372-Thread-10{user:23}INFO-create user args name='小林' age=24 gender=1 email='dsffdg@qq.com' password='123456'
+[2025-08-07 15:36:53]-p30372-Thread-10{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:36:53] "POST /user/ HTTP/1.1" 200 -
+[2025-08-07 15:37:28]-p30372-Thread-11{user:23}INFO-create user args name='小丽' age=18 gender=2 email='gfdgfh@qq.com' password='123456'
+[2025-08-07 15:37:29]-p30372-Thread-11{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:37:29] "POST /user/ HTTP/1.1" 200 -
+[2025-08-07 15:37:31]-p30372-Thread-12{user:23}INFO-create user args name='小丽' age=18 gender=2 email='gfdgfh@qq.com' password='123456'
+[2025-08-07 15:37:31]-p30372-Thread-12{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:37:31] "[31m[1mPOST /user/ HTTP/1.1[0m" 400 -
+[2025-08-07 15:37:57]-p30372-Thread-13{user:23}INFO-create user args name='小明' age=20 gender=1 email='gfhj545@qq.com' password='123456'
+[2025-08-07 15:37:57]-p30372-Thread-13{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:37:57] "POST /user/ HTTP/1.1" 200 -
+[2025-08-07 15:38:05]-p30372-Thread-14{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:38:05] "GET /user/ HTTP/1.1" 200 -
+[2025-08-07 15:38:40]-p30372-Thread-15{todo:23}INFO-create todo args name='做作业' done=False user_id=1
+[2025-08-07 15:38:40]-p30372-Thread-15{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:38:40] "POST /todo/ HTTP/1.1" 200 -
+[2025-08-07 15:39:04]-p30372-Thread-16{todo:23}INFO-create todo args name='洗碗' done=False user_id=3
+[2025-08-07 15:39:04]-p30372-Thread-16{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:39:04] "POST /todo/ HTTP/1.1" 200 -
+[2025-08-07 15:39:22]-p30372-Thread-17{todo:23}INFO-create todo args name='打扫房间' done=True user_id=2
+[2025-08-07 15:39:22]-p30372-Thread-17{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:39:22] "POST /todo/ HTTP/1.1" 200 -
+[2025-08-07 15:39:34]-p30372-Thread-18{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:39:34] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 15:40:11]-p30372-Thread-19{todo:34}INFO-update todo[1-做作业] args {'name': '睡觉', 'done': False, 'user_id': 1}
+[2025-08-07 15:40:12]-p30372-Thread-19{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:40:12] "PUT /todo/1/ HTTP/1.1" 200 -
+[2025-08-07 15:40:21]-p30372-Thread-20{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:40:21] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 15:40:32]-p30372-Thread-21{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:40:32] "GET /todo/1/ HTTP/1.1" 200 -
+[2025-08-07 15:40:59]-p30372-Thread-22{todo:34}INFO-update todo[1-睡觉] args {'name': '敲代码', 'done': True, 'user_id': 1}
+[2025-08-07 15:40:59]-p30372-Thread-22{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:40:59] "PATCH /todo/1/ HTTP/1.1" 200 -
+[2025-08-07 15:41:07]-p30372-Thread-23{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:41:07] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 15:41:19]-p30372-Thread-24{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:41:19] "DELETE /todo/3/ HTTP/1.1" 200 -
+[2025-08-07 15:41:24]-p30372-Thread-25{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 15:41:24] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 18:25:41]-p10584-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-07 18:25:41]-p10584-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-07 18:25:44]-p10584-Thread-1{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 18:25:44] "GET / HTTP/1.1" 200 -
+[2025-08-07 18:25:45]-p10584-Thread-4{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 18:25:45] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-07 18:25:45]-p10584-Thread-2{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 18:25:45] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-07 18:25:45]-p10584-Thread-5{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 18:25:45] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-07 18:25:45]-p10584-Thread-3{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 18:25:45] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-07 18:25:45]-p10584-Thread-6{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 18:25:45] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-07 18:26:07]-p10584-Thread-7{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 18:26:07] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 18:28:17]-p10584-Thread-8{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 18:28:17] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 18:29:37]-p10584-Thread-9{todo:23}INFO-create todo args name='打扫房间' done=False user_id=2
+[2025-08-07 18:29:37]-p10584-Thread-9{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 18:29:37] "POST /todo/ HTTP/1.1" 200 -
+[2025-08-07 18:30:18]-p10584-Thread-10{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 18:30:18] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 18:34:12]-p10584-Thread-11{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 18:34:12] "GET /user/ HTTP/1.1" 200 -
+[2025-08-07 19:54:51]-p33256-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-07 19:54:51]-p33256-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-07 19:54:55]-p33256-Thread-1{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 19:54:55] "GET / HTTP/1.1" 200 -
+[2025-08-07 19:54:56]-p33256-Thread-3{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 19:54:56] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-07 19:54:56]-p33256-Thread-2{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 19:54:56] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-07 19:54:56]-p33256-Thread-4{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 19:54:56] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-07 19:54:56]-p33256-Thread-5{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 19:54:56] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-07 19:54:56]-p33256-Thread-6{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 19:54:56] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-07 19:55:06]-p33256-Thread-7{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 19:55:06] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 19:55:23]-p33256-Thread-8{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 19:55:23] "GET /todo/1/ HTTP/1.1" 200 -
+[2025-08-07 20:58:06]-p9384-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-07 20:58:06]-p9384-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-07 20:58:08]-p9384-Thread-1{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 20:58:08] "GET / HTTP/1.1" 200 -
+[2025-08-07 20:58:09]-p9384-Thread-2{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 20:58:09] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-07 20:58:09]-p9384-Thread-4{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 20:58:09] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-07 20:58:09]-p9384-Thread-3{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 20:58:09] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-07 20:58:09]-p9384-Thread-5{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 20:58:09] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-07 20:58:09]-p9384-Thread-6{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 20:58:09] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-07 20:58:37]-p9384-Thread-7{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 20:58:37] "[31m[1mPATCH /todo/2/ HTTP/1.1[0m" 400 -
+[2025-08-07 21:08:08]-p32104-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-07 21:08:08]-p32104-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-07 21:08:11]-p32104-Thread-1{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 21:08:11] "GET / HTTP/1.1" 200 -
+[2025-08-07 21:08:11]-p32104-Thread-2{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 21:08:11] "GET / HTTP/1.1" 200 -
+[2025-08-07 21:08:12]-p32104-Thread-3{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 21:08:12] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-07 21:08:12]-p32104-Thread-5{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 21:08:12] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-07 21:08:12]-p32104-Thread-4{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 21:08:12] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-07 21:08:12]-p32104-Thread-7{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 21:08:12] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-07 21:08:12]-p32104-Thread-8{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 21:08:12] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-07 21:08:12]-p32104-Thread-9{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 21:08:12] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-07 21:08:12]-p32104-Thread-6{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 21:08:12] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-07 21:08:12]-p32104-Thread-10{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 21:08:12] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-07 21:08:13]-p32104-Thread-11{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 21:08:13] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-07 21:08:13]-p32104-Thread-12{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 21:08:13] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-07 21:08:19]-p32104-Thread-13{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 21:08:19] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 21:10:14]-p32104-Thread-14{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 21:10:14] "[31m[1mPATCH /todo/1/ HTTP/1.1[0m" 400 -
+[2025-08-07 22:24:48]-p10024-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-07 22:24:48]-p10024-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-07 22:24:59]-p32104-Thread-15{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 22:24:59] "[31m[1mPATCH /todo/1/ HTTP/1.1[0m" 400 -
+[2025-08-07 22:25:04]-p32104-Thread-16{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 22:25:04] "GET / HTTP/1.1" 200 -
+[2025-08-07 22:25:04]-p32104-Thread-17{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 22:25:04] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-07 22:25:04]-p32104-Thread-18{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 22:25:04] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-07 22:25:04]-p32104-Thread-19{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 22:25:04] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-07 22:25:04]-p32104-Thread-20{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 22:25:04] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-07 22:25:04]-p32104-Thread-21{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 22:25:04] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-07 22:25:04]-p32104-Thread-22{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 22:25:04] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-07 22:25:10]-p32104-Thread-23{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 22:25:10] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 22:25:48]-p32104-Thread-24{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 22:25:48] "[31m[1mPATCH /todo/1/ HTTP/1.1[0m" 400 -
+[2025-08-07 22:26:07]-p27236-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-07 22:26:07]-p27236-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-07 22:26:13]-p27236-Thread-1{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 22:26:13] "[31m[1mPATCH /todo/1/ HTTP/1.1[0m" 400 -
+[2025-08-07 22:26:38]-p29024-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-07 22:26:38]-p29024-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-07 22:26:42]-p29024-Thread-1{todo:46}INFO-update todo[1-敲代码] args {'name': '代码'}
+[2025-08-07 22:26:42]-p29024-Thread-1{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 22:26:42] "PATCH /todo/1/ HTTP/1.1" 200 -
+[2025-08-07 22:26:50]-p29024-Thread-2{todo:46}INFO-update todo[1-代码] args {'name': '代码'}
+[2025-08-07 22:26:50]-p29024-Thread-2{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 22:26:50] "PATCH /todo/1/ HTTP/1.1" 200 -
+[2025-08-07 22:29:33]-p20644-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-07 22:29:33]-p20644-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-07 22:29:35]-p20644-Thread-1{todo:47}INFO-update todo[1-代码] args {'name': '代码'}
+[2025-08-07 22:29:35]-p20644-Thread-1{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 22:29:35] "PATCH /todo/1/ HTTP/1.1" 200 -
+[2025-08-07 22:35:19]-p6104-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-07 22:35:19]-p6104-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-07 22:35:24]-p6104-Thread-1{app:875}ERROR-Exception on /todo/ [GET]
+Traceback (most recent call last):
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\test_flask_project\venv\lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\test_flask_project-v1\src\services\todo\views.py", line 22, in get
+    resp.append(todo.to_dict(exclude=self.exclude,extend_fields=self.extend_fields))
+  File "D:\test_flask_project-v1\src\common\db.py", line 21, in to_dict
+    rest[field] = v.to_dict()
+AttributeError: 'InstrumentedList' object has no attribute 'to_dict'
+[2025-08-07 22:35:24]-p6104-Thread-1{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 22:35:24] "[35m[1mGET /todo/ HTTP/1.1[0m" 500 -
+[2025-08-07 22:36:21]-p12596-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-07 22:36:21]-p12596-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-07 22:36:23]-p12596-Thread-1{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 22:36:23] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 22:36:51]-p8568-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-07 22:36:51]-p8568-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-07 22:38:11]-p18472-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-07 22:38:11]-p18472-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-07 22:38:13]-p18472-Thread-1{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 22:38:13] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 22:39:16]-p29780-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-07 22:39:16]-p29780-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-07 22:39:39]-p29780-Thread-1{app:875}ERROR-Exception on /todo/ [GET]
+Traceback (most recent call last):
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\test_flask_project\venv\lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\test_flask_project-v1\src\services\todo\views.py", line 22, in get
+    resp.append(todo.to_dict(exclude=self.exclude,extend_fields=self.extend_fields))
+  File "D:\test_flask_project-v1\src\common\db.py", line 22, in to_dict
+    rest[field] = v.to_dict()
+AttributeError: 'str' object has no attribute 'to_dict'
+[2025-08-07 22:39:39]-p29780-Thread-1{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 22:39:39] "[35m[1mGET /todo/ HTTP/1.1[0m" 500 -
+[2025-08-07 22:40:33]-p9672-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-07 22:40:33]-p9672-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-07 22:40:36]-p9672-Thread-1{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 22:40:36] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 22:49:52]-p25536-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-07 22:49:52]-p25536-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-07 22:49:53]-p25536-Thread-1{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 22:49:53] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 22:51:30]-p1792-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-07 22:51:30]-p1792-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-07 22:51:55]-p1792-Thread-1{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 22:51:55] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 22:52:12]-p21684-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-07 22:52:12]-p21684-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-07 22:52:14]-p21684-Thread-1{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 22:52:14] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 22:52:56]-p18784-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-07 22:52:56]-p18784-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-07 22:55:15]-p18176-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-07 22:55:15]-p18176-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-07 22:56:20]-p18176-Thread-5{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 22:56:20] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 22:57:31]-p6472-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-07 22:57:31]-p6472-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-07 22:57:33]-p6472-Thread-1{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 22:57:33] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 23:00:27]-p10420-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-07 23:00:27]-p10420-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-07 23:00:29]-p10420-Thread-1{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 23:00:29] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-07 23:02:41]-p9448-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-07 23:02:41]-p9448-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-07 23:02:45]-p9448-Thread-1{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 23:02:45] "GET / HTTP/1.1" 200 -
+[2025-08-07 23:02:46]-p9448-Thread-3{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 23:02:46] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-07 23:02:46]-p9448-Thread-4{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 23:02:46] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-07 23:02:46]-p9448-Thread-2{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 23:02:46] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-07 23:02:46]-p9448-Thread-5{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 23:02:46] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-07 23:02:46]-p9448-Thread-6{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 23:02:46] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-07 23:02:46]-p9448-Thread-7{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 23:02:46] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-07 23:02:50]-p9448-Thread-8{app:875}ERROR-Exception on /user/ [GET]
+Traceback (most recent call last):
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\test_flask_project\venv\lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\test_flask_project-v1\src\services\user\views.py", line 23, in get
+    return self.get_page(request)
+  File "D:\test_flask_project-v1\src\common\web.py", line 72, in get_page
+    datas = [self.get_list_data(model) for model in models]
+  File "D:\test_flask_project-v1\src\common\web.py", line 72, in <listcomp>
+    datas = [self.get_list_data(model) for model in models]
+  File "D:\test_flask_project-v1\src\common\web.py", line 56, in get_list_data
+    return model.to_dict(
+TypeError: to_dict() got an unexpected keyword argument 'exclude'
+[2025-08-07 23:02:50]-p9448-Thread-8{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 23:02:50] "[35m[1mGET /user/ HTTP/1.1[0m" 500 -
+[2025-08-07 23:03:40]-p6468-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-07 23:03:40]-p6468-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-07 23:03:57]-p6468-Thread-1{app:875}ERROR-Exception on /user/ [GET]
+Traceback (most recent call last):
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\test_flask_project\venv\lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\test_flask_project-v1\src\services\user\views.py", line 23, in get
+    return self.get_page(request)
+  File "D:\test_flask_project-v1\src\common\web.py", line 74, in get_page
+    models = self.query.all()
+  File "D:\test_flask_project-v1\src\common\web.py", line 74, in <listcomp>
+    models = self.query.all()
+  File "D:\test_flask_project-v1\src\common\web.py", line 58, in get_list_data
+    exclude_fields=self.exclude_fields,
+AttributeError: 'UsersView' object has no attribute 'include_fields'
+[2025-08-07 23:03:57]-p6468-Thread-1{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 23:03:57] "[35m[1mGET /user/ HTTP/1.1[0m" 500 -
+[2025-08-07 23:04:06]-p12840-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-07 23:04:06]-p12840-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-07 23:04:08]-p12840-Thread-1{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 23:04:08] "GET /user/ HTTP/1.1" 200 -
+[2025-08-07 23:05:02]-p12840-Thread-3{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 23:05:02] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-08-07 23:05:03]-p12840-Thread-2{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 23:05:03] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-07 23:05:03]-p12840-Thread-4{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 23:05:03] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-07 23:05:03]-p12840-Thread-7{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 23:05:03] "GET /swaggerui/swagger-ui.css.map HTTP/1.1" 200 -
+[2025-08-07 23:05:03]-p12840-Thread-5{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 23:05:03] "GET /swaggerui/swagger-ui-bundle.js.map HTTP/1.1" 200 -
+[2025-08-07 23:05:03]-p12840-Thread-6{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 23:05:03] "GET /swaggerui/swagger-ui-standalone-preset.js.map HTTP/1.1" 200 -
+[2025-08-07 23:05:05]-p12840-Thread-8{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 23:05:05] "GET /user/ HTTP/1.1" 200 -
+[2025-08-07 23:06:58]-p12840-Thread-9{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 23:06:58] "GET /user/ HTTP/1.1" 200 -
+[2025-08-07 23:08:50]-p12840-Thread-10{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 23:08:50] "GET /user/?limit=1&page=1 HTTP/1.1" 200 -
+[2025-08-07 23:09:26]-p12840-Thread-11{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 23:09:26] "GET /user/?limit=1&page=2 HTTP/1.1" 200 -
+[2025-08-07 23:10:14]-p12840-Thread-12{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 23:10:14] "GET /user/?limit=2&page=2 HTTP/1.1" 200 -
+[2025-08-07 23:10:31]-p12840-Thread-13{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 23:10:31] "GET /user/?limit=3&page=1 HTTP/1.1" 200 -
+[2025-08-07 23:10:53]-p12840-Thread-14{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 23:10:53] "GET /user/?limit=3&page=2 HTTP/1.1" 200 -
+[2025-08-07 23:17:59]-p15024-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-07 23:17:59]-p15024-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-07 23:18:00]-p15024-Thread-1{_internal:97}INFO-127.0.0.1 - - [07/Aug/2025 23:18:00] "GET /user/ HTTP/1.1" 200 -
+[2025-08-08 09:00:23]-p12436-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-08 09:00:23]-p12436-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-08 09:00:27]-p12436-Thread-1{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:00:27] "GET / HTTP/1.1" 200 -
+[2025-08-08 09:00:28]-p12436-Thread-5{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:00:28] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-08 09:00:28]-p12436-Thread-4{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:00:28] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-08 09:00:28]-p12436-Thread-3{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:00:28] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-08 09:00:28]-p12436-Thread-2{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:00:28] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-08 09:00:28]-p12436-Thread-6{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:00:28] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-08 09:00:37]-p12436-Thread-7{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:00:37] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-08 09:01:08]-p12436-Thread-8{todo:35}INFO-create todo args name='吃饭' done=False user_id=1
+[2025-08-08 09:01:08]-p12436-Thread-8{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:01:08] "POST /todo/ HTTP/1.1" 200 -
+[2025-08-08 09:01:21]-p12436-Thread-9{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:01:21] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-08 09:01:35]-p12436-Thread-10{app:875}ERROR-Exception on /todo/1/ [DELETE]
+Traceback (most recent call last):
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\test_flask_project\venv\lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\test_flask_project-v1\src\services\todo\views.py", line 65, in delete
+    return ctl.simple_delete()
+  File "D:\test_flask_project-v1\src\controls\base_ctl.py", line 18, in simple_delete
+    self.model.delete()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy_mixins\activerecord.py", line 56, in delete
+    self._commit_or_fail()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy_mixins\activerecord.py", line 60, in _commit_or_fail
+    self.session.commit()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\scoping.py", line 599, in commit
+    return self._proxied.commit()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4345, in flush
+    self._flush(objects)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4481, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4441, in _flush
+    flush_context.execute()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 589, in execute
+    self.dependency_processor.process_deletes(uow, states)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\dependency.py", line 565, in process_deletes
+    self._synchronize(
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\dependency.py", line 623, in _synchronize
+    sync.clear(dest, self.mapper, self.prop.synchronize_pairs)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\sync.py", line 88, in clear
+    raise AssertionError(
+AssertionError: Dependency rule on column 'todo.id' tried to blank-out primary key column 'user.id' on instance '<User at 0x1b778514b20>'
+[2025-08-08 09:01:35]-p12436-Thread-10{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:01:35] "[35m[1mDELETE /todo/1/ HTTP/1.1[0m" 500 -
+[2025-08-08 09:01:52]-p12436-Thread-11{app:875}ERROR-Exception on /todo/2/ [DELETE]
+Traceback (most recent call last):
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\test_flask_project\venv\lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\test_flask_project-v1\src\services\todo\views.py", line 65, in delete
+    return ctl.simple_delete()
+  File "D:\test_flask_project-v1\src\controls\base_ctl.py", line 18, in simple_delete
+    self.model.delete()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy_mixins\activerecord.py", line 56, in delete
+    self._commit_or_fail()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy_mixins\activerecord.py", line 60, in _commit_or_fail
+    self.session.commit()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\scoping.py", line 599, in commit
+    return self._proxied.commit()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4345, in flush
+    self._flush(objects)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4481, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4441, in _flush
+    flush_context.execute()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 589, in execute
+    self.dependency_processor.process_deletes(uow, states)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\dependency.py", line 565, in process_deletes
+    self._synchronize(
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\dependency.py", line 623, in _synchronize
+    sync.clear(dest, self.mapper, self.prop.synchronize_pairs)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\sync.py", line 88, in clear
+    raise AssertionError(
+AssertionError: Dependency rule on column 'todo.id' tried to blank-out primary key column 'user.id' on instance '<User at 0x1b778788040>'
+[2025-08-08 09:01:52]-p12436-Thread-11{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:01:52] "[35m[1mDELETE /todo/2/ HTTP/1.1[0m" 500 -
+[2025-08-08 09:01:55]-p12436-Thread-12{app:875}ERROR-Exception on /todo/2/ [DELETE]
+Traceback (most recent call last):
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\test_flask_project\venv\lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\test_flask_project-v1\src\services\todo\views.py", line 65, in delete
+    return ctl.simple_delete()
+  File "D:\test_flask_project-v1\src\controls\base_ctl.py", line 18, in simple_delete
+    self.model.delete()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy_mixins\activerecord.py", line 56, in delete
+    self._commit_or_fail()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy_mixins\activerecord.py", line 60, in _commit_or_fail
+    self.session.commit()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\scoping.py", line 599, in commit
+    return self._proxied.commit()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4345, in flush
+    self._flush(objects)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4481, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4441, in _flush
+    flush_context.execute()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 589, in execute
+    self.dependency_processor.process_deletes(uow, states)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\dependency.py", line 565, in process_deletes
+    self._synchronize(
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\dependency.py", line 623, in _synchronize
+    sync.clear(dest, self.mapper, self.prop.synchronize_pairs)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\sync.py", line 88, in clear
+    raise AssertionError(
+AssertionError: Dependency rule on column 'todo.id' tried to blank-out primary key column 'user.id' on instance '<User at 0x1b778793160>'
+[2025-08-08 09:01:55]-p12436-Thread-12{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:01:55] "[35m[1mDELETE /todo/2/ HTTP/1.1[0m" 500 -
+[2025-08-08 09:01:55]-p12436-Thread-13{app:875}ERROR-Exception on /todo/2/ [DELETE]
+Traceback (most recent call last):
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\test_flask_project\venv\lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\test_flask_project-v1\src\services\todo\views.py", line 65, in delete
+    return ctl.simple_delete()
+  File "D:\test_flask_project-v1\src\controls\base_ctl.py", line 18, in simple_delete
+    self.model.delete()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy_mixins\activerecord.py", line 56, in delete
+    self._commit_or_fail()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy_mixins\activerecord.py", line 60, in _commit_or_fail
+    self.session.commit()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\scoping.py", line 599, in commit
+    return self._proxied.commit()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4345, in flush
+    self._flush(objects)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4481, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4441, in _flush
+    flush_context.execute()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 589, in execute
+    self.dependency_processor.process_deletes(uow, states)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\dependency.py", line 565, in process_deletes
+    self._synchronize(
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\dependency.py", line 623, in _synchronize
+    sync.clear(dest, self.mapper, self.prop.synchronize_pairs)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\sync.py", line 88, in clear
+    raise AssertionError(
+AssertionError: Dependency rule on column 'todo.id' tried to blank-out primary key column 'user.id' on instance '<User at 0x1b778788a30>'
+[2025-08-08 09:01:55]-p12436-Thread-13{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:01:55] "[35m[1mDELETE /todo/2/ HTTP/1.1[0m" 500 -
+[2025-08-08 09:01:59]-p12436-Thread-14{app:875}ERROR-Exception on /todo/3/ [DELETE]
+Traceback (most recent call last):
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\test_flask_project\venv\lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\test_flask_project-v1\src\services\todo\views.py", line 65, in delete
+    return ctl.simple_delete()
+  File "D:\test_flask_project-v1\src\controls\base_ctl.py", line 18, in simple_delete
+    self.model.delete()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy_mixins\activerecord.py", line 56, in delete
+    self._commit_or_fail()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy_mixins\activerecord.py", line 60, in _commit_or_fail
+    self.session.commit()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\scoping.py", line 599, in commit
+    return self._proxied.commit()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4345, in flush
+    self._flush(objects)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4481, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4441, in _flush
+    flush_context.execute()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 589, in execute
+    self.dependency_processor.process_deletes(uow, states)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\dependency.py", line 565, in process_deletes
+    self._synchronize(
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\dependency.py", line 623, in _synchronize
+    sync.clear(dest, self.mapper, self.prop.synchronize_pairs)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\sync.py", line 88, in clear
+    raise AssertionError(
+AssertionError: Dependency rule on column 'todo.id' tried to blank-out primary key column 'user.id' on instance '<User at 0x1b778793f10>'
+[2025-08-08 09:01:59]-p12436-Thread-14{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:01:59] "[35m[1mDELETE /todo/3/ HTTP/1.1[0m" 500 -
+[2025-08-08 09:02:02]-p12436-Thread-15{app:875}ERROR-Exception on /todo/3/ [DELETE]
+Traceback (most recent call last):
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\test_flask_project\venv\lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\test_flask_project-v1\src\services\todo\views.py", line 65, in delete
+    return ctl.simple_delete()
+  File "D:\test_flask_project-v1\src\controls\base_ctl.py", line 18, in simple_delete
+    self.model.delete()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy_mixins\activerecord.py", line 56, in delete
+    self._commit_or_fail()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy_mixins\activerecord.py", line 60, in _commit_or_fail
+    self.session.commit()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\scoping.py", line 599, in commit
+    return self._proxied.commit()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4345, in flush
+    self._flush(objects)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4481, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4441, in _flush
+    flush_context.execute()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 589, in execute
+    self.dependency_processor.process_deletes(uow, states)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\dependency.py", line 565, in process_deletes
+    self._synchronize(
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\dependency.py", line 623, in _synchronize
+    sync.clear(dest, self.mapper, self.prop.synchronize_pairs)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\sync.py", line 88, in clear
+    raise AssertionError(
+AssertionError: Dependency rule on column 'todo.id' tried to blank-out primary key column 'user.id' on instance '<User at 0x1b778431d60>'
+[2025-08-08 09:02:02]-p12436-Thread-15{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:02:02] "[35m[1mDELETE /todo/3/ HTTP/1.1[0m" 500 -
+[2025-08-08 09:02:07]-p12436-Thread-16{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:02:07] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-08 09:03:29]-p12436-Thread-17{todo:47}INFO-update todo[4-吃饭] args {'name': '浇花'}
+[2025-08-08 09:03:29]-p12436-Thread-17{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:03:29] "PATCH /todo/4/ HTTP/1.1" 200 -
+[2025-08-08 09:03:40]-p12436-Thread-18{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:03:40] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-08 09:03:54]-p12436-Thread-19{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:03:54] "GET /todo/4/ HTTP/1.1" 200 -
+[2025-08-08 09:03:58]-p12436-Thread-20{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:03:58] "GET /todo/2/ HTTP/1.1" 200 -
+[2025-08-08 09:04:39]-p12436-Thread-21{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:04:39] "[31m[1mPUT /todo/2/ HTTP/1.1[0m" 400 -
+[2025-08-08 09:05:05]-p12436-Thread-22{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:05:05] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-08 09:05:16]-p12436-Thread-23{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:05:16] "GET / HTTP/1.1" 200 -
+[2025-08-08 09:05:16]-p12436-Thread-24{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:05:16] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-08 09:05:16]-p12436-Thread-25{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:05:16] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-08 09:05:16]-p12436-Thread-26{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:05:16] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-08 09:05:16]-p12436-Thread-27{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:05:16] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-08 09:05:16]-p12436-Thread-28{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:05:16] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-08 09:05:16]-p12436-Thread-29{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:05:16] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-08 09:06:43]-p12436-Thread-30{app:875}ERROR-Exception on /todo/3/ [DELETE]
+Traceback (most recent call last):
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\test_flask_project\venv\lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\test_flask_project-v1\src\services\todo\views.py", line 65, in delete
+    return ctl.simple_delete()
+  File "D:\test_flask_project-v1\src\controls\base_ctl.py", line 18, in simple_delete
+    self.model.delete()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy_mixins\activerecord.py", line 56, in delete
+    self._commit_or_fail()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy_mixins\activerecord.py", line 60, in _commit_or_fail
+    self.session.commit()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\scoping.py", line 599, in commit
+    return self._proxied.commit()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4345, in flush
+    self._flush(objects)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4481, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4441, in _flush
+    flush_context.execute()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 589, in execute
+    self.dependency_processor.process_deletes(uow, states)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\dependency.py", line 565, in process_deletes
+    self._synchronize(
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\dependency.py", line 623, in _synchronize
+    sync.clear(dest, self.mapper, self.prop.synchronize_pairs)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\sync.py", line 88, in clear
+    raise AssertionError(
+AssertionError: Dependency rule on column 'todo.id' tried to blank-out primary key column 'user.id' on instance '<User at 0x1b7786535b0>'
+[2025-08-08 09:06:43]-p12436-Thread-30{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:06:43] "[35m[1mDELETE /todo/3/ HTTP/1.1[0m" 500 -
+[2025-08-08 09:09:29]-p18896-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-08 09:09:29]-p18896-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-08 09:09:30]-p18896-Thread-1{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:09:30] "GET / HTTP/1.1" 200 -
+[2025-08-08 09:09:32]-p18896-Thread-3{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:09:32] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-08 09:09:32]-p18896-Thread-4{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:09:32] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-08 09:09:32]-p18896-Thread-5{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:09:32] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-08 09:09:32]-p18896-Thread-2{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:09:32] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-08 09:09:32]-p18896-Thread-6{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:09:32] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-08 09:10:04]-p18896-Thread-7{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:10:04] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-08 09:10:17]-p18896-Thread-8{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:10:17] "GET /user/ HTTP/1.1" 200 -
+[2025-08-08 09:12:33]-p31684-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-08 09:12:33]-p31684-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-08 09:12:35]-p31684-Thread-1{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:12:35] "GET / HTTP/1.1" 200 -
+[2025-08-08 09:12:36]-p31684-Thread-3{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:12:36] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-08 09:12:36]-p31684-Thread-2{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:12:36] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-08 09:12:36]-p31684-Thread-4{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:12:36] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-08 09:12:36]-p31684-Thread-5{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:12:36] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-08 09:12:36]-p31684-Thread-6{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:12:36] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-08 09:12:48]-p31684-Thread-7{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:12:48] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-08 09:13:05]-p31684-Thread-8{app:875}ERROR-Exception on /todo/1/ [DELETE]
+Traceback (most recent call last):
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\test_flask_project\venv\lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\test_flask_project-v1\src\services\todo\views.py", line 65, in delete
+    return ctl.simple_delete()
+  File "D:\test_flask_project-v1\src\controls\base_ctl.py", line 18, in simple_delete
+    self.model.delete()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy_mixins\activerecord.py", line 56, in delete
+    self._commit_or_fail()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy_mixins\activerecord.py", line 60, in _commit_or_fail
+    self.session.commit()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\scoping.py", line 599, in commit
+    return self._proxied.commit()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4345, in flush
+    self._flush(objects)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4481, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4441, in _flush
+    flush_context.execute()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 589, in execute
+    self.dependency_processor.process_deletes(uow, states)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\dependency.py", line 565, in process_deletes
+    self._synchronize(
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\dependency.py", line 623, in _synchronize
+    sync.clear(dest, self.mapper, self.prop.synchronize_pairs)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\sync.py", line 88, in clear
+    raise AssertionError(
+AssertionError: Dependency rule on column 'todo.id' tried to blank-out primary key column 'user.id' on instance '<User at 0x1f93f6fef40>'
+[2025-08-08 09:13:05]-p31684-Thread-8{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:13:05] "[35m[1mDELETE /todo/1/ HTTP/1.1[0m" 500 -
+[2025-08-08 09:13:16]-p31684-Thread-9{app:875}ERROR-Exception on /todo/1/ [GET]
+Traceback (most recent call last):
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\test_flask_project\venv\lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\test_flask_project-v1\src\services\todo\views.py", line 44, in get
+    return todo.to_dict(exclude=self.exclude)
+TypeError: to_dict() got an unexpected keyword argument 'exclude'
+[2025-08-08 09:13:16]-p31684-Thread-9{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:13:16] "[35m[1mGET /todo/1/ HTTP/1.1[0m" 500 -
+[2025-08-08 09:13:21]-p31684-Thread-10{app:875}ERROR-Exception on /todo/1/ [GET]
+Traceback (most recent call last):
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\test_flask_project\venv\lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\test_flask_project-v1\src\services\todo\views.py", line 44, in get
+    return todo.to_dict(exclude=self.exclude)
+TypeError: to_dict() got an unexpected keyword argument 'exclude'
+[2025-08-08 09:13:21]-p31684-Thread-10{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:13:21] "[35m[1mGET /todo/1/ HTTP/1.1[0m" 500 -
+[2025-08-08 09:13:22]-p31684-Thread-11{app:875}ERROR-Exception on /todo/1/ [GET]
+Traceback (most recent call last):
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\test_flask_project\venv\lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\test_flask_project-v1\src\services\todo\views.py", line 44, in get
+    return todo.to_dict(exclude=self.exclude)
+TypeError: to_dict() got an unexpected keyword argument 'exclude'
+[2025-08-08 09:13:22]-p31684-Thread-11{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:13:22] "[35m[1mGET /todo/1/ HTTP/1.1[0m" 500 -
+[2025-08-08 09:13:22]-p31684-Thread-12{app:875}ERROR-Exception on /todo/1/ [GET]
+Traceback (most recent call last):
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\test_flask_project\venv\lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\test_flask_project-v1\src\services\todo\views.py", line 44, in get
+    return todo.to_dict(exclude=self.exclude)
+TypeError: to_dict() got an unexpected keyword argument 'exclude'
+[2025-08-08 09:13:22]-p31684-Thread-12{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:13:22] "[35m[1mGET /todo/1/ HTTP/1.1[0m" 500 -
+[2025-08-08 09:13:23]-p31684-Thread-13{app:875}ERROR-Exception on /todo/1/ [GET]
+Traceback (most recent call last):
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\test_flask_project\venv\lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\test_flask_project-v1\src\services\todo\views.py", line 44, in get
+    return todo.to_dict(exclude=self.exclude)
+TypeError: to_dict() got an unexpected keyword argument 'exclude'
+[2025-08-08 09:13:23]-p31684-Thread-13{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:13:23] "[35m[1mGET /todo/1/ HTTP/1.1[0m" 500 -
+[2025-08-08 09:13:34]-p31684-Thread-14{app:875}ERROR-Exception on /todo/1/ [DELETE]
+Traceback (most recent call last):
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\test_flask_project\venv\lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\test_flask_project-v1\src\services\todo\views.py", line 65, in delete
+    return ctl.simple_delete()
+  File "D:\test_flask_project-v1\src\controls\base_ctl.py", line 18, in simple_delete
+    self.model.delete()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy_mixins\activerecord.py", line 56, in delete
+    self._commit_or_fail()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy_mixins\activerecord.py", line 60, in _commit_or_fail
+    self.session.commit()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\scoping.py", line 599, in commit
+    return self._proxied.commit()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4345, in flush
+    self._flush(objects)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4481, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4441, in _flush
+    flush_context.execute()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 589, in execute
+    self.dependency_processor.process_deletes(uow, states)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\dependency.py", line 565, in process_deletes
+    self._synchronize(
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\dependency.py", line 623, in _synchronize
+    sync.clear(dest, self.mapper, self.prop.synchronize_pairs)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\sync.py", line 88, in clear
+    raise AssertionError(
+AssertionError: Dependency rule on column 'todo.id' tried to blank-out primary key column 'user.id' on instance '<User at 0x1f93f961d30>'
+[2025-08-08 09:13:34]-p31684-Thread-14{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:13:34] "[35m[1mDELETE /todo/1/ HTTP/1.1[0m" 500 -
+[2025-08-08 09:13:35]-p31684-Thread-15{app:875}ERROR-Exception on /todo/1/ [DELETE]
+Traceback (most recent call last):
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\test_flask_project\venv\lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\test_flask_project-v1\src\services\todo\views.py", line 65, in delete
+    return ctl.simple_delete()
+  File "D:\test_flask_project-v1\src\controls\base_ctl.py", line 18, in simple_delete
+    self.model.delete()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy_mixins\activerecord.py", line 56, in delete
+    self._commit_or_fail()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy_mixins\activerecord.py", line 60, in _commit_or_fail
+    self.session.commit()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\scoping.py", line 599, in commit
+    return self._proxied.commit()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4345, in flush
+    self._flush(objects)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4481, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4441, in _flush
+    flush_context.execute()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 589, in execute
+    self.dependency_processor.process_deletes(uow, states)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\dependency.py", line 565, in process_deletes
+    self._synchronize(
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\dependency.py", line 623, in _synchronize
+    sync.clear(dest, self.mapper, self.prop.synchronize_pairs)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\sync.py", line 88, in clear
+    raise AssertionError(
+AssertionError: Dependency rule on column 'todo.id' tried to blank-out primary key column 'user.id' on instance '<User at 0x1f93f96f220>'
+[2025-08-08 09:13:35]-p31684-Thread-15{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:13:35] "[35m[1mDELETE /todo/1/ HTTP/1.1[0m" 500 -
+[2025-08-08 09:13:37]-p31684-Thread-16{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:13:37] "GET / HTTP/1.1" 200 -
+[2025-08-08 09:13:37]-p31684-Thread-17{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:13:37] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-08 09:13:37]-p31684-Thread-18{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:13:37] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-08 09:13:37]-p31684-Thread-19{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:13:37] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-08 09:13:37]-p31684-Thread-20{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:13:37] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-08 09:13:37]-p31684-Thread-21{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:13:37] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-08 09:13:37]-p31684-Thread-22{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:13:37] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-08 09:14:48]-p30444-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-08 09:14:48]-p30444-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-08 09:14:52]-p30444-Thread-1{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:14:52] "GET / HTTP/1.1" 200 -
+[2025-08-08 09:14:53]-p30444-Thread-4{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:14:53] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-08 09:14:53]-p30444-Thread-5{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:14:53] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-08 09:14:53]-p30444-Thread-2{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:14:53] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-08 09:14:53]-p30444-Thread-3{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:14:53] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-08 09:14:53]-p30444-Thread-6{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:14:53] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-08 09:15:11]-p30444-Thread-7{todo:35}INFO-create todo args name='吃饭' done=True user_id=1
+[2025-08-08 09:15:11]-p30444-Thread-7{app:875}ERROR-Exception on /todo/ [POST]
+Traceback (most recent call last):
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\test_flask_project\venv\lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\test_flask_project\venv\lib\site-packages\flask_pydantic\core.py", line 285, in wrapper
+    res = func(*args, **kwargs)
+  File "D:\test_flask_project-v1\src\services\todo\views.py", line 31, in post
+    return todo.to_dict(exclude=self.exclude)
+AttributeError: 'TodosView' object has no attribute 'exclude'
+[2025-08-08 09:15:11]-p30444-Thread-7{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:15:11] "[35m[1mPOST /todo/ HTTP/1.1[0m" 500 -
+[2025-08-08 09:19:35]-p16364-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-08 09:19:35]-p16364-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-08 09:19:36]-p16364-Thread-1{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:19:36] "GET / HTTP/1.1" 200 -
+[2025-08-08 09:19:38]-p16364-Thread-4{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:19:38] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-08 09:19:38]-p16364-Thread-2{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:19:38] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-08 09:19:38]-p16364-Thread-3{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:19:38] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-08 09:19:38]-p16364-Thread-5{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:19:38] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-08 09:19:38]-p16364-Thread-6{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:19:38] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-08 09:19:45]-p16364-Thread-7{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:19:45] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-08 09:20:13]-p16364-Thread-8{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:20:13] "GET /todo/1/ HTTP/1.1" 200 -
+[2025-08-08 09:20:27]-p16364-Thread-9{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:20:27] "GET /todo/2/ HTTP/1.1" 200 -
+[2025-08-08 09:20:31]-p16364-Thread-10{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:20:31] "GET /todo/3/ HTTP/1.1" 200 -
+[2025-08-08 09:20:41]-p16364-Thread-11{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:20:41] "GET /user/1/ HTTP/1.1" 200 -
+[2025-08-08 09:21:40]-p16364-Thread-12{todo:47}INFO-update todo[3-打扫房间] args {'done': True}
+[2025-08-08 09:21:41]-p16364-Thread-12{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:21:41] "PATCH /todo/3/ HTTP/1.1" 200 -
+[2025-08-08 09:21:51]-p16364-Thread-13{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:21:51] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-08 09:22:07]-p16364-Thread-14{app:875}ERROR-Exception on /todo/1/ [DELETE]
+Traceback (most recent call last):
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\test_flask_project\venv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\test_flask_project\venv\lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+  File "D:\test_flask_project\venv\lib\site-packages\flask_restx\resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\test_flask_project-v1\src\services\todo\views.py", line 65, in delete
+    return ctl.simple_delete()
+  File "D:\test_flask_project-v1\src\controls\base_ctl.py", line 18, in simple_delete
+    self.model.delete()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy_mixins\activerecord.py", line 56, in delete
+    self._commit_or_fail()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy_mixins\activerecord.py", line 60, in _commit_or_fail
+    self.session.commit()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\scoping.py", line 599, in commit
+    return self._proxied.commit()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4345, in flush
+    self._flush(objects)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4481, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4441, in _flush
+    flush_context.execute()
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 589, in execute
+    self.dependency_processor.process_deletes(uow, states)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\dependency.py", line 565, in process_deletes
+    self._synchronize(
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\dependency.py", line 623, in _synchronize
+    sync.clear(dest, self.mapper, self.prop.synchronize_pairs)
+  File "D:\test_flask_project\venv\lib\site-packages\sqlalchemy\orm\sync.py", line 88, in clear
+    raise AssertionError(
+AssertionError: Dependency rule on column 'todo.id' tried to blank-out primary key column 'user.id' on instance '<User at 0x2312a597670>'
+[2025-08-08 09:22:07]-p16364-Thread-14{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:22:07] "[35m[1mDELETE /todo/1/ HTTP/1.1[0m" 500 -
+[2025-08-08 09:22:44]-p16364-Thread-15{todo:47}INFO-update todo[5-吃饭] args {'name': '做作业', 'done': False, 'user_id': 2}
+[2025-08-08 09:22:44]-p16364-Thread-15{_internal:97}INFO-127.0.0.1 - - [08/Aug/2025 09:22:44] "PUT /todo/5/ HTTP/1.1" 200 -
+[2025-08-08 21:46:12]-p27204-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-08 21:46:12]-p27204-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-08 22:00:27]-p23944-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-08 22:00:27]-p23944-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-08 22:00:27]-p23944-MainThread{compare:190}INFO-Detected added table 'todo'
+[2025-08-08 22:00:27]-p23944-MainThread{compare:685}INFO-Detected added index 'ix_todo_done' on '('done',)'
+[2025-08-08 22:00:27]-p23944-MainThread{compare:685}INFO-Detected added index 'ix_todo_name' on '('name',)'
+[2025-08-08 22:00:27]-p23944-MainThread{compare:685}INFO-Detected added index 'ix_todo_user_id' on '('user_id',)'
+[2025-08-08 22:00:27]-p23944-MainThread{compare:190}INFO-Detected added table 'user'
+[2025-08-08 22:00:27]-p23944-MainThread{compare:685}INFO-Detected added index 'ix_user_email' on '('email',)'
+[2025-08-08 22:00:27]-p23944-MainThread{compare:685}INFO-Detected added index 'ix_user_name' on '('name',)'
+[2025-08-08 22:00:27]-p23944-MainThread{compare:685}INFO-Detected added index 'ix_user_password' on '('password',)'
+[2025-08-08 22:01:10]-p33260-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-08 22:01:10]-p33260-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-08 22:01:10]-p33260-MainThread{migration:622}INFO-Running upgrade  -> 3d6f2793e583, empty message
+[2025-08-08 22:03:17]-p33564-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-08 22:03:17]-p33564-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-08 22:11:12]-p12320-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-08 22:11:12]-p12320-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-08 22:11:12]-p12320-MainThread{compare:190}INFO-Detected added table 'article'
+[2025-08-08 22:11:12]-p12320-MainThread{compare:685}INFO-Detected added index 'ix_article_category_id' on '('category_id',)'
+[2025-08-08 22:11:12]-p12320-MainThread{compare:685}INFO-Detected added index 'ix_article_status' on '('status',)'
+[2025-08-08 22:11:12]-p12320-MainThread{compare:685}INFO-Detected added index 'ix_article_user_id' on '('user_id',)'
+[2025-08-08 22:11:12]-p12320-MainThread{compare:190}INFO-Detected added table 'comment'
+[2025-08-08 22:11:12]-p12320-MainThread{compare:685}INFO-Detected added index 'ix_comment_article_id' on '('article_id',)'
+[2025-08-08 22:11:12]-p12320-MainThread{compare:685}INFO-Detected added index 'ix_comment_created_at' on '('created_at',)'
+[2025-08-08 22:11:12]-p12320-MainThread{compare:190}INFO-Detected added table 'postscategory'
+[2025-08-08 22:11:12]-p12320-MainThread{compare:685}INFO-Detected added index 'ix_postscategory_name' on '('name',)'
+[2025-08-08 22:11:54]-p22480-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-08 22:11:54]-p22480-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-08 22:11:54]-p22480-MainThread{migration:622}INFO-Running upgrade 3d6f2793e583 -> 77ba73151cb0, empty message
+[2025-08-08 22:13:46]-p20844-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-08 22:13:46]-p20844-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-08 22:13:46]-p20844-MainThread{migration:622}INFO-Running downgrade 77ba73151cb0 -> 3d6f2793e583, empty message
+[2025-08-08 22:15:33]-p16396-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-08 22:15:33]-p16396-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-08 22:15:33]-p16396-MainThread{compare:190}INFO-Detected added table 'article'
+[2025-08-08 22:15:33]-p16396-MainThread{compare:685}INFO-Detected added index 'ix_article_category_id' on '('category_id',)'
+[2025-08-08 22:15:33]-p16396-MainThread{compare:685}INFO-Detected added index 'ix_article_status' on '('status',)'
+[2025-08-08 22:15:33]-p16396-MainThread{compare:685}INFO-Detected added index 'ix_article_user_id' on '('user_id',)'
+[2025-08-08 22:15:33]-p16396-MainThread{compare:190}INFO-Detected added table 'comment'
+[2025-08-08 22:15:33]-p16396-MainThread{compare:685}INFO-Detected added index 'ix_comment_article_id' on '('article_id',)'
+[2025-08-08 22:15:33]-p16396-MainThread{compare:685}INFO-Detected added index 'ix_comment_created_at' on '('created_at',)'
+[2025-08-08 22:15:33]-p16396-MainThread{compare:190}INFO-Detected added table 'postscategory'
+[2025-08-08 22:15:33]-p16396-MainThread{compare:685}INFO-Detected added index 'ix_postscategory_name' on '('name',)'
+[2025-08-08 22:15:53]-p24668-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-08 22:15:53]-p24668-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-08 22:15:53]-p24668-MainThread{migration:622}INFO-Running upgrade 3d6f2793e583 -> ad56bb7e87c9, empty message
+[2025-08-08 22:27:04]-p24028-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-08 22:27:04]-p24028-MainThread{migration:213}INFO-Generating static SQL
+[2025-08-08 22:27:04]-p24028-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-08 22:27:04]-p24028-MainThread{migration:622}INFO-Running upgrade 3d6f2793e583 -> ad56bb7e87c9, empty message
+[2025-08-08 22:27:40]-p24644-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-08 22:27:40]-p24644-MainThread{migration:213}INFO-Generating static SQL
+[2025-08-08 22:27:40]-p24644-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-08 22:27:40]-p24644-MainThread{migration:622}INFO-Running upgrade  -> 3d6f2793e583, empty message
+[2025-08-08 22:27:40]-p24644-MainThread{migration:622}INFO-Running upgrade 3d6f2793e583 -> ad56bb7e87c9, empty message
+[2025-08-08 22:38:48]-p10840-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-08 22:38:48]-p10840-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-08 22:46:56]-p11728-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-08 22:46:56]-p11728-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-08 22:46:56]-p11728-MainThread{compare:1003}INFO-Detected type change from VARCHAR(length=80) to Text() on 'article.content'
+[2025-08-08 22:47:52]-p10164-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-08 22:47:52]-p10164-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-08 22:47:52]-p10164-MainThread{migration:622}INFO-Running upgrade ad56bb7e87c9 -> 3906ad0b2a63, empty message
+[2025-08-08 22:53:09]-p33244-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-08 22:53:09]-p33244-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-08 22:53:09]-p33244-MainThread{compare:1003}INFO-Detected type change from VARCHAR(length=80) to String(length=250) on 'comment.content'
+[2025-08-08 22:53:09]-p33244-MainThread{compare:755}INFO-Detected changed index 'ix_postscategory_name' on 'postscategory': unique=False to unique=True
+[2025-08-08 22:55:17]-p12916-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-08 22:55:17]-p12916-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-08 22:55:17]-p12916-MainThread{migration:622}INFO-Running upgrade 3906ad0b2a63 -> 291c7536e9a1, empty message
