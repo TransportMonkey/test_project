@@ -12,6 +12,6 @@ class User(BaseModel):
     password = db.Column(db.String(80), index=True, nullable=False, comment="密码")
     todos = db.relationship(
         'Todo',
-        primaryjoin='Todo.id==foreign(model.user.User.id)',
+        primaryjoin='model.user.User.id==foreign(Todo.user_id)',
         uselist=True
     )

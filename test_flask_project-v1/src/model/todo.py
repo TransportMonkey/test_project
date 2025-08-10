@@ -10,10 +10,6 @@ class Todo(BaseModel):
     user_id = db.Column(db.Integer,index=True,comment="用户ID",nullable=False)
     user = db.relationship(
         'User',
-        primaryjoin='Todo.id==foreign(model.user.User.id)',
+        primaryjoin='model.user.User.id==foreign(Todo.user_id)',
         uselist=False,
     )
-    # @property
-    # def user_name(self):
-    #     if self.user:
-    #         return self.user.name

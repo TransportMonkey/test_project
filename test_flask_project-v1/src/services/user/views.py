@@ -12,14 +12,12 @@ from flask import request
 class UsersView(AdvResource):
     model = User
     control = UserCtl
-
     exclude_fields = ["password"]
 
     # @api.expect(PageReq.rest_x_model(api))
     # @validate(query=PageReq)
     def get(self):
         """查看用户列表"""
-
         return self.get_page(request)
 
     @api.expect(vm.UserCreateOrPutReq.rest_x_model(api))
@@ -35,12 +33,12 @@ class UserView(AdvResource):
     model = User
     control = UserCtl
     exclude_fields = ["password"]
+    extend_fields = ['todos']
 
     def get(self, user_id):
         """查看单个用户"""
         user = self.model.find_or_fail(user_id)
-
-        return user.to_dict(exclude_fields=self.exclude_fields)
+        return user.to_dict(exclude_fields=self.exclude_fields,extend_fields=self.extend_fields)
 
     @api.expect(vm.UserCreateOrPutReq.rest_x_model(api))
     @validate()
@@ -48,7 +46,7 @@ class UserView(AdvResource):
         """完整更新用户"""
         ctl = self.control.new_by_id(user_id)
         user = ctl.update(body)
-        return user.to_dict(exclude=self.exclude_fields)
+        return user.to_dict(exclude_fields=self.exclude_fields)
 
     @api.expect(vm.UserPatchReq.rest_x_model(api))
     @validate()
@@ -56,9 +54,9 @@ class UserView(AdvResource):
         """部分更新用户"""
         ctl = self.control.new_by_id(user_id)
         user = ctl.update(body)
-        return user.to_dict(exclude=self.exclude_fields)
+        return user.to_dict(exclude_fields=self.exclude_fields)
 
     def delete(self, user_id):
         """删除用户"""
         ctl = self.control.new_by_id(user_id)
-        return ctl.simple_delete()
+        return ctl.delete()

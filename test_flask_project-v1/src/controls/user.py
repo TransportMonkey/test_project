@@ -35,3 +35,10 @@ class UserCtl(BaseCtl):
             self.user.update(**args)
         return self.user
 
+    def delete(self):
+        # 删除_id
+        for todo in self.user.todos:
+            todo.delete()
+        # 删除id
+        self.user.delete()
+

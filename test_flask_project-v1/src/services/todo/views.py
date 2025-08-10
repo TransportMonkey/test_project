@@ -37,6 +37,7 @@ class TodoView(Resource):
     control = TodoCtl
     exclude_fields = ['user_id','id']
 
+
     def get(self, todo_id):
         """查看单个todo"""
         todo = self.model.find_or_fail(todo_id)
