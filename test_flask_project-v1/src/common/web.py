@@ -30,7 +30,7 @@ class PageResourceMixin:
     def filter(self, param):
         filters = {k[2:]: v for k, v in param.items() if k.startswith(self.FILTER_PRE)}
         for field, value in filters.items():
-            if field in self.model.columns():
+            if field in self.model.columns:
                 self.query = self.query.filter_by(**{field: value})
 
     def search(self, params):

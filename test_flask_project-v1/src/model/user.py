@@ -1,9 +1,17 @@
 from common.db import BaseModel, db
 
+"""
+定义User和Token类，都继承BaseModel基类
+1、user表的结构：id(Integer)、name(String)、gender(Integer)、age(Integer)、email(String)、password(String)
+2、token表的结构：id(Integer)、token(String)、expire_time(DateTime)、user_id(Integer)
+3、表的关联关系：
+        user与token是一对多关系(一个用户有多个token)
+        user与todo是一对多关系(一个用户有多个todo)
+4、通过relationship建立表与表的关联，访问关联的数据
+"""
 
 class User(BaseModel):
     __tablename__ = 'user'
-
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(80), index=True, nullable=False, comment="用户名")
     age = db.Column(db.Integer, comment="年龄", nullable=False)
@@ -14,4 +22,22 @@ class User(BaseModel):
         'Todo',
         primaryjoin='model.user.User.id==foreign(Todo.user_id)',
         uselist=True
+    )
+    tokens = db.relationship(
+        'Token', # 指定关联的模型
+        primaryjoin='User.id == foreign(Token.user_id)', # 指定连接条件
+        uselist=True, # 指定关系类型
+    )
+
+class Token(BaseModel):
+    __tablename__ = 'token'
+    id = db.Column(db.Integer, primary_key=True)
+    token = db.Column(db.String(20),index=True, unique=True, nullable=False,comment='用户token')
+    expire_time = db.Column(db.DateTime,nullable=False,comment='token过期时间')
+    user_id = db.Column(db.Integer,nullable=False,comment='用户ID')
+
+    user = db.relationship(
+        'User', # 指定关联的模型
+        primaryjoin='User.id == foreign(Token.user_id)', # 指定连接条件
+        uselist=False, # 指定关系类型
     )

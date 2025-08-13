@@ -7349,3 +7349,1236 @@ sqlalchemy_mixins.activerecord.ModelNotFoundError: Todo with id '9' was not foun
 [2025-08-10 22:34:28]-p11616-Thread-20{_internal:97}INFO-127.0.0.1 - - [10/Aug/2025 22:34:28] "GET /todo/ HTTP/1.1" 200 -
 [2025-08-10 22:34:33]-p11616-Thread-21{_internal:97}INFO-127.0.0.1 - - [10/Aug/2025 22:34:33] "GET /todo/ HTTP/1.1" 200 -
 [2025-08-10 22:34:56]-p11616-Thread-22{_internal:97}INFO-127.0.0.1 - - [10/Aug/2025 22:34:56] "DELETE /todo/4/ HTTP/1.1" 200 -
+[2025-08-11 11:18:22]-p5420-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-11 11:18:22]-p5420-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-11 11:18:22]-p5420-MainThread{compare:190}INFO-Detected added table 'login'
+[2025-08-11 11:18:22]-p5420-MainThread{compare:685}INFO-Detected added index 'ix_login_token' on '('token',)'
+[2025-08-11 11:19:19]-p12008-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-11 11:19:19]-p12008-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-11 11:19:19]-p12008-MainThread{migration:622}INFO-Running upgrade 7713099c9723 -> fb0946972036, empty message
+[2025-08-11 11:20:07]-p26232-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 11:20:07]-p26232-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 11:20:12]-p26232-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:20:12] "GET / HTTP/1.1" 200 -
+[2025-08-11 11:20:12]-p26232-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:20:12] "GET / HTTP/1.1" 200 -
+[2025-08-11 11:20:13]-p26232-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:20:13] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+[2025-08-11 11:20:13]-p26232-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:20:13] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+[2025-08-11 11:20:13]-p26232-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:20:13] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+[2025-08-11 11:20:13]-p26232-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:20:13] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 11:20:13]-p26232-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:20:13] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 11:20:13]-p26232-Thread-9{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:20:13] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 11:20:14]-p26232-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:20:14] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+[2025-08-11 11:20:14]-p26232-Thread-10{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:20:14] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 11:20:14]-p26232-Thread-11{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:20:14] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 11:20:14]-p26232-Thread-12{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:20:14] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 11:20:27]-p26232-Thread-13{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:20:27] "GET /user/user/ HTTP/1.1" 200 -
+[2025-08-11 11:21:34]-p26844-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 11:21:34]-p26844-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 11:21:36]-p26844-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:21:36] "GET / HTTP/1.1" 200 -
+[2025-08-11 11:21:36]-p26844-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:21:36] "GET / HTTP/1.1" 200 -
+[2025-08-11 11:21:37]-p26844-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:21:37] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 11:21:37]-p26844-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:21:37] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 11:21:37]-p26844-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:21:37] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 11:21:37]-p26844-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:21:37] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 11:21:37]-p26844-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:21:37] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 11:21:37]-p26844-Thread-9{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:21:37] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 11:21:37]-p26844-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:21:37] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 11:21:37]-p26844-Thread-10{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:21:37] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 11:21:37]-p26844-Thread-11{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:21:37] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 11:21:37]-p26844-Thread-12{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:21:37] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 11:22:03]-p26844-Thread-13{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:22:03] "GET /user/user/ HTTP/1.1" 200 -
+[2025-08-11 11:22:26]-p26844-Thread-14{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:22:26] "POST /user/login/ HTTP/1.1" 200 -
+[2025-08-11 11:29:43]-p11156-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 11:29:43]-p11156-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 11:29:47]-p11156-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:29:47] "GET / HTTP/1.1" 200 -
+[2025-08-11 11:29:47]-p11156-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:29:47] "GET / HTTP/1.1" 200 -
+[2025-08-11 11:29:48]-p11156-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:29:48] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 11:29:48]-p11156-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:29:48] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 11:29:48]-p11156-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:29:48] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 11:29:48]-p11156-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:29:48] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 11:29:48]-p11156-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:29:48] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 11:29:48]-p11156-Thread-9{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:29:48] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 11:29:48]-p11156-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:29:48] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 11:29:48]-p11156-Thread-10{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:29:48] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 11:29:48]-p11156-Thread-11{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:29:48] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 11:29:48]-p11156-Thread-12{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:29:48] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 11:29:58]-p11156-Thread-13{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:29:58] "GET /user/login/ HTTP/1.1" 200 -
+[2025-08-11 11:30:20]-p11156-Thread-14{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:30:20] "POST /user/login/ HTTP/1.1" 200 -
+[2025-08-11 11:42:18]-p26596-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 11:42:18]-p26596-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 11:43:43]-p28552-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 11:43:43]-p28552-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 11:43:46]-p28552-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:43:46] "GET / HTTP/1.1" 200 -
+[2025-08-11 11:43:47]-p28552-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:43:47] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 11:43:47]-p28552-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:43:47] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 11:43:47]-p28552-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:43:47] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 11:43:47]-p28552-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:43:47] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 11:43:47]-p28552-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:43:47] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 11:55:19]-p33480-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 11:55:19]-p33480-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 11:55:21]-p33480-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:55:21] "GET / HTTP/1.1" 200 -
+[2025-08-11 11:55:22]-p33480-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:55:22] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 11:55:22]-p33480-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:55:22] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 11:55:22]-p33480-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:55:22] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 11:55:22]-p33480-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:55:22] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 11:55:23]-p33480-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:55:23] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 11:55:48]-p33480-Thread-7{app:1744}ERROR-Exception on /user/login/ [POST]
+Traceback (most recent call last):
+  File "D:\Code\test_project\venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\test_project\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Code\test_project\venv\lib\site-packages\flask_restx\api.py", line 406, in wrapper
+    return self.make_response(data, code, headers=headers)
+  File "D:\Code\test_project\venv\lib\site-packages\flask_restx\api.py", line 430, in make_response
+    resp = self.representations[mediatype](data, *args, **kwargs)
+  File "D:\Code\test_project\venv\lib\site-packages\flask_restx\representations.py", line 22, in output_json
+    dumped = dumps(data, **settings) + "\n"
+  File "F:\software\install\python39\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "F:\software\install\python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "F:\software\install\python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "F:\software\install\python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Response is not JSON serializable
+[2025-08-11 11:55:48]-p33480-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:55:48] "[35m[1mPOST /user/login/ HTTP/1.1[0m" 500 -
+[2025-08-11 11:57:38]-p33480-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 11:57:38] "GET /user/login/ HTTP/1.1" 200 -
+[2025-08-11 12:07:04]-p8684-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 12:07:04]-p8684-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 12:07:11]-p8684-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 12:07:11] "GET / HTTP/1.1" 200 -
+[2025-08-11 12:07:12]-p8684-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 12:07:12] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+[2025-08-11 12:07:12]-p8684-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 12:07:12] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+[2025-08-11 12:07:12]-p8684-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 12:07:12] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+[2025-08-11 12:07:12]-p8684-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 12:07:12] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+[2025-08-11 12:07:12]-p8684-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 12:07:12] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 12:07:19]-p8684-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 12:07:19] "GET /user/login/ HTTP/1.1" 200 -
+[2025-08-11 12:07:30]-p8684-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 12:07:30] "POST /user/login/ HTTP/1.1" 200 -
+[2025-08-11 12:40:18]-p30996-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 12:40:18]-p30996-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 12:40:20]-p30996-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 12:40:20] "GET / HTTP/1.1" 200 -
+[2025-08-11 12:40:21]-p30996-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 12:40:21] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 12:40:21]-p30996-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 12:40:21] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 12:40:21]-p30996-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 12:40:21] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 12:40:21]-p30996-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 12:40:21] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 12:40:22]-p30996-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 12:40:22] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 12:40:27]-p30996-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 12:40:27] "GET /user/login/ HTTP/1.1" 200 -
+[2025-08-11 12:40:38]-p30996-Thread-8{app:1744}ERROR-Exception on /user/login/ [POST]
+Traceback (most recent call last):
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\api.py", line 406, in wrapper
+    return self.make_response(data, code, headers=headers)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\api.py", line 430, in make_response
+    resp = self.representations[mediatype](data, *args, **kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\representations.py", line 22, in output_json
+    dumped = dumps(data, **settings) + "\n"
+  File "F:\software\install\python39\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "F:\software\install\python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "F:\software\install\python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "F:\software\install\python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Response is not JSON serializable
+[2025-08-11 12:40:38]-p30996-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 12:40:38] "[35m[1mPOST /user/login/ HTTP/1.1[0m" 500 -
+[2025-08-11 12:47:19]-p24904-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 12:47:19]-p24904-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 12:47:22]-p24904-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 12:47:22] "GET / HTTP/1.1" 200 -
+[2025-08-11 12:47:22]-p24904-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 12:47:22] "GET / HTTP/1.1" 200 -
+[2025-08-11 12:47:23]-p24904-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 12:47:23] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 12:47:23]-p24904-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 12:47:23] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 12:47:23]-p24904-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 12:47:23] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 12:47:23]-p24904-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 12:47:23] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 12:47:23]-p24904-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 12:47:23] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 12:47:23]-p24904-Thread-9{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 12:47:23] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 12:47:23]-p24904-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 12:47:23] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 12:47:23]-p24904-Thread-10{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 12:47:23] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 12:47:23]-p24904-Thread-11{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 12:47:23] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 12:47:23]-p24904-Thread-12{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 12:47:23] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 12:47:28]-p24904-Thread-13{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 12:47:28] "GET /user/login/ HTTP/1.1" 200 -
+[2025-08-11 12:47:42]-p24904-Thread-14{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 12:47:42] "POST /user/login/ HTTP/1.1" 200 -
+[2025-08-11 14:02:49]-p10084-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 14:02:49]-p10084-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 14:03:10]-p15604-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 14:03:10]-p15604-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 14:03:12]-p15604-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:03:12] "GET / HTTP/1.1" 200 -
+[2025-08-11 14:03:12]-p15604-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:03:12] "GET / HTTP/1.1" 200 -
+[2025-08-11 14:03:13]-p15604-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:03:13] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 14:03:13]-p15604-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:03:13] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 14:03:13]-p15604-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:03:13] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 14:03:13]-p15604-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:03:13] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 14:03:13]-p15604-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:03:13] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 14:03:13]-p15604-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:03:13] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 14:03:13]-p15604-Thread-9{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:03:13] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 14:03:13]-p15604-Thread-10{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:03:13] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 14:03:14]-p15604-Thread-11{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:03:14] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 14:03:14]-p15604-Thread-12{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:03:14] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 14:03:14]-p15604-Thread-13{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:03:14] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+[2025-08-11 14:03:14]-p15604-Thread-14{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:03:14] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-11 14:03:24]-p15604-Thread-15{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:03:24] "GET /user/login/ HTTP/1.1" 200 -
+[2025-08-11 14:03:39]-p15604-Thread-16{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:03:39] "POST /user/login/ HTTP/1.1" 200 -
+[2025-08-11 14:03:46]-p15604-Thread-17{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:03:46] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 14:03:46]-p15604-Thread-18{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:03:46] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 14:03:46]-p15604-Thread-19{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:03:46] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-08-11 14:03:46]-p15604-Thread-20{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:03:46] "GET /swaggerui/swagger-ui-bundle.js.map HTTP/1.1" 200 -
+[2025-08-11 14:03:46]-p15604-Thread-21{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:03:46] "GET /swaggerui/swagger-ui-standalone-preset.js.map HTTP/1.1" 200 -
+[2025-08-11 14:03:46]-p15604-Thread-22{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:03:46] "GET /swaggerui/swagger-ui.css.map HTTP/1.1" 200 -
+[2025-08-11 14:04:25]-p15604-Thread-23{app:1744}ERROR-Exception on /user/login/ [POST]
+Traceback (most recent call last):
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_pydantic\core.py", line 285, in wrapper
+    res = func(*args, **kwargs)
+  File "D:\Code\test_project\test_flask_project-v1\src\services\user\views\login.py", line 24, in post
+    raw_token = self.control.create(body)
+  File "D:\Code\test_project\test_flask_project-v1\src\controls\user.py", line 65, in create
+    if time_diff > timedelta(hours=24):
+  File "D:\Code\test_project\.venv\lib\site-packages\sqlalchemy\sql\elements.py", line 3971, in __bool__
+    raise TypeError("Boolean value of this clause is not defined")
+TypeError: Boolean value of this clause is not defined
+[2025-08-11 14:04:25]-p15604-Thread-23{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:04:25] "[35m[1mPOST /user/login/ HTTP/1.1[0m" 500 -
+[2025-08-11 14:19:18]-p20716-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 14:19:18]-p20716-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 14:19:31]-p20716-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:19:31] "GET / HTTP/1.1" 200 -
+[2025-08-11 14:19:32]-p20716-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:19:32] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 14:19:32]-p20716-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:19:32] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 14:19:32]-p20716-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:19:32] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 14:19:32]-p20716-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:19:32] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 14:19:32]-p20716-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:19:32] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 14:19:35]-p20716-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:19:35] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 14:19:35]-p20716-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:19:35] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 14:19:35]-p20716-Thread-9{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:19:35] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-08-11 14:19:36]-p20716-Thread-10{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:19:36] "[36mGET /swaggerui/swagger-ui-bundle.js.map HTTP/1.1[0m" 304 -
+[2025-08-11 14:19:36]-p20716-Thread-11{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:19:36] "[36mGET /swaggerui/swagger-ui-standalone-preset.js.map HTTP/1.1[0m" 304 -
+[2025-08-11 14:19:36]-p20716-Thread-12{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:19:36] "[36mGET /swaggerui/swagger-ui.css.map HTTP/1.1[0m" 304 -
+[2025-08-11 14:19:43]-p20716-Thread-13{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:19:43] "GET / HTTP/1.1" 200 -
+[2025-08-11 14:19:43]-p20716-Thread-14{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:19:43] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-08-11 14:19:43]-p20716-Thread-15{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:19:43] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 14:19:43]-p20716-Thread-16{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:19:43] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 14:19:43]-p20716-Thread-17{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:19:43] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 14:19:43]-p20716-Thread-18{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:19:43] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 14:19:43]-p20716-Thread-19{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:19:43] "[36mGET /swaggerui/swagger-ui.css.map HTTP/1.1[0m" 304 -
+[2025-08-11 14:19:44]-p20716-Thread-20{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:19:44] "[36mGET /swaggerui/swagger-ui-bundle.js.map HTTP/1.1[0m" 304 -
+[2025-08-11 14:19:44]-p20716-Thread-21{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:19:44] "[36mGET /swaggerui/swagger-ui-standalone-preset.js.map HTTP/1.1[0m" 304 -
+[2025-08-11 14:19:44]-p20716-Thread-22{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:19:44] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 14:19:44]-p20716-Thread-23{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:19:44] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-11 14:20:04]-p20716-Thread-24{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:20:04] "POST /user/login/ HTTP/1.1" 200 -
+[2025-08-11 14:20:42]-p20716-Thread-25{app:1744}ERROR-Exception on /user/login/ [POST]
+Traceback (most recent call last):
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_pydantic\core.py", line 285, in wrapper
+    res = func(*args, **kwargs)
+  File "D:\Code\test_project\test_flask_project-v1\src\services\user\views\login.py", line 24, in post
+    raw_token = self.control.create(body)
+  File "D:\Code\test_project\test_flask_project-v1\src\controls\user.py", line 66, in create
+    if time_diff > timedelta(hours=24):
+  File "D:\Code\test_project\.venv\lib\site-packages\sqlalchemy\sql\elements.py", line 3971, in __bool__
+    raise TypeError("Boolean value of this clause is not defined")
+TypeError: Boolean value of this clause is not defined
+[2025-08-11 14:20:42]-p20716-Thread-25{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:20:42] "[35m[1mPOST /user/login/ HTTP/1.1[0m" 500 -
+[2025-08-11 14:45:09]-p20116-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 14:45:09]-p20116-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 14:45:11]-p20116-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:45:11] "GET / HTTP/1.1" 200 -
+[2025-08-11 14:45:12]-p20116-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:45:12] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 14:45:12]-p20116-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:45:12] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 14:45:12]-p20116-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:45:12] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 14:45:12]-p20116-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:45:12] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 14:45:12]-p20116-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:45:12] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 14:45:25]-p20116-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:45:25] "POST /user/login/ HTTP/1.1" 200 -
+[2025-08-11 14:46:41]-p20116-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:46:41] "POST /user/login/ HTTP/1.1" 200 -
+[2025-08-11 14:50:11]-p22568-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 14:50:11]-p22568-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 14:50:17]-p22568-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:50:17] "POST /user/login/ HTTP/1.1" 200 -
+[2025-08-11 14:50:20]-p22568-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:50:20] "POST /user/login/ HTTP/1.1" 200 -
+[2025-08-11 14:50:32]-p22568-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:50:32] "POST /user/login/ HTTP/1.1" 200 -
+[2025-08-11 14:50:33]-p22568-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:50:33] "POST /user/login/ HTTP/1.1" 200 -
+[2025-08-11 14:50:33]-p22568-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:50:33] "POST /user/login/ HTTP/1.1" 200 -
+[2025-08-11 14:50:33]-p22568-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:50:33] "POST /user/login/ HTTP/1.1" 200 -
+[2025-08-11 14:50:34]-p22568-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:50:34] "POST /user/login/ HTTP/1.1" 200 -
+[2025-08-11 14:50:34]-p22568-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:50:34] "POST /user/login/ HTTP/1.1" 200 -
+[2025-08-11 14:50:34]-p22568-Thread-9{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:50:34] "POST /user/login/ HTTP/1.1" 200 -
+[2025-08-11 14:50:34]-p22568-Thread-10{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:50:34] "POST /user/login/ HTTP/1.1" 200 -
+[2025-08-11 14:50:34]-p22568-Thread-11{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:50:34] "POST /user/login/ HTTP/1.1" 200 -
+[2025-08-11 14:50:34]-p22568-Thread-12{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:50:34] "POST /user/login/ HTTP/1.1" 200 -
+[2025-08-11 14:50:35]-p22568-Thread-13{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:50:35] "POST /user/login/ HTTP/1.1" 200 -
+[2025-08-11 14:50:35]-p22568-Thread-14{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:50:35] "POST /user/login/ HTTP/1.1" 200 -
+[2025-08-11 14:50:35]-p22568-Thread-15{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:50:35] "POST /user/login/ HTTP/1.1" 200 -
+[2025-08-11 14:57:21]-p11780-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 14:57:21]-p11780-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 14:57:23]-p11780-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:57:23] "GET / HTTP/1.1" 200 -
+[2025-08-11 14:57:24]-p11780-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:57:24] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 14:57:24]-p11780-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:57:24] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 14:57:24]-p11780-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:57:24] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 14:57:24]-p11780-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:57:24] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 14:57:24]-p11780-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:57:24] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 14:57:48]-p11780-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:57:48] "[31m[1mPOST /user/login/ HTTP/1.1[0m" 400 -
+[2025-08-11 14:58:11]-p11780-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:58:11] "[35m[1mPOST /user/login/ HTTP/1.1[0m" 201 -
+[2025-08-11 14:58:16]-p11780-Thread-9{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:58:16] "[35m[1mPOST /user/login/ HTTP/1.1[0m" 201 -
+[2025-08-11 14:58:17]-p11780-Thread-10{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:58:17] "[35m[1mPOST /user/login/ HTTP/1.1[0m" 201 -
+[2025-08-11 14:58:18]-p11780-Thread-11{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:58:18] "[35m[1mPOST /user/login/ HTTP/1.1[0m" 201 -
+[2025-08-11 14:58:18]-p11780-Thread-12{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:58:18] "[35m[1mPOST /user/login/ HTTP/1.1[0m" 201 -
+[2025-08-11 14:58:38]-p11780-Thread-13{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:58:38] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 14:58:38]-p11780-Thread-14{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:58:38] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 14:58:38]-p11780-Thread-15{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:58:38] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-08-11 14:58:39]-p11780-Thread-16{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:58:39] "[36mGET /swaggerui/swagger-ui-bundle.js.map HTTP/1.1[0m" 304 -
+[2025-08-11 14:58:39]-p11780-Thread-17{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:58:39] "[36mGET /swaggerui/swagger-ui-standalone-preset.js.map HTTP/1.1[0m" 304 -
+[2025-08-11 14:58:39]-p11780-Thread-18{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:58:39] "[36mGET /swaggerui/swagger-ui.css.map HTTP/1.1[0m" 304 -
+[2025-08-11 14:58:41]-p11780-Thread-19{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:58:41] "GET / HTTP/1.1" 200 -
+[2025-08-11 14:58:41]-p11780-Thread-20{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:58:41] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-08-11 14:58:42]-p11780-Thread-21{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:58:42] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 14:58:42]-p11780-Thread-22{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:58:42] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 14:58:42]-p11780-Thread-23{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:58:42] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 14:58:42]-p11780-Thread-24{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:58:42] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 14:58:42]-p11780-Thread-25{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:58:42] "[36mGET /swaggerui/swagger-ui.css.map HTTP/1.1[0m" 304 -
+[2025-08-11 14:58:42]-p11780-Thread-26{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:58:42] "[36mGET /swaggerui/swagger-ui-bundle.js.map HTTP/1.1[0m" 304 -
+[2025-08-11 14:58:42]-p11780-Thread-27{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:58:42] "[36mGET /swaggerui/swagger-ui-standalone-preset.js.map HTTP/1.1[0m" 304 -
+[2025-08-11 14:58:42]-p11780-Thread-28{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:58:42] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 14:58:42]-p11780-Thread-29{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:58:42] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-11 14:59:21]-p11780-Thread-30{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 14:59:21] "[35m[1mPOST /user/login/ HTTP/1.1[0m" 201 -
+[2025-08-11 15:00:20]-p11780-Thread-31{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:00:20] "[35m[1mPOST /user/login/ HTTP/1.1[0m" 201 -
+[2025-08-11 15:06:17]-p21756-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 15:06:17]-p21756-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 15:06:53]-p21756-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:06:53] "GET / HTTP/1.1" 200 -
+[2025-08-11 15:06:54]-p21756-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:06:54] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 15:06:54]-p21756-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:06:54] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 15:06:54]-p21756-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:06:54] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 15:06:54]-p21756-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:06:54] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 15:06:54]-p21756-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:06:54] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 15:06:54]-p21756-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:06:54] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-11 15:06:56]-p21756-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:06:56] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 15:06:56]-p21756-Thread-9{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:06:56] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 15:06:56]-p21756-Thread-10{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:06:56] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-08-11 15:06:56]-p21756-Thread-11{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:06:56] "[36mGET /swaggerui/swagger-ui-bundle.js.map HTTP/1.1[0m" 304 -
+[2025-08-11 15:06:56]-p21756-Thread-12{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:06:56] "[36mGET /swaggerui/swagger-ui-standalone-preset.js.map HTTP/1.1[0m" 304 -
+[2025-08-11 15:06:56]-p21756-Thread-13{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:06:56] "[36mGET /swaggerui/swagger-ui.css.map HTTP/1.1[0m" 304 -
+[2025-08-11 15:07:00]-p21756-Thread-14{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:07:00] "GET / HTTP/1.1" 200 -
+[2025-08-11 15:07:00]-p21756-Thread-15{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:07:00] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 15:07:00]-p21756-Thread-19{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:07:00] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-08-11 15:07:00]-p21756-Thread-17{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:07:00] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 15:07:00]-p21756-Thread-16{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:07:00] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 15:07:00]-p21756-Thread-18{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:07:00] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 15:07:00]-p21756-Thread-20{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:07:00] "[36mGET /swaggerui/swagger-ui.css.map HTTP/1.1[0m" 304 -
+[2025-08-11 15:07:00]-p21756-Thread-21{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:07:00] "[36mGET /swaggerui/swagger-ui-bundle.js.map HTTP/1.1[0m" 304 -
+[2025-08-11 15:07:00]-p21756-Thread-22{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:07:00] "[36mGET /swaggerui/swagger-ui-standalone-preset.js.map HTTP/1.1[0m" 304 -
+[2025-08-11 15:07:01]-p21756-Thread-23{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:07:01] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 15:07:01]-p21756-Thread-24{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:07:01] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-11 15:07:16]-p21756-Thread-25{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:07:16] "[35m[1mPOST /user/login/ HTTP/1.1[0m" 201 -
+[2025-08-11 15:08:07]-p21756-Thread-26{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:08:07] "[35m[1mPOST /user/login/ HTTP/1.1[0m" 201 -
+[2025-08-11 15:15:29]-p9388-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 15:15:29]-p9388-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 15:15:33]-p9388-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:15:33] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-08-11 15:15:34]-p9388-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:15:34] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 15:15:34]-p9388-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:15:34] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 15:15:34]-p9388-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:15:34] "[36mGET /swaggerui/swagger-ui.css.map HTTP/1.1[0m" 304 -
+[2025-08-11 15:15:34]-p9388-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:15:34] "[36mGET /swaggerui/swagger-ui-bundle.js.map HTTP/1.1[0m" 304 -
+[2025-08-11 15:15:34]-p9388-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:15:34] "[36mGET /swaggerui/swagger-ui-standalone-preset.js.map HTTP/1.1[0m" 304 -
+[2025-08-11 15:15:37]-p9388-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:15:37] "GET / HTTP/1.1" 200 -
+[2025-08-11 15:15:37]-p9388-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:15:37] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-08-11 15:15:37]-p9388-Thread-9{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:15:37] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 15:15:37]-p9388-Thread-10{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:15:37] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 15:15:37]-p9388-Thread-11{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:15:37] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 15:15:37]-p9388-Thread-12{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:15:37] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 15:15:37]-p9388-Thread-13{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:15:37] "[36mGET /swaggerui/swagger-ui.css.map HTTP/1.1[0m" 304 -
+[2025-08-11 15:15:37]-p9388-Thread-14{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:15:37] "[36mGET /swaggerui/swagger-ui-bundle.js.map HTTP/1.1[0m" 304 -
+[2025-08-11 15:15:37]-p9388-Thread-15{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:15:37] "[36mGET /swaggerui/swagger-ui-standalone-preset.js.map HTTP/1.1[0m" 304 -
+[2025-08-11 15:15:37]-p9388-Thread-16{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:15:37] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 15:15:37]-p9388-Thread-17{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:15:37] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-11 15:15:48]-p9388-Thread-18{app:1744}ERROR-Exception on /user/login/ [POST]
+Traceback (most recent call last):
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_pydantic\core.py", line 285, in wrapper
+    res = func(*args, **kwargs)
+  File "D:\Code\test_project\test_flask_project-v1\src\services\user\views\login.py", line 24, in post
+    raw_token = self.control.create(body)
+  File "D:\Code\test_project\test_flask_project-v1\src\controls\user.py", line 62, in create
+    if datetime.now() >= cls.model_cls.expire_time:
+  File "D:\Code\test_project\.venv\lib\site-packages\sqlalchemy\sql\elements.py", line 3971, in __bool__
+    raise TypeError("Boolean value of this clause is not defined")
+TypeError: Boolean value of this clause is not defined
+[2025-08-11 15:15:48]-p9388-Thread-18{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:15:48] "[35m[1mPOST /user/login/ HTTP/1.1[0m" 500 -
+[2025-08-11 15:22:22]-p35420-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 15:22:22]-p35420-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 15:22:27]-p35420-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:22:27] "GET / HTTP/1.1" 200 -
+[2025-08-11 15:22:27]-p35420-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:22:27] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-08-11 15:22:29]-p35420-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:22:29] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 15:22:29]-p35420-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:22:29] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 15:22:29]-p35420-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:22:29] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 15:22:29]-p35420-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:22:29] "[36mGET /swaggerui/swagger-ui.css.map HTTP/1.1[0m" 304 -
+[2025-08-11 15:22:29]-p35420-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:22:29] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 15:22:29]-p35420-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:22:29] "[36mGET /swaggerui/swagger-ui-bundle.js.map HTTP/1.1[0m" 304 -
+[2025-08-11 15:22:29]-p35420-Thread-9{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:22:29] "[36mGET /swaggerui/swagger-ui-standalone-preset.js.map HTTP/1.1[0m" 304 -
+[2025-08-11 15:22:29]-p35420-Thread-10{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:22:29] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 15:22:29]-p35420-Thread-11{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:22:29] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-11 15:22:52]-p35420-Thread-12{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:22:52] "[31m[1mPOST /user/login/ HTTP/1.1[0m" 400 -
+[2025-08-11 15:23:01]-p35420-Thread-13{app:1744}ERROR-Exception on /user/login/ [POST]
+Traceback (most recent call last):
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_pydantic\core.py", line 285, in wrapper
+    res = func(*args, **kwargs)
+  File "D:\Code\test_project\test_flask_project-v1\src\services\user\views\login.py", line 24, in post
+    raw_token = self.control.create(body)
+  File "D:\Code\test_project\test_flask_project-v1\src\controls\user.py", line 57, in create
+    if not token.token:
+AttributeError: 'NoneType' object has no attribute 'token'
+[2025-08-11 15:23:01]-p35420-Thread-13{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:23:01] "[35m[1mPOST /user/login/ HTTP/1.1[0m" 500 -
+[2025-08-11 15:27:31]-p10436-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 15:27:31]-p10436-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 15:27:45]-p10436-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:27:45] "[35m[1mPOST /user/login/ HTTP/1.1[0m" 201 -
+[2025-08-11 15:27:49]-p10436-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:27:49] "[35m[1mPOST /user/login/ HTTP/1.1[0m" 201 -
+[2025-08-11 15:27:50]-p10436-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:27:50] "[35m[1mPOST /user/login/ HTTP/1.1[0m" 201 -
+[2025-08-11 15:27:51]-p10436-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:27:51] "[35m[1mPOST /user/login/ HTTP/1.1[0m" 201 -
+[2025-08-11 15:27:51]-p10436-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:27:51] "[35m[1mPOST /user/login/ HTTP/1.1[0m" 201 -
+[2025-08-11 15:27:51]-p10436-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:27:51] "[35m[1mPOST /user/login/ HTTP/1.1[0m" 201 -
+[2025-08-11 15:27:52]-p10436-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:27:52] "[35m[1mPOST /user/login/ HTTP/1.1[0m" 201 -
+[2025-08-11 15:27:52]-p10436-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:27:52] "[35m[1mPOST /user/login/ HTTP/1.1[0m" 201 -
+[2025-08-11 15:27:52]-p10436-Thread-9{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:27:52] "[35m[1mPOST /user/login/ HTTP/1.1[0m" 201 -
+[2025-08-11 15:27:52]-p10436-Thread-10{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:27:52] "[35m[1mPOST /user/login/ HTTP/1.1[0m" 201 -
+[2025-08-11 15:27:52]-p10436-Thread-11{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:27:52] "[35m[1mPOST /user/login/ HTTP/1.1[0m" 201 -
+[2025-08-11 15:27:53]-p10436-Thread-12{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:27:53] "[35m[1mPOST /user/login/ HTTP/1.1[0m" 201 -
+[2025-08-11 15:27:53]-p10436-Thread-13{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:27:53] "[35m[1mPOST /user/login/ HTTP/1.1[0m" 201 -
+[2025-08-11 15:28:12]-p10436-Thread-14{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:28:12] "[35m[1mPOST /user/login/ HTTP/1.1[0m" 201 -
+[2025-08-11 15:28:12]-p10436-Thread-15{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:28:12] "[35m[1mPOST /user/login/ HTTP/1.1[0m" 201 -
+[2025-08-11 15:28:12]-p10436-Thread-16{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:28:12] "[35m[1mPOST /user/login/ HTTP/1.1[0m" 201 -
+[2025-08-11 15:28:13]-p10436-Thread-17{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:28:13] "[35m[1mPOST /user/login/ HTTP/1.1[0m" 201 -
+[2025-08-11 15:28:13]-p10436-Thread-18{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:28:13] "[35m[1mPOST /user/login/ HTTP/1.1[0m" 201 -
+[2025-08-11 15:57:40]-p28928-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 15:57:40]-p28928-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 15:57:47]-p28928-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:57:47] "GET / HTTP/1.1" 200 -
+[2025-08-11 15:57:47]-p28928-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:57:47] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-08-11 15:57:48]-p28928-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:57:48] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 15:57:48]-p28928-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:57:48] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 15:57:48]-p28928-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:57:48] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 15:57:48]-p28928-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:57:48] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 15:57:48]-p28928-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:57:48] "[36mGET /swaggerui/swagger-ui.css.map HTTP/1.1[0m" 304 -
+[2025-08-11 15:57:48]-p28928-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:57:48] "[36mGET /swaggerui/swagger-ui-bundle.js.map HTTP/1.1[0m" 304 -
+[2025-08-11 15:57:49]-p28928-Thread-9{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:57:49] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 15:57:49]-p28928-Thread-10{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:57:49] "[36mGET /swaggerui/swagger-ui-standalone-preset.js.map HTTP/1.1[0m" 304 -
+[2025-08-11 15:57:49]-p28928-Thread-11{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:57:49] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-11 15:57:56]-p28928-Thread-12{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:57:56] "GET /user/login/ HTTP/1.1" 200 -
+[2025-08-11 15:58:15]-p28928-Thread-13{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:58:15] "GET /user/login/ HTTP/1.1" 200 -
+[2025-08-11 15:59:06]-p28928-Thread-14{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:59:06] "[35m[1mPOST /user/login/ HTTP/1.1[0m" 201 -
+[2025-08-11 15:59:19]-p28928-Thread-15{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:59:19] "GET /user/login/ HTTP/1.1" 200 -
+[2025-08-11 15:59:22]-p28928-Thread-16{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 15:59:22] "GET /user/login/ HTTP/1.1" 200 -
+[2025-08-11 16:39:34]-p12112-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 16:39:34]-p12112-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 16:39:43]-p12112-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:39:43] "GET / HTTP/1.1" 200 -
+[2025-08-11 16:39:43]-p12112-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:39:43] "GET / HTTP/1.1" 200 -
+[2025-08-11 16:39:44]-p12112-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:39:44] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 16:39:44]-p12112-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:39:44] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 16:39:44]-p12112-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:39:44] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 16:39:44]-p12112-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:39:44] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 16:39:44]-p12112-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:39:44] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 16:39:44]-p12112-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:39:44] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 16:39:44]-p12112-Thread-9{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:39:44] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 16:39:44]-p12112-Thread-10{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:39:44] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 16:39:44]-p12112-Thread-11{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:39:44] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 16:39:44]-p12112-Thread-12{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:39:44] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 16:39:56]-p12112-Thread-13{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:39:56] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 16:39:56]-p12112-Thread-14{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:39:56] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 16:39:56]-p12112-Thread-15{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:39:56] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-08-11 16:39:57]-p12112-Thread-16{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:39:57] "[36mGET /swaggerui/swagger-ui-bundle.js.map HTTP/1.1[0m" 304 -
+[2025-08-11 16:39:57]-p12112-Thread-17{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:39:57] "[36mGET /swaggerui/swagger-ui-standalone-preset.js.map HTTP/1.1[0m" 304 -
+[2025-08-11 16:39:57]-p12112-Thread-18{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:39:57] "[36mGET /swaggerui/swagger-ui.css.map HTTP/1.1[0m" 304 -
+[2025-08-11 16:40:01]-p12112-Thread-19{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:40:01] "GET / HTTP/1.1" 200 -
+[2025-08-11 16:40:01]-p12112-Thread-20{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:40:01] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-08-11 16:40:01]-p12112-Thread-21{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:40:01] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 16:40:01]-p12112-Thread-22{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:40:01] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 16:40:01]-p12112-Thread-23{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:40:01] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 16:40:01]-p12112-Thread-24{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:40:01] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 16:40:01]-p12112-Thread-25{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:40:01] "[36mGET /swaggerui/swagger-ui.css.map HTTP/1.1[0m" 304 -
+[2025-08-11 16:40:01]-p12112-Thread-26{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:40:01] "[36mGET /swaggerui/swagger-ui-bundle.js.map HTTP/1.1[0m" 304 -
+[2025-08-11 16:40:01]-p12112-Thread-27{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:40:01] "[36mGET /swaggerui/swagger-ui-standalone-preset.js.map HTTP/1.1[0m" 304 -
+[2025-08-11 16:40:01]-p12112-Thread-28{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:40:01] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 16:40:01]-p12112-Thread-29{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:40:01] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-11 16:40:15]-p12112-Thread-30{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:40:15] "[35m[1mPOST /user/login/ HTTP/1.1[0m" 201 -
+[2025-08-11 16:40:49]-p12112-Thread-31{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:40:49] "GET /user/login/ HTTP/1.1" 200 -
+[2025-08-11 16:43:28]-p18268-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 16:43:28]-p18268-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 16:43:34]-p18268-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:43:34] "GET / HTTP/1.1" 200 -
+[2025-08-11 16:43:34]-p18268-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:43:34] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-08-11 16:43:35]-p18268-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:43:35] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 16:43:35]-p18268-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:43:35] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 16:43:35]-p18268-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:43:35] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 16:43:35]-p18268-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:43:35] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 16:43:35]-p18268-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:43:35] "[36mGET /swaggerui/swagger-ui.css.map HTTP/1.1[0m" 304 -
+[2025-08-11 16:43:35]-p18268-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:43:35] "[36mGET /swaggerui/swagger-ui-bundle.js.map HTTP/1.1[0m" 304 -
+[2025-08-11 16:43:35]-p18268-Thread-10{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:43:35] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 16:43:35]-p18268-Thread-9{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:43:35] "[36mGET /swaggerui/swagger-ui-standalone-preset.js.map HTTP/1.1[0m" 304 -
+[2025-08-11 16:43:35]-p18268-Thread-11{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:43:35] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-11 16:43:55]-p18268-Thread-12{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:43:55] "GET /user/user/ HTTP/1.1" 200 -
+[2025-08-11 16:47:55]-p35364-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 16:47:55]-p35364-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 16:48:00]-p35364-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:48:00] "GET / HTTP/1.1" 200 -
+[2025-08-11 16:48:00]-p35364-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:48:00] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-08-11 16:48:01]-p35364-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:48:01] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 16:48:01]-p35364-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:48:01] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 16:48:01]-p35364-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:48:01] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 16:48:01]-p35364-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:48:01] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 16:48:01]-p35364-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:48:01] "[36mGET /swaggerui/swagger-ui.css.map HTTP/1.1[0m" 304 -
+[2025-08-11 16:48:01]-p35364-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:48:01] "[36mGET /swaggerui/swagger-ui-bundle.js.map HTTP/1.1[0m" 304 -
+[2025-08-11 16:48:01]-p35364-Thread-9{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:48:01] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 16:48:01]-p35364-Thread-10{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:48:01] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-11 16:48:01]-p35364-Thread-11{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:48:01] "[36mGET /swaggerui/swagger-ui-standalone-preset.js.map HTTP/1.1[0m" 304 -
+[2025-08-11 16:48:07]-p35364-Thread-12{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:48:07] "GET /todo/todo/ HTTP/1.1" 200 -
+[2025-08-11 16:50:09]-p35364-Thread-13{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:50:09] "GET /user/login/ HTTP/1.1" 200 -
+[2025-08-11 16:51:33]-p35364-Thread-14{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:51:33] "[33mGET /todo/ HTTP/1.1[0m" 404 -
+[2025-08-11 16:51:47]-p35364-Thread-15{app:1744}ERROR-Exception on /todo/todo/ [GET]
+Traceback (most recent call last):
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\Code\test_project\test_flask_project-v1\src\common\verify_token.py", line 16, in decorated_function
+    if datetime.now() >= Login.expire_time:
+  File "D:\Code\test_project\.venv\lib\site-packages\sqlalchemy\sql\elements.py", line 3971, in __bool__
+    raise TypeError("Boolean value of this clause is not defined")
+TypeError: Boolean value of this clause is not defined
+[2025-08-11 16:51:47]-p35364-Thread-15{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:51:47] "[35m[1mGET /todo/todo/ HTTP/1.1[0m" 500 -
+[2025-08-11 16:53:55]-p12352-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 16:53:55]-p12352-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 16:54:02]-p12352-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:54:02] "GET / HTTP/1.1" 200 -
+[2025-08-11 16:54:03]-p12352-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:54:03] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 16:54:03]-p12352-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:54:03] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 16:54:03]-p12352-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:54:03] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 16:54:03]-p12352-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:54:03] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 16:54:03]-p12352-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:54:03] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 16:54:03]-p12352-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:54:03] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-11 16:54:09]-p12352-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:54:09] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-11 16:55:28]-p12352-Thread-9{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 16:55:28] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-11 17:01:19]-p17216-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 17:01:19]-p17216-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 17:01:26]-p17216-Thread-1{app:1744}ERROR-Exception on /todo/ [GET]
+Traceback (most recent call last):
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\api.py", line 406, in wrapper
+    return self.make_response(data, code, headers=headers)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\api.py", line 430, in make_response
+    resp = self.representations[mediatype](data, *args, **kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\representations.py", line 22, in output_json
+    dumped = dumps(data, **settings) + "\n"
+  File "F:\software\install\python39\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "F:\software\install\python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "F:\software\install\python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "F:\software\install\python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Response is not JSON serializable
+[2025-08-11 17:01:26]-p17216-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:01:26] "[35m[1mGET /todo/ HTTP/1.1[0m" 500 -
+[2025-08-11 17:01:31]-p17216-Thread-2{app:1744}ERROR-Exception on /todo/ [GET]
+Traceback (most recent call last):
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\api.py", line 406, in wrapper
+    return self.make_response(data, code, headers=headers)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\api.py", line 430, in make_response
+    resp = self.representations[mediatype](data, *args, **kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\representations.py", line 22, in output_json
+    dumped = dumps(data, **settings) + "\n"
+  File "F:\software\install\python39\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "F:\software\install\python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "F:\software\install\python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "F:\software\install\python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Response is not JSON serializable
+[2025-08-11 17:01:31]-p17216-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:01:31] "[35m[1mGET /todo/ HTTP/1.1[0m" 500 -
+[2025-08-11 17:06:23]-p22104-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 17:06:23]-p22104-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 17:06:28]-p22104-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:06:28] "GET / HTTP/1.1" 200 -
+[2025-08-11 17:06:28]-p22104-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:06:28] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-08-11 17:06:29]-p22104-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:06:29] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 17:06:29]-p22104-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:06:29] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 17:06:29]-p22104-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:06:29] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 17:06:29]-p22104-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:06:29] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 17:06:29]-p22104-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:06:29] "[36mGET /swaggerui/swagger-ui.css.map HTTP/1.1[0m" 304 -
+[2025-08-11 17:06:30]-p22104-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:06:30] "[36mGET /swaggerui/swagger-ui-bundle.js.map HTTP/1.1[0m" 304 -
+[2025-08-11 17:06:30]-p22104-Thread-9{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:06:30] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 17:06:30]-p22104-Thread-10{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:06:30] "[36mGET /swaggerui/swagger-ui-standalone-preset.js.map HTTP/1.1[0m" 304 -
+[2025-08-11 17:06:30]-p22104-Thread-11{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:06:30] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-11 17:06:45]-p22104-Thread-12{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:06:45] "POST /user/login/ HTTP/1.1" 200 -
+[2025-08-11 17:07:19]-p22104-Thread-13{app:1744}ERROR-Exception on /todo/ [GET]
+Traceback (most recent call last):
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\api.py", line 406, in wrapper
+    return self.make_response(data, code, headers=headers)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\api.py", line 430, in make_response
+    resp = self.representations[mediatype](data, *args, **kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\representations.py", line 22, in output_json
+    dumped = dumps(data, **settings) + "\n"
+  File "F:\software\install\python39\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "F:\software\install\python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "F:\software\install\python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "F:\software\install\python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Response is not JSON serializable
+[2025-08-11 17:07:19]-p22104-Thread-13{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:07:19] "[35m[1mGET /todo/ HTTP/1.1[0m" 500 -
+[2025-08-11 17:08:51]-p31040-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 17:08:51]-p31040-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 17:09:00]-p31040-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:09:00] "GET / HTTP/1.1" 200 -
+[2025-08-11 17:09:00]-p31040-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:09:00] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-08-11 17:09:01]-p31040-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:09:01] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 17:09:01]-p31040-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:09:01] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 17:09:01]-p31040-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:09:01] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 17:09:01]-p31040-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:09:01] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 17:09:01]-p31040-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:09:01] "[36mGET /swaggerui/swagger-ui.css.map HTTP/1.1[0m" 304 -
+[2025-08-11 17:09:01]-p31040-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:09:01] "[36mGET /swaggerui/swagger-ui-bundle.js.map HTTP/1.1[0m" 304 -
+[2025-08-11 17:09:01]-p31040-Thread-9{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:09:01] "[36mGET /swaggerui/swagger-ui-standalone-preset.js.map HTTP/1.1[0m" 304 -
+[2025-08-11 17:09:01]-p31040-Thread-10{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:09:01] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 17:09:01]-p31040-Thread-11{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:09:01] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-11 17:09:10]-p31040-Thread-12{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:09:10] "POST /user/login/ HTTP/1.1" 200 -
+[2025-08-11 17:09:27]-p31040-Thread-13{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:09:27] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-11 17:10:31]-p31040-Thread-14{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:10:31] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-11 17:12:24]-p31040-Thread-15{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:12:24] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-11 17:16:46]-p6532-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 17:16:46]-p6532-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 17:16:51]-p6532-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:16:51] "GET / HTTP/1.1" 200 -
+[2025-08-11 17:16:52]-p6532-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:16:52] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 17:16:52]-p6532-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:16:52] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 17:16:52]-p6532-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:16:52] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 17:16:52]-p6532-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:16:52] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 17:16:52]-p6532-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:16:52] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 17:16:52]-p6532-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:16:52] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-11 17:17:43]-p6532-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:17:43] "POST /user/login/ HTTP/1.1" 200 -
+[2025-08-11 17:18:08]-p6532-Thread-9{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:18:08] "[31m[1mGET /todo/ HTTP/1.1[0m" 401 -
+[2025-08-11 17:18:36]-p6532-Thread-10{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:18:36] "[31m[1mGET /todo/ HTTP/1.1[0m" 401 -
+[2025-08-11 17:19:22]-p6532-Thread-11{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:19:22] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-11 17:30:12]-p29088-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 17:30:12]-p29088-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 17:30:17]-p29088-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:30:17] "[31m[1mGET /todo/ HTTP/1.1[0m" 401 -
+[2025-08-11 17:30:23]-p29088-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:30:23] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-11 17:30:51]-p29088-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:30:51] "[31m[1mGET /todo/ HTTP/1.1[0m" 401 -
+[2025-08-11 17:30:52]-p29088-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:30:52] "[31m[1mGET /todo/ HTTP/1.1[0m" 401 -
+[2025-08-11 17:30:53]-p29088-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:30:53] "[31m[1mGET /todo/ HTTP/1.1[0m" 401 -
+[2025-08-11 17:31:30]-p11820-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 17:31:30]-p11820-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 17:31:37]-p11820-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:31:37] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-11 17:31:38]-p11820-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:31:38] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-11 17:32:01]-p11820-Thread-3{todo:35}INFO-create todo args name='test1' done=True user_id=2
+[2025-08-11 17:32:01]-p11820-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:32:01] "POST /todo/ HTTP/1.1" 200 -
+[2025-08-11 17:32:08]-p11820-Thread-4{todo:35}INFO-create todo args name='test2' done=True user_id=2
+[2025-08-11 17:32:08]-p11820-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:32:08] "POST /todo/ HTTP/1.1" 200 -
+[2025-08-11 17:32:12]-p11820-Thread-5{todo:35}INFO-create todo args name='test3' done=True user_id=2
+[2025-08-11 17:32:12]-p11820-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:32:12] "POST /todo/ HTTP/1.1" 200 -
+[2025-08-11 17:32:15]-p11820-Thread-6{todo:35}INFO-create todo args name='test4' done=True user_id=2
+[2025-08-11 17:32:15]-p11820-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:32:15] "POST /todo/ HTTP/1.1" 200 -
+[2025-08-11 17:32:18]-p11820-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:32:18] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-11 17:32:49]-p15188-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 17:32:49]-p15188-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 17:32:57]-p15188-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:32:57] "[31m[1mGET /todo/ HTTP/1.1[0m" 401 -
+[2025-08-11 17:33:01]-p15188-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:33:01] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-11 17:35:38]-p22960-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 17:35:38]-p22960-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 17:36:00]-p22960-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:36:00] "[31m[1mGET /todo/ HTTP/1.1[0m" 403 -
+[2025-08-11 17:36:09]-p22960-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:36:09] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-11 17:36:14]-p22960-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:36:14] "[31m[1mGET /todo/ HTTP/1.1[0m" 401 -
+[2025-08-11 17:51:37]-p22936-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 17:51:37]-p22936-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 17:51:49]-p22936-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:51:49] "GET / HTTP/1.1" 200 -
+[2025-08-11 17:51:50]-p22936-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:51:50] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 17:51:50]-p22936-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:51:50] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 17:51:50]-p22936-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:51:50] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 17:51:50]-p22936-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:51:50] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 17:51:50]-p22936-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:51:50] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 17:51:50]-p22936-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:51:50] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-11 17:52:01]-p22936-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:52:01] "DELETE /user/login/10 HTTP/1.1" 200 -
+[2025-08-11 17:52:15]-p22936-Thread-9{app:1744}ERROR-Exception on /user/login/10 [DELETE]
+Traceback (most recent call last):
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\Code\test_project\test_flask_project-v1\src\services\user\views\login.py", line 40, in delete
+    return ctl.simple_delete()
+  File "D:\Code\test_project\test_flask_project-v1\src\controls\base_ctl.py", line 18, in simple_delete
+    self.model.delete()
+AttributeError: 'NoneType' object has no attribute 'delete'
+[2025-08-11 17:52:15]-p22936-Thread-9{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:52:15] "[35m[1mDELETE /user/login/10 HTTP/1.1[0m" 500 -
+[2025-08-11 17:52:30]-p25024-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 17:52:30]-p25024-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 17:52:39]-p25024-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:52:39] "GET /user/user/ HTTP/1.1" 200 -
+[2025-08-11 17:52:54]-p25024-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:52:54] "POST /user/login/ HTTP/1.1" 200 -
+[2025-08-11 17:53:17]-p25024-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 17:53:17] "DELETE /user/login/10 HTTP/1.1" 200 -
+[2025-08-11 18:26:16]-p16696-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 18:26:16]-p16696-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 18:29:30]-p14008-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 18:29:30]-p14008-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 18:29:32]-p14008-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 18:29:32] "GET / HTTP/1.1" 200 -
+[2025-08-11 18:29:33]-p14008-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 18:29:33] "GET / HTTP/1.1" 200 -
+[2025-08-11 18:29:34]-p14008-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 18:29:34] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 18:29:34]-p14008-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 18:29:34] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 18:29:34]-p14008-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 18:29:34] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 18:29:34]-p14008-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 18:29:34] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 18:29:34]-p14008-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 18:29:34] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 18:29:34]-p14008-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 18:29:34] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 18:29:34]-p14008-Thread-9{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 18:29:34] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 18:29:34]-p14008-Thread-10{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 18:29:34] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 18:29:34]-p14008-Thread-11{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 18:29:34] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 18:29:34]-p14008-Thread-12{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 18:29:34] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 18:35:01]-p25072-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 18:35:01]-p25072-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 18:35:05]-p25072-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 18:35:05] "GET / HTTP/1.1" 200 -
+[2025-08-11 18:35:05]-p25072-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 18:35:05] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-08-11 18:35:06]-p25072-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 18:35:06] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 18:35:06]-p25072-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 18:35:06] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 18:35:06]-p25072-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 18:35:06] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 18:35:06]-p25072-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 18:35:06] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 18:35:06]-p25072-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 18:35:06] "[36mGET /swaggerui/swagger-ui.css.map HTTP/1.1[0m" 304 -
+[2025-08-11 18:35:06]-p25072-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 18:35:06] "[36mGET /swaggerui/swagger-ui-bundle.js.map HTTP/1.1[0m" 304 -
+[2025-08-11 18:35:07]-p25072-Thread-9{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 18:35:07] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 18:35:07]-p25072-Thread-10{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 18:35:07] "[36mGET /swaggerui/swagger-ui-standalone-preset.js.map HTTP/1.1[0m" 304 -
+[2025-08-11 18:35:07]-p25072-Thread-11{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 18:35:07] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-11 19:00:53]-p30328-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-11 19:00:53]-p30328-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-11 19:02:51]-p27556-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-11 19:02:51]-p27556-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-11 19:02:51]-p27556-MainThread{messaging:71}ERROR-Target database is not up to date.
+[2025-08-11 19:04:15]-p6892-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 19:04:15]-p6892-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 19:04:20]-p6892-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:04:20] "GET / HTTP/1.1" 200 -
+[2025-08-11 19:04:20]-p6892-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:04:20] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-08-11 19:04:22]-p6892-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:04:22] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 19:04:22]-p6892-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:04:22] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 19:04:22]-p6892-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:04:22] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 19:04:22]-p6892-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:04:22] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 19:04:22]-p6892-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:04:22] "[36mGET /swaggerui/swagger-ui.css.map HTTP/1.1[0m" 304 -
+[2025-08-11 19:04:22]-p6892-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:04:22] "[36mGET /swaggerui/swagger-ui-bundle.js.map HTTP/1.1[0m" 304 -
+[2025-08-11 19:04:22]-p6892-Thread-9{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:04:22] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 19:04:22]-p6892-Thread-10{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:04:22] "[36mGET /swaggerui/swagger-ui-standalone-preset.js.map HTTP/1.1[0m" 304 -
+[2025-08-11 19:04:22]-p6892-Thread-11{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:04:22] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-11 19:04:55]-p19348-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 19:04:55]-p19348-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 19:05:00]-p19348-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:05:00] "GET / HTTP/1.1" 200 -
+[2025-08-11 19:05:02]-p19348-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:05:02] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 19:05:02]-p19348-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:05:02] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 19:05:02]-p19348-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:05:02] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 19:05:02]-p19348-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:05:02] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 19:05:02]-p19348-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:05:02] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 19:05:02]-p19348-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:05:02] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-11 19:05:09]-p19348-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:05:09] "GET /user/user/ HTTP/1.1" 200 -
+[2025-08-11 19:05:29]-p19348-Thread-9{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:05:29] "GET /user/user/ HTTP/1.1" 200 -
+[2025-08-11 19:06:06]-p19348-Thread-10{user:23}INFO-create user args name='abc' age=23 gender=1 email='sfddsfdsf@qq.com' password='123456'
+[2025-08-11 19:06:06]-p19348-Thread-10{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:06:06] "POST /user/user/ HTTP/1.1" 200 -
+[2025-08-11 19:06:15]-p19348-Thread-11{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:06:15] "GET /user/user/ HTTP/1.1" 200 -
+[2025-08-11 19:06:31]-p19348-Thread-12{app:1744}ERROR-Exception on /user/login/abc/123456 [POST]
+Traceback (most recent call last):
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\Code\test_project\test_flask_project-v1\src\services\user\views\login.py", line 19, in post
+    raw_token = self.control.create(user_name,user_pwd)
+  File "D:\Code\test_project\test_flask_project-v1\src\controls\user.py", line 61, in create
+    cls.model_cls.update(**args)
+TypeError: update() missing 1 required positional argument: 'self'
+[2025-08-11 19:06:31]-p19348-Thread-12{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:06:31] "[35m[1mPOST /user/login/abc/123456 HTTP/1.1[0m" 500 -
+[2025-08-11 19:21:30]-p27660-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 19:21:30]-p27660-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 19:21:34]-p27660-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:21:34] "GET / HTTP/1.1" 200 -
+[2025-08-11 19:21:35]-p27660-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:21:35] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 19:21:35]-p27660-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:21:35] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 19:21:35]-p27660-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:21:35] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 19:21:35]-p27660-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:21:35] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 19:21:35]-p27660-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:21:35] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 19:21:35]-p27660-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:21:35] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-11 19:21:45]-p27660-Thread-8{app:1744}ERROR-Exception on /user/login/abc/123456 [POST]
+Traceback (most recent call last):
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\Code\test_project\test_flask_project-v1\src\services\user\views\login.py", line 19, in post
+    raw_token = self.control.create(user_name,user_pwd)
+TypeError: create() missing 1 required positional argument: 'user_pwd'
+[2025-08-11 19:21:45]-p27660-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:21:45] "[35m[1mPOST /user/login/abc/123456 HTTP/1.1[0m" 500 -
+[2025-08-11 19:30:17]-p5204-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 19:30:17]-p5204-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 19:30:22]-p5204-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:30:22] "GET / HTTP/1.1" 200 -
+[2025-08-11 19:30:23]-p5204-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:30:23] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 19:30:23]-p5204-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:30:23] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 19:30:23]-p5204-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:30:23] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 19:30:23]-p5204-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:30:23] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 19:30:24]-p5204-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:30:24] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 19:30:24]-p5204-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:30:24] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-11 19:30:32]-p5204-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:30:32] "POST /user/login/abc/123456 HTTP/1.1" 200 -
+[2025-08-11 19:30:53]-p5204-Thread-9{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:30:53] "POST /user/login/abc/123456 HTTP/1.1" 200 -
+[2025-08-11 19:30:54]-p5204-Thread-10{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:30:54] "POST /user/login/abc/123456 HTTP/1.1" 200 -
+[2025-08-11 19:31:00]-p5204-Thread-11{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:31:00] "[31m[1mPOST /user/login/abcretr/123456 HTTP/1.1[0m" 400 -
+[2025-08-11 19:31:08]-p5204-Thread-12{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:31:08] "[31m[1mPOST /user/login/abc/12 HTTP/1.1[0m" 400 -
+[2025-08-11 19:31:25]-p5204-Thread-13{app:1744}ERROR-Exception on /user/login/11 [DELETE]
+Traceback (most recent call last):
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\Code\test_project\test_flask_project-v1\src\services\user\views\login.py", line 34, in delete
+    ctl = self.control.new_by_id(user_id)
+  File "D:\Code\test_project\test_flask_project-v1\src\controls\base_ctl.py", line 14, in new_by_id
+    model = cls.model_cls.find_or_fail(_id)
+  File "D:\Code\test_project\.venv\lib\site-packages\sqlalchemy_mixins\activerecord.py", line 100, in find_or_fail
+    raise ModelNotFoundError("{} with id '{}' was not found"
+sqlalchemy_mixins.activerecord.ModelNotFoundError: Login with id '11' was not found
+[2025-08-11 19:31:25]-p5204-Thread-13{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:31:25] "[35m[1mDELETE /user/login/11 HTTP/1.1[0m" 500 -
+[2025-08-11 19:31:56]-p5204-Thread-14{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:31:56] "GET /user/user/ HTTP/1.1" 200 -
+[2025-08-11 19:33:39]-p9380-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 19:33:39]-p9380-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 19:33:43]-p9380-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:33:43] "GET / HTTP/1.1" 200 -
+[2025-08-11 19:33:44]-p9380-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:33:44] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 19:33:44]-p9380-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:33:44] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 19:33:44]-p9380-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:33:44] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 19:33:44]-p9380-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:33:44] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 19:33:44]-p9380-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:33:44] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 19:33:44]-p9380-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:33:44] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-11 19:33:52]-p9380-Thread-8{app:1744}ERROR-Exception on /user/login/11 [DELETE]
+Traceback (most recent call last):
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\Code\test_project\test_flask_project-v1\src\services\user\views\login.py", line 34, in delete
+    ctl = self.control.new_by_id(user_id)
+  File "D:\Code\test_project\test_flask_project-v1\src\controls\base_ctl.py", line 14, in new_by_id
+    model = cls.model_cls.find_or_fail(_id)
+  File "D:\Code\test_project\.venv\lib\site-packages\sqlalchemy_mixins\activerecord.py", line 100, in find_or_fail
+    raise ModelNotFoundError("{} with id '{}' was not found"
+sqlalchemy_mixins.activerecord.ModelNotFoundError: Login with id '11' was not found
+[2025-08-11 19:33:52]-p9380-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:33:52] "[35m[1mDELETE /user/login/11 HTTP/1.1[0m" 500 -
+[2025-08-11 19:38:21]-p32752-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-11 19:38:21]-p32752-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-11 19:38:21]-p32752-MainThread{messaging:71}ERROR-Target database is not up to date.
+[2025-08-11 19:40:48]-p24668-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-11 19:40:48]-p24668-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-11 19:40:48]-p24668-MainThread{messaging:71}ERROR-Target database is not up to date.
+[2025-08-11 19:42:57]-p14184-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-11 19:42:57]-p14184-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-11 19:43:42]-p21920-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-11 19:43:42]-p21920-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-11 19:43:42]-p21920-MainThread{migration:622}INFO-Running stamp_revision fb0946972036 -> 5c1e79054ab7
+[2025-08-11 19:44:22]-p10192-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-11 19:44:22]-p10192-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-11 19:45:15]-p25464-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-11 19:45:15]-p25464-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-11 19:45:15]-p25464-MainThread{messaging:71}ERROR-Target database is not up to date.
+[2025-08-11 19:45:36]-p34568-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-11 19:45:36]-p34568-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-11 19:45:36]-p34568-MainThread{migration:622}INFO-Running upgrade 5c1e79054ab7 -> bff4af38f7b4, empty message
+[2025-08-11 19:46:14]-p6660-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-11 19:46:14]-p6660-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-11 19:46:32]-p13384-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 19:46:32]-p13384-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 19:46:37]-p13384-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:46:37] "GET / HTTP/1.1" 200 -
+[2025-08-11 19:46:38]-p13384-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:46:38] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 19:46:38]-p13384-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:46:38] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 19:46:38]-p13384-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:46:38] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 19:46:38]-p13384-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:46:38] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 19:46:38]-p13384-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:46:38] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 19:46:38]-p13384-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:46:38] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-11 19:46:46]-p13384-Thread-8{app:1744}ERROR-Exception on /user/login/11 [DELETE]
+Traceback (most recent call last):
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\Code\test_project\test_flask_project-v1\src\services\user\views\login.py", line 34, in delete
+    ctl = self.control.new_by_id(user_id)
+  File "D:\Code\test_project\test_flask_project-v1\src\controls\base_ctl.py", line 14, in new_by_id
+    model = cls.model_cls.find_or_fail(_id)
+  File "D:\Code\test_project\.venv\lib\site-packages\sqlalchemy_mixins\activerecord.py", line 100, in find_or_fail
+    raise ModelNotFoundError("{} with id '{}' was not found"
+sqlalchemy_mixins.activerecord.ModelNotFoundError: Login with id '11' was not found
+[2025-08-11 19:46:46]-p13384-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:46:46] "[35m[1mDELETE /user/login/11 HTTP/1.1[0m" 500 -
+[2025-08-11 19:50:50]-p1560-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 19:50:50]-p1560-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 19:50:54]-p1560-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:50:54] "GET / HTTP/1.1" 200 -
+[2025-08-11 19:50:55]-p1560-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:50:55] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 19:50:55]-p1560-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:50:55] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 19:50:55]-p1560-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:50:55] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 19:50:55]-p1560-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:50:55] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 19:50:55]-p1560-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:50:55] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 19:50:55]-p1560-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:50:55] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-11 19:51:03]-p1560-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:51:03] "DELETE /user/login/11 HTTP/1.1" 200 -
+[2025-08-11 19:56:57]-p33412-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 19:56:57]-p33412-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 19:57:02]-p33412-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:57:02] "GET / HTTP/1.1" 200 -
+[2025-08-11 19:57:03]-p33412-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:57:03] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 19:57:03]-p33412-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:57:03] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 19:57:03]-p33412-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:57:03] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 19:57:03]-p33412-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:57:03] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 19:57:03]-p33412-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:57:03] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 19:57:03]-p33412-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:57:03] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-11 19:57:36]-p33412-Thread-8{user:23}INFO-create user args name='abcc' age=23 gender=1 email='fdsfdsf@qq.com' password='123456'
+[2025-08-11 19:57:36]-p33412-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:57:36] "POST /user/user/ HTTP/1.1" 200 -
+[2025-08-11 19:57:44]-p33412-Thread-9{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:57:44] "GET /user/user/ HTTP/1.1" 200 -
+[2025-08-11 19:58:07]-p33412-Thread-10{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:58:07] "POST /user/login/abcc/123456 HTTP/1.1" 200 -
+[2025-08-11 19:58:17]-p33412-Thread-11{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:58:17] "GET /user/user/ HTTP/1.1" 200 -
+[2025-08-11 19:58:33]-p33412-Thread-12{app:1744}ERROR-Exception on /user/login/12 [DELETE]
+Traceback (most recent call last):
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\Code\test_project\test_flask_project-v1\src\services\user\views\login.py", line 35, in delete
+    ctr = self.control.new_by_id(user_id)
+  File "D:\Code\test_project\test_flask_project-v1\src\controls\user.py", line 74, in new_by_id
+    token = cls.model.query.filter_by(user_id=user_id).first()
+AttributeError: type object 'LoginCtl' has no attribute 'model'
+[2025-08-11 19:58:33]-p33412-Thread-12{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:58:33] "[35m[1mDELETE /user/login/12 HTTP/1.1[0m" 500 -
+[2025-08-11 19:59:21]-p10044-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 19:59:21]-p10044-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 19:59:24]-p10044-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:59:24] "GET / HTTP/1.1" 200 -
+[2025-08-11 19:59:26]-p10044-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:59:26] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 19:59:26]-p10044-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:59:26] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 19:59:26]-p10044-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:59:26] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 19:59:26]-p10044-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:59:26] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 19:59:26]-p10044-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:59:26] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 19:59:26]-p10044-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:59:26] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-11 19:59:32]-p10044-Thread-8{app:1744}ERROR-Exception on /user/login/12 [DELETE]
+Traceback (most recent call last):
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\Code\test_project\test_flask_project-v1\src\services\user\views\login.py", line 36, in delete
+    retu
+NameError: name 'retu' is not defined
+[2025-08-11 19:59:32]-p10044-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 19:59:32] "[35m[1mDELETE /user/login/12 HTTP/1.1[0m" 500 -
+[2025-08-11 20:06:09]-p4428-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 20:06:09]-p4428-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 20:06:17]-p4428-Thread-1{app:1744}ERROR-Exception on /user/login/12 [DELETE]
+Traceback (most recent call last):
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\Code\test_project\test_flask_project-v1\src\services\user\views\login.py", line 35, in delete
+    ctr = self.control.new_by_id(user_id)
+  File "D:\Code\test_project\test_flask_project-v1\src\controls\base_ctl.py", line 14, in new_by_id
+    model = cls.model_cls.find_or_fail(_id)
+  File "D:\Code\test_project\.venv\lib\site-packages\sqlalchemy_mixins\activerecord.py", line 100, in find_or_fail
+    raise ModelNotFoundError("{} with id '{}' was not found"
+sqlalchemy_mixins.activerecord.ModelNotFoundError: Login with id '12' was not found
+[2025-08-11 20:06:17]-p4428-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:06:17] "[35m[1mDELETE /user/login/12 HTTP/1.1[0m" 500 -
+[2025-08-11 20:10:58]-p17760-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 20:10:58]-p17760-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 20:11:00]-p17760-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:11:00] "GET / HTTP/1.1" 200 -
+[2025-08-11 20:11:01]-p17760-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:11:01] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 20:11:01]-p17760-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:11:01] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 20:11:01]-p17760-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:11:01] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 20:11:01]-p17760-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:11:01] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 20:11:01]-p17760-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:11:01] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 20:11:01]-p17760-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:11:01] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-11 20:11:08]-p17760-Thread-8{app:1744}ERROR-Exception on /user/login/12 [DELETE]
+Traceback (most recent call last):
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\Code\test_project\test_flask_project-v1\src\services\user\views\login.py", line 36, in delete
+    ctr.delete()
+AttributeError: 'LoginCtl' object has no attribute 'delete'
+[2025-08-11 20:11:08]-p17760-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:11:08] "[35m[1mDELETE /user/login/12 HTTP/1.1[0m" 500 -
+[2025-08-11 20:13:02]-p21032-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 20:13:02]-p21032-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 20:13:05]-p21032-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:13:05] "GET / HTTP/1.1" 200 -
+[2025-08-11 20:13:06]-p21032-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:13:06] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 20:13:06]-p21032-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:13:06] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 20:13:06]-p21032-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:13:06] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 20:13:06]-p21032-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:13:06] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 20:13:06]-p21032-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:13:06] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 20:13:06]-p21032-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:13:06] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-11 20:13:12]-p21032-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:13:12] "DELETE /user/login/12 HTTP/1.1" 200 -
+[2025-08-11 20:15:08]-p25772-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 20:15:08]-p25772-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 20:15:12]-p25772-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:15:12] "GET / HTTP/1.1" 200 -
+[2025-08-11 20:15:13]-p25772-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:15:13] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 20:15:13]-p25772-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:15:13] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 20:15:13]-p25772-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:15:13] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 20:15:13]-p25772-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:15:13] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 20:15:13]-p25772-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:15:13] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 20:15:13]-p25772-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:15:13] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-11 20:15:19]-p25772-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:15:19] "DELETE /user/login/12 HTTP/1.1" 200 -
+[2025-08-11 20:15:22]-p25772-Thread-9{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:15:22] "DELETE /user/login/12 HTTP/1.1" 200 -
+[2025-08-11 20:18:26]-p14956-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 20:18:26]-p14956-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 20:18:34]-p14956-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:18:34] "GET / HTTP/1.1" 200 -
+[2025-08-11 20:18:35]-p14956-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:18:35] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 20:18:35]-p14956-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:18:35] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 20:18:35]-p14956-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:18:35] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 20:18:35]-p14956-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:18:35] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 20:18:36]-p14956-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:18:36] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 20:18:36]-p14956-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:18:36] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-11 20:18:44]-p14956-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:18:44] "GET /user/user/ HTTP/1.1" 200 -
+[2025-08-11 20:21:59]-p19484-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 20:21:59]-p19484-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 20:22:03]-p19484-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:22:03] "GET / HTTP/1.1" 200 -
+[2025-08-11 20:22:04]-p19484-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:22:04] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 20:22:04]-p19484-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:22:04] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 20:22:04]-p19484-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:22:04] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 20:22:04]-p19484-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:22:04] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 20:22:04]-p19484-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:22:04] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 20:22:04]-p19484-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:22:04] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-11 20:22:10]-p19484-Thread-8{app:1744}ERROR-Exception on /user/login/ [GET]
+Traceback (most recent call last):
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Code\test_project\.venv\lib\site-packages\flask_restx\resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\Code\test_project\test_flask_project-v1\src\services\user\views\login.py", line 11, in get
+    return  self.get_page(request)
+  File "D:\Code\test_project\test_flask_project-v1\src\common\web.py", line 101, in get_page
+    query = query if query is not None else self.model.query
+AttributeError: 'TokenView' object has no attribute 'model'
+[2025-08-11 20:22:10]-p19484-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:22:10] "[35m[1mGET /user/login/ HTTP/1.1[0m" 500 -
+[2025-08-11 20:28:24]-p1132-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 20:28:24]-p1132-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 20:28:29]-p1132-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:28:29] "GET / HTTP/1.1" 200 -
+[2025-08-11 20:28:30]-p1132-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:28:30] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+[2025-08-11 20:28:30]-p1132-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:28:30] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+[2025-08-11 20:28:30]-p1132-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:28:30] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+[2025-08-11 20:28:30]-p1132-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:28:30] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+[2025-08-11 20:28:30]-p1132-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:28:30] "GET /swagger.json HTTP/1.1" 200 -
+[2025-08-11 20:28:30]-p1132-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:28:30] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+[2025-08-11 20:28:40]-p1132-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:28:40] "GET /user/user/ HTTP/1.1" 200 -
+[2025-08-11 20:29:18]-p1132-Thread-9{user:23}INFO-create user args name='aaa' age=23 gender=2 email='frdsfdsfg@qq.com' password='123456'
+[2025-08-11 20:29:19]-p1132-Thread-9{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:29:19] "POST /user/user/ HTTP/1.1" 200 -
+[2025-08-11 20:29:25]-p1132-Thread-10{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:29:25] "GET /user/user/ HTTP/1.1" 200 -
+[2025-08-11 20:29:58]-p1132-Thread-11{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:29:58] "POST /user/login/abc/123456 HTTP/1.1" 200 -
+[2025-08-11 20:30:02]-p1132-Thread-12{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:30:02] "POST /user/login/abcc/123456 HTTP/1.1" 200 -
+[2025-08-11 20:30:11]-p1132-Thread-13{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:30:11] "POST /user/login/aaa/123456 HTTP/1.1" 200 -
+[2025-08-11 20:31:25]-p1132-Thread-14{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:31:25] "GET /user/user/ HTTP/1.1" 200 -
+[2025-08-11 20:31:35]-p1132-Thread-15{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:31:35] "GET /user/user/11/ HTTP/1.1" 200 -
+[2025-08-11 20:31:47]-p1132-Thread-16{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:31:47] "GET /user/user/12/ HTTP/1.1" 200 -
+[2025-08-11 20:31:52]-p1132-Thread-17{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:31:52] "GET /user/user/13/ HTTP/1.1" 200 -
+[2025-08-11 20:32:53]-p1132-Thread-18{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:32:53] "[31m[1mGET /todo/ HTTP/1.1[0m" 401 -
+[2025-08-11 20:33:34]-p1132-Thread-19{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:33:34] "[31m[1mGET /todo/ HTTP/1.1[0m" 401 -
+[2025-08-11 20:34:48]-p1132-Thread-20{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:34:48] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-11 20:35:09]-p1132-Thread-21{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:35:09] "[31m[1mGET /todo/ HTTP/1.1[0m" 403 -
+[2025-08-11 20:38:10]-p1132-Thread-22{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:38:10] "GET /todo/ HTTP/1.1" 200 -
+[2025-08-11 20:38:26]-p1132-Thread-23{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:38:26] "[31m[1mGET /todo/ HTTP/1.1[0m" 403 -
+[2025-08-11 20:38:33]-p1132-Thread-24{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:38:33] "[31m[1mGET /todo/ HTTP/1.1[0m" 401 -
+[2025-08-11 20:40:12]-p1132-Thread-25{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:40:12] "POST /user/login/aaa/123456 HTTP/1.1" 200 -
+[2025-08-11 20:47:50]-p3904-MainThread{_internal:97}INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-08-11 20:47:50]-p3904-MainThread{_internal:97}INFO-[33mPress CTRL+C to quit[0m
+[2025-08-11 20:48:07]-p3904-Thread-1{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:48:07] "POST /user/login/aaa/123456 HTTP/1.1" 200 -
+[2025-08-11 20:48:09]-p3904-Thread-2{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:48:09] "POST /user/login/aaa/123456 HTTP/1.1" 200 -
+[2025-08-11 20:48:10]-p3904-Thread-3{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:48:10] "POST /user/login/aaa/123456 HTTP/1.1" 200 -
+[2025-08-11 20:48:10]-p3904-Thread-4{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:48:10] "POST /user/login/aaa/123456 HTTP/1.1" 200 -
+[2025-08-11 20:48:10]-p3904-Thread-5{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:48:10] "POST /user/login/aaa/123456 HTTP/1.1" 200 -
+[2025-08-11 20:48:12]-p3904-Thread-6{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:48:12] "POST /user/login/aaa/123456 HTTP/1.1" 200 -
+[2025-08-11 20:48:12]-p3904-Thread-7{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:48:12] "POST /user/login/aaa/123456 HTTP/1.1" 200 -
+[2025-08-11 20:48:14]-p3904-Thread-8{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:48:14] "POST /user/login/aaa/123456 HTTP/1.1" 200 -
+[2025-08-11 20:48:14]-p3904-Thread-9{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:48:14] "POST /user/login/aaa/123456 HTTP/1.1" 200 -
+[2025-08-11 20:48:14]-p3904-Thread-10{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:48:14] "POST /user/login/aaa/123456 HTTP/1.1" 200 -
+[2025-08-11 20:48:15]-p3904-Thread-11{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:48:15] "POST /user/login/aaa/123456 HTTP/1.1" 200 -
+[2025-08-11 20:48:15]-p3904-Thread-12{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:48:15] "POST /user/login/aaa/123456 HTTP/1.1" 200 -
+[2025-08-11 20:48:15]-p3904-Thread-13{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:48:15] "POST /user/login/aaa/123456 HTTP/1.1" 200 -
+[2025-08-11 20:48:16]-p3904-Thread-14{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:48:16] "POST /user/login/aaa/123456 HTTP/1.1" 200 -
+[2025-08-11 20:48:16]-p3904-Thread-15{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:48:16] "POST /user/login/aaa/123456 HTTP/1.1" 200 -
+[2025-08-11 20:48:16]-p3904-Thread-16{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:48:16] "POST /user/login/aaa/123456 HTTP/1.1" 200 -
+[2025-08-11 20:48:16]-p3904-Thread-17{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:48:16] "POST /user/login/aaa/123456 HTTP/1.1" 200 -
+[2025-08-11 20:48:16]-p3904-Thread-18{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:48:16] "POST /user/login/aaa/123456 HTTP/1.1" 200 -
+[2025-08-11 20:48:17]-p3904-Thread-19{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:48:17] "POST /user/login/aaa/123456 HTTP/1.1" 200 -
+[2025-08-11 20:48:17]-p3904-Thread-20{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:48:17] "POST /user/login/aaa/123456 HTTP/1.1" 200 -
+[2025-08-11 20:48:17]-p3904-Thread-21{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:48:17] "POST /user/login/aaa/123456 HTTP/1.1" 200 -
+[2025-08-11 20:48:19]-p3904-Thread-22{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:48:19] "POST /user/login/aaa/123456 HTTP/1.1" 200 -
+[2025-08-11 20:48:19]-p3904-Thread-23{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:48:19] "POST /user/login/aaa/123456 HTTP/1.1" 200 -
+[2025-08-11 20:48:19]-p3904-Thread-24{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:48:19] "POST /user/login/aaa/123456 HTTP/1.1" 200 -
+[2025-08-11 20:48:20]-p3904-Thread-25{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:48:20] "POST /user/login/aaa/123456 HTTP/1.1" 200 -
+[2025-08-11 20:48:21]-p3904-Thread-26{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:48:21] "POST /user/login/aaa/123456 HTTP/1.1" 200 -
+[2025-08-11 20:48:22]-p3904-Thread-27{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:48:22] "POST /user/login/aaa/123456 HTTP/1.1" 200 -
+[2025-08-11 20:48:22]-p3904-Thread-28{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:48:22] "POST /user/login/aaa/123456 HTTP/1.1" 200 -
+[2025-08-11 20:57:18]-p3904-Thread-29{_internal:97}INFO-127.0.0.1 - - [11/Aug/2025 20:57:18] "POST /user/login/aaa/123456 HTTP/1.1" 200 -
+[2025-08-12 09:37:30]-p24216-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-12 09:37:30]-p24216-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-12 09:37:30]-p24216-MainThread{compare:190}INFO-Detected added table 'token'
+[2025-08-12 09:37:30]-p24216-MainThread{compare:685}INFO-Detected added index 'ix_token_token' on '('token',)'
+[2025-08-12 09:37:30]-p24216-MainThread{compare:724}INFO-Detected removed index 'ix_login_token' on 'login'
+[2025-08-12 09:37:30]-p24216-MainThread{compare:231}INFO-Detected removed table 'login'
+[2025-08-12 09:38:48]-p8460-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-12 09:38:48]-p8460-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-12 09:38:48]-p8460-MainThread{migration:622}INFO-Running upgrade bff4af38f7b4 -> 46abe8e2475b, empty message
+[2025-08-12 17:52:55]-p10664-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-12 17:52:55]-p10664-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-12 17:52:55]-p10664-MainThread{compare:943}INFO-Detected NOT NULL on column 'token.expire_time'
+[2025-08-12 17:53:45]-p19924-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-12 17:53:45]-p19924-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-12 17:53:45]-p19924-MainThread{migration:622}INFO-Running upgrade 46abe8e2475b -> 6bf6dcddfb39, empty message

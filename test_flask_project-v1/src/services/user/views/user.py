@@ -1,62 +1,58 @@
 from model.user import User
 from services.user import view_model as vm
-from . import api
+from services.user import api
 from flask_pydantic import validate
 from controls.user import UserCtl
 from common.web import AdvResource
 from flask import request
-# from common.view_model import PageReq
-
+from common.verify_token import require_token,get_request_user
 
 @api.route('/')
-class UsersView(AdvResource):
+class UserView(AdvResource):
     model = User
     control = UserCtl
     exclude_fields = ["password"]
+    extend_fields = ['todos','tokens']
 
-    # @api.expect(PageReq.rest_x_model(api))
-    # @validate(query=PageReq)
+    @require_token
     def get(self):
-        """查看用户列表"""
-        return self.get_page(request)
+        """查看单个用户"""
+        args = request.args.to_dict()
+        user = get_request_user()
+        args['f_id'] = user.id
+        return self.get_page(args)
 
     @api.expect(vm.UserCreateOrPutReq.rest_x_model(api))
     @validate()
+    @require_token
     def post(self, body: vm.UserCreateOrPutReq):
         """创建用户"""
         user = self.control.create(body)
         return user.to_dict(exclude_fields=self.exclude_fields)
 
-
-@api.route('/<int:user_id>/')
-class UserView(AdvResource):
-    model = User
-    control = UserCtl
-    exclude_fields = ["password"]
-    extend_fields = ['todos']
-
-    def get(self, user_id):
-        """查看单个用户"""
-        user = self.model.find_or_fail(user_id)
-        return user.to_dict(exclude_fields=self.exclude_fields,extend_fields=self.extend_fields)
-
     @api.expect(vm.UserCreateOrPutReq.rest_x_model(api))
     @validate()
-    def put(self, user_id, body: vm.UserCreateOrPutReq):
+    @require_token
+    def put(self, body: vm.UserCreateOrPutReq):
         """完整更新用户"""
-        ctl = self.control.new_by_id(user_id)
+        user = get_request_user()
+        ctl = self.control.new_by_id(user.id)
         user = ctl.update(body)
         return user.to_dict(exclude_fields=self.exclude_fields)
 
     @api.expect(vm.UserPatchReq.rest_x_model(api))
     @validate()
-    def patch(self, user_id, body: vm.UserPatchReq):
+    @require_token
+    def patch(self, body: vm.UserPatchReq):
         """部分更新用户"""
-        ctl = self.control.new_by_id(user_id)
+        user = get_request_user()
+        ctl = self.control.new_by_id(user.id)
         user = ctl.update(body)
         return user.to_dict(exclude_fields=self.exclude_fields)
 
-    def delete(self, user_id):
+    @require_token
+    def delete(self):
         """删除用户"""
-        ctl = self.control.new_by_id(user_id)
+        user = get_request_user()
+        ctl = self.control.new_by_id(user.id)
         return ctl.delete()

@@ -16,3 +16,11 @@ class UserPatchReq(RestXBaseModel):
     gender: int = Field(None, description="性别", ge=1, le=2)
     email: str = Field(None, description="邮箱", max_length=80)
     password: str = Field(None, description="密码", max_length=80)
+
+class TokenReq(RestXBaseModel):
+    user_name: str = Field(description="用户名")
+    password: str = Field(None, description="密码", max_length=80)
+
+class TokenPatchReq(RestXBaseModel):
+    token: str = Field(None,description="用户token", max_length=20)
+    user_id: int = Field(None,description="用户ID")

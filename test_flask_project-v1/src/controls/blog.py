@@ -45,7 +45,7 @@ class CommentCtl(BaseCtl):
         return self.model
 
     @classmethod
-    def publish(cls, args: vm.CommentCreateOrPutReq) -> Comment:
+    def publish(cls, args: vm.CommentPatchReq) -> Comment:
         return cls.model_cls.create(**args.model_dump(exclude_none=True))
 
 

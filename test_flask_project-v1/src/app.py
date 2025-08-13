@@ -15,6 +15,7 @@ class MyApp(Flask):
     root: Api
     db: SQLAlchemy
 
+
     def __init__(self):
         super(MyApp, self).__init__(__name__)
         self.wsgi_app = ProxyFix(self.wsgi_app)

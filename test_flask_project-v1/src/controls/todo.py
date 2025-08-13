@@ -1,5 +1,4 @@
 import typing
-
 from model.todo import Todo
 from services.todo import view_model as vm
 from .base_ctl import BaseCtl
@@ -31,13 +30,13 @@ class TodoCtl(BaseCtl):
         # return False
 
     @classmethod
-    def create(cls, args: vm.TodoCreateOrPutReq) -> Todo:
+    def create(cls, args: vm.TodoPatchReq) -> Todo:
         logmode.info("create todo args %s", args)
         if cls.exist_todo_name(args.name,args.user_id):
             raise BadRequest("todo名称已创建，请更换名称再重试")
         return cls.model_cls.create(**args.model_dump(exclude_none=True))
 
-    def update(self, args: typing.Union[vm.TodoCreateOrPutReq, vm.TodoPatchReq]):
+    def update(self, args: typing.Union[vm.TodoPatchReq,vm.TodoReq]):
         """更新todo"""
         args = args.model_dump(exclude_none=True)
         if len(args) > 0:

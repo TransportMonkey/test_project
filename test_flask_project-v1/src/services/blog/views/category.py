@@ -1,6 +1,6 @@
 
 from model.blog import Category
-from flask_restx import Resource
+from common.verify_token import require_token
 from services.blog import view_model as vm
 from services.blog import api
 from flask_pydantic import validate
@@ -15,12 +15,14 @@ class CategoryView(AdvResource):
     model = Category
     control = CategoryCtl
 
+    @require_token
     def get(self):
         """查看分类"""
         return self.get_page(request)
 
     @api.expect(vm.CategoryCreateOrPutReq.rest_x_model(api))
     @validate() # 校验参数
+    @require_token
     def post(self, body: vm.CategoryCreateOrPutReq):
         """创建分类"""
         category = self.control.create(body)
@@ -33,6 +35,8 @@ class CategoriesView(AdvResource):
     control = CategoryCtl
     extend_fields = ['title']
     exclude_fields = ['id']
+
+    @require_token
     def get(self, category_id):
         """查看单个分类"""
         category = self.model.find_or_fail(category_id)
