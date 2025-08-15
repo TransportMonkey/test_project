@@ -1,6 +1,5 @@
 import typing
 from flask_restx import Resource
-from sqlalchemy import or_, and_, desc, asc
 
 
 class PageResourceMixin:
@@ -49,7 +48,7 @@ class PageResourceMixin:
 
             _field = getattr(self.model, _fn, None)
             if not _field:
-                return
+                return None
 
             pattern = f'%{_v}%'
             return _field.like(pattern)

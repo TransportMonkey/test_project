@@ -28,7 +28,9 @@ class UserView(AdvResource):
     def post(self, body: vm.UserCreateOrPutReq):
         """创建用户"""
         user = self.control.create(body)
-        return user.to_dict(exclude_fields=self.exclude_fields)
+        ret = user.to_dict(exclude_fields=self.exclude_fields)
+        # self.control.send_welcome_email(user)
+        return ret
 
     @api.expect(vm.UserCreateOrPutReq.rest_x_model(api))
     @validate()

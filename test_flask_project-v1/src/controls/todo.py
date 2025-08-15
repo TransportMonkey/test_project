@@ -30,11 +30,11 @@ class TodoCtl(BaseCtl):
         # return False
 
     @classmethod
-    def create(cls, args: vm.TodoPatchReq) -> Todo:
+    def create(cls, user_id, args: vm.TodoReq) -> Todo:
         logmode.info("create todo args %s", args)
-        if cls.exist_todo_name(args.name,args.user_id):
+        if cls.exist_todo_name(args.name,user_id):
             raise BadRequest("todo名称已创建，请更换名称再重试")
-        return cls.model_cls.create(**args.model_dump(exclude_none=True))
+        return cls.model_cls.create(user_id=user_id,**args.model_dump(exclude_none=True))
 
     def update(self, args: typing.Union[vm.TodoPatchReq,vm.TodoReq]):
         """更新todo"""

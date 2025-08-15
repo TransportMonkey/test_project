@@ -12,9 +12,9 @@ class ArticleCtl(BaseCtl):
         return self.model
 
     @classmethod
-    def release(cls, args: vm.ArticlePatchReq) -> Article:
+    def release(cls, user_id, args: vm.ArticleCreateOrPutReq) -> Article:
         logmode.info("release article args %s", args)
-        return cls.model_cls.create(**args.model_dump(exclude_none=True))
+        return cls.model_cls.create(user_id=user_id,**args.model_dump(exclude_none=True))
 
     def delete(self):
         # 删除_id
@@ -32,8 +32,8 @@ class CategoryCtl(BaseCtl):
         return self.model
 
     @classmethod
-    def create(cls,args: vm.CategoryCreateOrPutReq) -> Category:
-        return cls.model_cls.create(**args.model_dump(exclude_none=True))
+    def create(cls, user_id, args: vm.CategoryCreateOrPutReq) -> Category:
+        return cls.model_cls.create(user_id=user_id,**args.model_dump(exclude_none=True))
 
 
 
@@ -45,7 +45,7 @@ class CommentCtl(BaseCtl):
         return self.model
 
     @classmethod
-    def publish(cls, args: vm.CommentPatchReq) -> Comment:
-        return cls.model_cls.create(**args.model_dump(exclude_none=True))
+    def publish(cls, user_id, args: vm.CommentCreateOrPutReq) -> Comment:
+        return cls.model_cls.create(user_id=user_id,**args.model_dump(exclude_none=True))
 
 

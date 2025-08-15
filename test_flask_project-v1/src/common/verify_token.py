@@ -9,10 +9,12 @@ from werkzeug.exceptions import Unauthorized,Forbidden
 def get_request_user()->typing.Optional[User]:
     if hasattr(request, "user"):
         return request.user
+    return None
 
 def get_user_token()->typing.Optional[Token]:
     if hasattr(request, "token"):
         return request.token
+    return None
 
 
 def require_token(f):

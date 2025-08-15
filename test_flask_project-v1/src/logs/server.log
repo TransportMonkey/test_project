@@ -8582,3 +8582,217 @@ AttributeError: 'TokenView' object has no attribute 'model'
 [2025-08-12 17:53:45]-p19924-MainThread{migration:211}INFO-Context impl MySQLImpl.
 [2025-08-12 17:53:45]-p19924-MainThread{migration:214}INFO-Will assume non-transactional DDL.
 [2025-08-12 17:53:45]-p19924-MainThread{migration:622}INFO-Running upgrade 46abe8e2475b -> 6bf6dcddfb39, empty message
+[2025-08-13 16:53:52]-p9928-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 16:53:52]-p9928-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 16:53:52]-p9928-MainThread{compare:190}INFO-Detected added table 'expense'
+[2025-08-13 16:53:52]-p9928-MainThread{compare:685}INFO-Detected added index 'ix_expense_name' on '('name',)'
+[2025-08-13 16:53:52]-p9928-MainThread{compare:685}INFO-Detected added index 'ix_expense_user_id' on '('user_id',)'
+[2025-08-13 16:53:52]-p9928-MainThread{compare:190}INFO-Detected added table 'record'
+[2025-08-13 16:53:52]-p9928-MainThread{compare:685}INFO-Detected added index 'ix_record_income' on '('income',)'
+[2025-08-13 16:53:52]-p9928-MainThread{compare:685}INFO-Detected added index 'ix_record_record_time' on '('record_time',)'
+[2025-08-13 16:53:52]-p9928-MainThread{compare:685}INFO-Detected added index 'ix_record_spend' on '('spend',)'
+[2025-08-13 16:54:16]-p17256-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 16:54:16]-p17256-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 16:54:16]-p17256-MainThread{migration:622}INFO-Running upgrade 6bf6dcddfb39 -> e048924b11b8, empty message
+[2025-08-13 17:05:48]-p8092-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 17:05:48]-p8092-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 17:05:48]-p8092-MainThread{compare:402}INFO-Detected added column 'record.Expense_id'
+[2025-08-13 17:05:48]-p8092-MainThread{compare:437}INFO-Detected removed column 'record.category_id'
+[2025-08-13 17:08:06]-p16320-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 17:08:06]-p16320-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 17:08:06]-p16320-MainThread{messaging:71}ERROR-Target database is not up to date.
+[2025-08-13 17:08:22]-p34040-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 17:08:22]-p34040-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 17:08:22]-p34040-MainThread{migration:622}INFO-Running upgrade e048924b11b8 -> 46e2dc469363, empty message
+[2025-08-13 17:08:29]-p5920-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 17:08:29]-p5920-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 17:08:29]-p5920-MainThread{compare:402}INFO-Detected added column 'record.expense_id'
+[2025-08-13 17:08:29]-p5920-MainThread{compare:437}INFO-Detected removed column 'record.Expense_id'
+[2025-08-13 17:08:47]-p3332-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 17:08:47]-p3332-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 17:08:47]-p3332-MainThread{migration:622}INFO-Running upgrade 46e2dc469363 -> 8093a31d8a5b, empty message
+[2025-08-13 17:10:46]-p32340-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 17:10:46]-p32340-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 17:10:46]-p32340-MainThread{messaging:71}ERROR-Target database is not up to date.
+[2025-08-13 17:11:11]-p32336-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 17:11:11]-p32336-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 17:11:11]-p32336-MainThread{migration:622}INFO-Running upgrade 46e2dc469363 -> 8093a31d8a5b, empty message
+[2025-08-13 17:15:34]-p26564-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 17:15:34]-p26564-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 17:15:34]-p26564-MainThread{migration:622}INFO-Running downgrade 46e2dc469363 -> e048924b11b8, empty message
+[2025-08-13 17:15:34]-p26564-MainThread{migration:622}INFO-Running downgrade e048924b11b8 -> 6bf6dcddfb39, empty message
+[2025-08-13 17:15:50]-p34664-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 17:15:50]-p34664-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 17:15:50]-p34664-MainThread{messaging:71}ERROR-Target database is not up to date.
+[2025-08-13 17:16:45]-p21180-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 17:16:45]-p21180-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 17:16:45]-p21180-MainThread{migration:622}INFO-Running upgrade 6bf6dcddfb39 -> e048924b11b8, empty message
+[2025-08-13 17:16:45]-p21180-MainThread{migration:622}INFO-Running upgrade e048924b11b8 -> 46e2dc469363, empty message
+[2025-08-13 17:16:45]-p21180-MainThread{migration:622}INFO-Running upgrade 46e2dc469363 -> 8093a31d8a5b, empty message
+[2025-08-13 17:19:53]-p10400-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 17:19:53]-p10400-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 17:19:53]-p10400-MainThread{migration:622}INFO-Running upgrade 46e2dc469363 -> 8093a31d8a5b, empty message
+[2025-08-13 17:25:58]-p11732-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 17:25:58]-p11732-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 17:25:58]-p11732-MainThread{migration:622}INFO-Running upgrade 46e2dc469363 -> 8093a31d8a5b, empty message
+[2025-08-13 17:26:41]-p14320-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 17:26:41]-p14320-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 17:26:41]-p14320-MainThread{migration:622}INFO-Running downgrade 46e2dc469363 -> e048924b11b8, empty message
+[2025-08-13 17:27:01]-p9544-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 17:27:01]-p9544-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 17:27:01]-p9544-MainThread{messaging:71}ERROR-Target database is not up to date.
+[2025-08-13 17:27:08]-p32404-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 17:27:08]-p32404-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 17:27:08]-p32404-MainThread{migration:622}INFO-Running upgrade 46e2dc469363 -> 8093a31d8a5b, empty message
+[2025-08-13 17:27:37]-p21476-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 17:27:37]-p21476-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 17:27:45]-p26928-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 17:27:45]-p26928-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 17:27:45]-p26928-MainThread{messaging:71}ERROR-Target database is not up to date.
+[2025-08-13 17:27:54]-p35768-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 17:27:54]-p35768-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 17:27:54]-p35768-MainThread{migration:622}INFO-Running upgrade 46e2dc469363 -> 8093a31d8a5b, empty message
+[2025-08-13 17:31:27]-p7912-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 17:31:27]-p7912-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 17:31:27]-p7912-MainThread{migration:622}INFO-Running upgrade 46e2dc469363 -> 8093a31d8a5b, empty message
+[2025-08-13 17:34:11]-p23440-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 17:34:11]-p23440-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 17:34:11]-p23440-MainThread{messaging:71}ERROR-Can't locate revision identified by '8093a31d8a5b'
+[2025-08-13 17:34:23]-p1340-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 17:34:23]-p1340-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 17:34:23]-p1340-MainThread{messaging:71}ERROR-Can't locate revision identified by '46e2dc469363'
+[2025-08-13 17:34:46]-p16448-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 17:34:46]-p16448-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 17:34:46]-p16448-MainThread{messaging:71}ERROR-Can't locate revision identified by '46e2dc469363'
+[2025-08-13 17:35:29]-p19876-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 17:35:29]-p19876-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 17:35:29]-p19876-MainThread{messaging:71}ERROR-Can't locate revision identified by '46e2dc469363'
+[2025-08-13 17:37:17]-p31248-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 17:37:17]-p31248-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 17:37:17]-p31248-MainThread{compare:190}INFO-Detected added table 'expense'
+[2025-08-13 17:37:17]-p31248-MainThread{compare:685}INFO-Detected added index 'ix_expense_name' on '('name',)'
+[2025-08-13 17:37:17]-p31248-MainThread{compare:685}INFO-Detected added index 'ix_expense_user_id' on '('user_id',)'
+[2025-08-13 17:37:17]-p31248-MainThread{compare:190}INFO-Detected added table 'record'
+[2025-08-13 17:37:17]-p31248-MainThread{compare:685}INFO-Detected added index 'ix_record_expense_id' on '('expense_id',)'
+[2025-08-13 17:37:17]-p31248-MainThread{compare:685}INFO-Detected added index 'ix_record_income' on '('income',)'
+[2025-08-13 17:37:17]-p31248-MainThread{compare:685}INFO-Detected added index 'ix_record_record_time' on '('record_time',)'
+[2025-08-13 17:37:17]-p31248-MainThread{compare:685}INFO-Detected added index 'ix_record_spend' on '('spend',)'
+[2025-08-13 17:37:17]-p31248-MainThread{compare:685}INFO-Detected added index 'ix_record_user_id' on '('user_id',)'
+[2025-08-13 17:37:39]-p23412-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 17:37:39]-p23412-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 17:37:39]-p23412-MainThread{migration:622}INFO-Running upgrade 6bf6dcddfb39 -> b8ee4140f00a, empty message
+[2025-08-13 18:25:30]-p14636-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 18:25:30]-p14636-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 18:25:30]-p14636-MainThread{compare:1003}INFO-Detected type change from FLOAT() to Numeric(precision=10, scale=2) on 'record.income'
+[2025-08-13 18:25:30]-p14636-MainThread{compare:1003}INFO-Detected type change from FLOAT() to Numeric(precision=10, scale=2) on 'record.spend'
+[2025-08-13 18:25:43]-p6500-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 18:25:43]-p6500-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 18:51:37]-p14356-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 18:51:37]-p14356-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 18:51:37]-p14356-MainThread{messaging:71}ERROR-Target database is not up to date.
+[2025-08-13 18:52:02]-p35184-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 18:52:02]-p35184-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 18:52:02]-p35184-MainThread{migration:622}INFO-Running upgrade b8ee4140f00a -> 821239b02de6, empty message
+[2025-08-13 18:52:28]-p13816-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 18:52:28]-p13816-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 18:52:28]-p13816-MainThread{compare:1003}INFO-Detected type change from DECIMAL(precision=10, scale=2) to DECIMAL(precision=10, scale=4) on 'record.income'
+[2025-08-13 18:52:28]-p13816-MainThread{compare:1003}INFO-Detected type change from DECIMAL(precision=10, scale=2) to DECIMAL(precision=10, scale=4) on 'record.spend'
+[2025-08-13 18:52:41]-p8444-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 18:52:41]-p8444-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 18:52:41]-p8444-MainThread{migration:622}INFO-Running upgrade 821239b02de6 -> 5e6a9a78d439, empty message
+[2025-08-13 18:58:32]-p34728-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 18:58:32]-p34728-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 18:58:32]-p34728-MainThread{compare:1003}INFO-Detected type change from DECIMAL(precision=10, scale=4) to Float() on 'record.income'
+[2025-08-13 18:58:32]-p34728-MainThread{compare:1003}INFO-Detected type change from DECIMAL(precision=10, scale=4) to Float() on 'record.spend'
+[2025-08-13 18:58:45]-p23824-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 18:58:45]-p23824-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 19:04:12]-p27664-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 19:04:12]-p27664-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 19:04:12]-p27664-MainThread{messaging:71}ERROR-Target database is not up to date.
+[2025-08-13 19:04:19]-p26788-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 19:04:19]-p26788-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 19:04:19]-p26788-MainThread{migration:622}INFO-Running upgrade 5e6a9a78d439 -> 3257f0734c05, empty message
+[2025-08-13 19:04:23]-p23716-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 19:04:23]-p23716-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 19:04:23]-p23716-MainThread{compare:1003}INFO-Detected type change from FLOAT() to Numeric(precision=10, scale=2) on 'record.income'
+[2025-08-13 19:04:23]-p23716-MainThread{compare:1003}INFO-Detected type change from FLOAT() to Numeric(precision=10, scale=2) on 'record.spend'
+[2025-08-13 19:04:41]-p26464-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 19:04:41]-p26464-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 19:04:41]-p26464-MainThread{migration:622}INFO-Running upgrade 3257f0734c05 -> 59ee90fbfbbd, empty message
+[2025-08-13 19:08:12]-p34396-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 19:08:12]-p34396-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 19:08:17]-p17400-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 19:08:17]-p17400-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 19:08:17]-p17400-MainThread{compare:1003}INFO-Detected type change from DECIMAL(precision=10, scale=2) to Float(precision=10, asdecimal=2) on 'record.income'
+[2025-08-13 19:08:17]-p17400-MainThread{compare:1003}INFO-Detected type change from DECIMAL(precision=10, scale=2) to Float(precision=10, asdecimal=2) on 'record.spend'
+[2025-08-13 19:08:32]-p25744-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 19:08:32]-p25744-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 19:08:32]-p25744-MainThread{migration:622}INFO-Running upgrade 59ee90fbfbbd -> 9a045fb72022, empty message
+[2025-08-13 19:14:57]-p14520-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 19:14:57]-p14520-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 19:15:12]-p20384-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 19:15:12]-p20384-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 19:15:12]-p20384-MainThread{migration:622}INFO-Running upgrade 9a045fb72022 -> 1b01e26bbd6f, empty message
+[2025-08-13 19:24:07]-p2028-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 19:24:07]-p2028-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 19:24:23]-p18724-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 19:24:23]-p18724-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 19:24:23]-p18724-MainThread{migration:622}INFO-Running upgrade 1b01e26bbd6f -> cb2f4bd52923, empty message
+[2025-08-13 20:27:53]-p11024-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 20:27:53]-p11024-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 20:28:15]-p8432-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-13 20:28:15]-p8432-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-13 20:28:15]-p8432-MainThread{migration:622}INFO-Running upgrade cb2f4bd52923 -> fda32be7b9f3, empty message
+[2025-08-14 09:47:35]-p1756-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-14 09:47:35]-p1756-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-14 09:47:53]-p9920-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-14 09:47:53]-p9920-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-14 09:47:53]-p9920-MainThread{migration:622}INFO-Running upgrade fda32be7b9f3 -> eb8fd357f80f, empty message
+[2025-08-14 10:02:38]-p12892-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-14 10:02:38]-p12892-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-14 10:02:38]-p12892-MainThread{compare:943}INFO-Detected NOT NULL on column 'record.income'
+[2025-08-14 10:02:38]-p12892-MainThread{compare:943}INFO-Detected NOT NULL on column 'record.spend'
+[2025-08-14 10:02:59]-p29932-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-14 10:02:59]-p29932-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-14 10:02:59]-p29932-MainThread{migration:622}INFO-Running upgrade eb8fd357f80f -> ce6e4515a780, empty message
+[2025-08-14 13:46:26]-p16592-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-14 13:46:26]-p16592-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-14 13:46:26]-p16592-MainThread{compare:755}INFO-Detected changed index 'ix_user_email' on 'user': unique=False to unique=True
+[2025-08-14 13:46:50]-p32556-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-14 13:46:50]-p32556-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-14 13:46:50]-p32556-MainThread{migration:622}INFO-Running upgrade ce6e4515a780 -> 5c60606f76b4, empty message
+[2025-08-14 13:47:24]-p20004-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-14 13:47:24]-p20004-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-14 13:47:24]-p20004-MainThread{migration:622}INFO-Running upgrade ce6e4515a780 -> 5c60606f76b4, empty message
+[2025-08-14 13:47:49]-p25436-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-14 13:47:49]-p25436-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-14 13:47:49]-p25436-MainThread{compare:685}INFO-Detected added index 'ix_user_email' on '('email',)'
+[2025-08-14 13:48:07]-p26320-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-14 13:48:07]-p26320-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-14 13:48:07]-p26320-MainThread{migration:622}INFO-Running upgrade ce6e4515a780 -> 006dc2d74836, empty message
+[2025-08-14 18:32:37]-p25712-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-14 18:32:37]-p25712-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-14 18:32:37]-p25712-MainThread{compare:190}INFO-Detected added table 'file'
+[2025-08-14 18:32:37]-p25712-MainThread{compare:685}INFO-Detected added index 'ix_file_name' on '('name',)'
+[2025-08-14 18:32:37]-p25712-MainThread{compare:685}INFO-Detected added index 'ix_file_path' on '('path',)'
+[2025-08-14 18:32:37]-p25712-MainThread{compare:685}INFO-Detected added index 'ix_file_user_id' on '('user_id',)'
+[2025-08-14 18:32:58]-p21268-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-14 18:32:58]-p21268-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-14 18:32:59]-p21268-MainThread{migration:622}INFO-Running upgrade 006dc2d74836 -> 6d96e10021b0, empty message
+[2025-08-14 19:01:17]-p30780-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-14 19:01:17]-p30780-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-14 19:01:35]-p33680-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-14 19:01:35]-p33680-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-14 19:01:35]-p33680-MainThread{migration:622}INFO-Running upgrade 6d96e10021b0 -> e1d14d9786e1, empty message
+[2025-08-14 19:04:02]-p12308-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-14 19:04:02]-p12308-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-14 19:04:21]-p20096-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-14 19:04:21]-p20096-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-14 19:04:21]-p20096-MainThread{migration:622}INFO-Running upgrade e1d14d9786e1 -> 86bb479bc437, empty message
+[2025-08-14 23:21:52]-p9860-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-14 23:21:52]-p9860-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-14 23:21:52]-p9860-MainThread{compare:724}INFO-Detected removed index 'ix_file_path' on 'file'
+[2025-08-14 23:21:52]-p9860-MainThread{compare:437}INFO-Detected removed column 'file.path'
+[2025-08-14 23:22:18]-p7404-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-14 23:22:18]-p7404-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-14 23:22:18]-p7404-MainThread{migration:622}INFO-Running upgrade 86bb479bc437 -> f8ce0e25cb1a, empty message

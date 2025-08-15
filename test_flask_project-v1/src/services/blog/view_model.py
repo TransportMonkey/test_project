@@ -20,7 +20,6 @@ class ArticlePatchReq(RestXBaseModel):
     content: str = Field(None,description="文章内容")
     status: bool = Field(None,description="是否发布")
     visible: bool = Field(None,description="文章可见范围")
-    user_id: int = Field(None,description="用户ID")
     category_id: int = Field(None,description="专栏ID")
 
 class CommentCreateOrPutReq(RestXBaseModel):
@@ -29,5 +28,4 @@ class CommentCreateOrPutReq(RestXBaseModel):
 
 class CommentPatchReq(RestXBaseModel):
     content: str = Field(None, description="评论内容")
-    user_id: int = Field(None, description="用户ID")
     article_id: int = Field(None, description="被评论的文章ID")

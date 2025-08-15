@@ -1,6 +1,6 @@
 
 from model.blog import Category
-from common.verify_token import require_token
+from common.verify_token import require_token, get_request_user
 from services.blog import view_model as vm
 from services.blog import api
 from flask_pydantic import validate
@@ -18,14 +18,18 @@ class CategoryView(AdvResource):
     @require_token
     def get(self):
         """查看分类"""
-        return self.get_page(request)
+        args = request.args.to_dict()
+        user = get_request_user()
+        args['f_user_id'] = user.id
+        return self.get_page(args)
 
     @api.expect(vm.CategoryCreateOrPutReq.rest_x_model(api))
     @validate() # 校验参数
     @require_token
     def post(self, body: vm.CategoryCreateOrPutReq):
         """创建分类"""
-        category = self.control.create(body)
+        user = get_request_user()
+        category = self.control.create(user.id,body)
         return category.to_dict()
 
 

@@ -1,4 +1,7 @@
 import os
+
+from flask_mail import Mail
+
 from common import logmode, db
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
@@ -14,6 +17,7 @@ class MyApp(Flask):
     inited = False
     root: Api
     db: SQLAlchemy
+    mail:Mail
 
 
     def __init__(self):
@@ -27,10 +31,15 @@ class MyApp(Flask):
         self._init_config()
         self._init_log()
         self._init_redis()
+        self.init_mail()
 
         self._init_sqlalchemy()
         self.init_route()
         self.inited = True
+
+    def init_mail(self):
+        mail = Mail(self)
+        self.mail = mail
 
     def get_config(self, name: str, default=None):
         """获取配置，环境变量优先，没有才从配置读取
@@ -87,8 +96,8 @@ class MyApp(Flask):
         root = Api(self)
         self.root = root
 
-        from services import user,todo,blog
-        for view in [user,todo,blog]:
+        from services import user,todo,blog,bookkeeping
+        for view in [user,todo,blog,bookkeeping]:
             root.add_namespace(view.api) # user、todo模型获取api
 
     def run(self, **kwargs):

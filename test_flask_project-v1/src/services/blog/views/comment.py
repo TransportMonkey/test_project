@@ -26,12 +26,11 @@ class CommentsView(AdvResource):
     @api.expect(vm.CommentCreateOrPutReq.rest_x_model(api))
     @validate()
     @require_token
-    def post(self, body: vm.CommentPatchReq):
+    def post(self, body: vm.CommentCreateOrPutReq):
         """评论文章"""
         user = get_request_user()
-        body.user_id = user.id
-        todo = self.control.publish(body)
-        return todo.to_dict(exclude_fields=self.exclude_fields)
+        comment = self.control.publish(user.id,body)
+        return comment.to_dict(exclude_fields=self.exclude_fields)
 
 
 @api.route('/comment/<int:comment_id>/')

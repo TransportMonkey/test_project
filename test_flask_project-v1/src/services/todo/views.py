@@ -16,7 +16,7 @@ class TodosView(AdvResource):
     control = TodoCtl
     extend_fields = ["user_name"] # 扩展字段
     include_fields = None # 原有字段
-    exclude_fields = ['user_id','id'] # 过滤字段
+    exclude_fields = ['user_id'] # 过滤字段
 
     @require_token
     def get(self):
@@ -29,11 +29,10 @@ class TodosView(AdvResource):
     @api.expect(vm.TodoReq.rest_x_model(api))
     @validate()
     @require_token
-    def post(self, body: vm.TodoPatchReq):
+    def post(self, body: vm.TodoReq):
         """创建Todo"""
         user = get_request_user()
-        body.user_id = user.id
-        todo = self.control.create(body)
+        todo = self.control.create(user.id,body)
         return todo.to_dict(exclude_fields=self.exclude_fields)
 
 

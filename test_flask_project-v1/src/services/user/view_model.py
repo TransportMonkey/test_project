@@ -19,8 +19,4 @@ class UserPatchReq(RestXBaseModel):
 
 class TokenReq(RestXBaseModel):
     user_name: str = Field(description="用户名")
-    password: str = Field(None, description="密码", max_length=80)
-
-class TokenPatchReq(RestXBaseModel):
-    token: str = Field(None,description="用户token", max_length=20)
-    user_id: int = Field(None,description="用户ID")
+    password: str = Field(description="密码", max_length=80)

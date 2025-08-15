@@ -26,12 +26,11 @@ class ArticleView(AdvResource):
     @api.expect(vm.ArticleCreateOrPutReq.rest_x_model(api))
     @validate()
     @require_token
-    def post(self, body: vm.ArticlePatchReq):
+    def post(self, body: vm.ArticleCreateOrPutReq):
         """发布文章"""
         user = get_request_user()
-        body.user_id = user.id
-        todo = self.control.release(body)
-        return todo.to_dict(exclude_fields=self.exclude_fields)
+        article = self.control.release(user.id,body)
+        return article.to_dict(exclude_fields=self.exclude_fields)
 
 
 
@@ -41,14 +40,14 @@ class ArticlesView(AdvResource):
     control = ArticleCtl
     extend_fields = ['comments','test'] # 扩展字段(指定模型的属性)
 
-    @require_token
-    def get(self, article_id):
-        """查看文章"""
-        article = self.model.find_or_fail(article_id)
-        user = get_request_user()
-        if article.user_id != user.id:
-            raise Forbidden('文章不存在')
-        return article.to_dict(exclude_fields=self.extend_fields)
+    # @require_token
+    # def get(self, article_id):
+    #     """查看文章"""
+    #     article = self.model.find_or_fail(article_id)
+    #     user = get_request_user()
+    #     if article.user_id != user.id:
+    #         raise Forbidden('文章不存在')
+    #     return article.to_dict(exclude_fields=self.extend_fields)
 
 
     @require_token
