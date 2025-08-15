@@ -1,37 +1,27 @@
 from common.db import BaseModel, db
 from sqlalchemy.sql import func
 
-
 """
-专栏（分类）
-id：
-name:
-
-文章
-id:
-title:
-content:
-category_id #分类id
-user_id:
-
-
-评论
-id:
-content:
-user_id:
-article_id:
+定义Category、Article、Comment类，继承BaseModel基类
+1、表的结构：
+    category：id(Integer)、name(String)
+    article：id(Integer)、title(String)、content(Text)、status(Boolean)
+            visible(Boolean)、user_id(Integer)、category_id(Integer)
+    comment: id(Integer)、content(String)、user_id(Integer)、
+            article_id(Integer)、created_at(DateTime)      
+2、表的关联关系：
+        category与article是一对多关系(一个分类有多篇文章)
+        article与comment是一对多关系(一篇文章有多个评论)
+3、通过relationship建立表与表的关联，访问关联的数据
 """
 
-# 定义文章专栏模型
-class ArticleCategory(BaseModel):
-    __tablename__ = "postscategory"
+class Category(BaseModel):
+    __tablename__ = "category"
     id = db.Column(db.Integer, primary_key=True) # 专栏ID
     name = db.Column(db.String(80), index=True,unique=True, nullable=False,comment='专栏名称') # 专栏名称
-
-
     articles = db.relationship(
-        'MyArticle',
-        primaryjoin='MyArticle.category_id==foreign(ArticleCategory.id)',
+        'Article',
+        primaryjoin='Category.id==foreign(Article.category_id)',
         uselist=True
     )
 
@@ -47,19 +37,18 @@ class Article(BaseModel):
     user_id = db.Column(db.Integer,index=True,comment="用户ID",nullable=False) # 外键，表示该文章所属的用户
     category_id = db.Column(db.Integer,index=True,comment="专栏ID",nullable=False) # 外键，表示该文章所属的专栏
     category = db.relationship(
-        'ArticleCategory',
-        primaryjoin='Article.category_id==foreign(ArticleCategory.id)',
+        'Category',
+        primaryjoin='Category.id==foreign(Article.category_id)',
         uselist=False
     )
 
     comments = db.relationship(
         'Comment',
-        primaryjoin='Comment.article_id==foreign(Article.id)',
-        uselist=True
+        primaryjoin='Article.id==foreign(Comment.article_id)',
+        uselist=True,
+        # lazy='dynamic'
     )
 
-
-# 定义评论模型
 class Comment(BaseModel):
     __tablename__ = "comment"
     id = db.Column(db.Integer, primary_key=True)
@@ -70,6 +59,13 @@ class Comment(BaseModel):
 
     article = db.relationship(
         'Article',
-        primaryjoin='Comment.article_id==foreign(Article.id)',
+        primaryjoin='Article.id==foreign(Comment.article_id)',
+        uselist=False,
+        # lazy='dynamic'
+    )
+
+    user = db.relationship(
+        'User',
+        primaryjoin='model.user.User.id==foreign(Comment.user_id)',
         uselist=False
     )

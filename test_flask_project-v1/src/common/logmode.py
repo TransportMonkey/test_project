@@ -1,15 +1,12 @@
 import os
 from os.path import exists
 import logging
-from logging import DEBUG, INFO, WARN, ERROR, LogRecord, setLogRecordFactory
+from logging import INFO
 from logging.handlers import TimedRotatingFileHandler
 import time
 from datetime import datetime
-import traceback
-from threading import local
-from functools import wraps
 
-# log_format = '%(threadName)s %(asctime)s [%(levelname)s] %(message)s'
+
 log_format = '[%(asctime)s]-p%(process)d-%(threadName)s{%(module)s:%(lineno)d}%(levelname)s-%(message)s'
 log_datefmt = '%Y-%m-%d %H:%M:%S'
 
@@ -130,7 +127,6 @@ def log_init(path, debug):
     g_logger.init(path, level)
 
 
-# not use, will be override on LogClass.init
 debug = lambda *args, **kwargs: None
 info = debug
 warning = debug

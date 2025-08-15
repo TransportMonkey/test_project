@@ -13,6 +13,7 @@ class PageResourceMixin:
     total: int
     query: typing.Any
     default_limit = 10
+    select_fields = ()  # search field list
 
     def pre_page(self, params: dict):
         """预分页处理"""
@@ -28,8 +29,36 @@ class PageResourceMixin:
     def filter(self, param):
         filters = {k[2:]: v for k, v in param.items() if k.startswith(self.FILTER_PRE)}
         for field, value in filters.items():
-            if field in self.model.columns():
+            if field in self.model.columns:
                 self.query = self.query.filter_by(**{field: value})
+
+    def search(self, params):
+        """ 模糊查询  (url中 &=%26, |=%7C, "=%22)
+        支持特定字段: s_name=a%26b
+        """
+
+        _fields_search = dict([(k[2:], v) for k, v in params.items() if k.startswith(self.SEARCH_PRE)])
+        if not _fields_search:
+            return self
+
+        def _field_search(_fn, _v):
+            """ 单个字段的查询
+            :return subquery | None
+            """
+
+            _field = getattr(self.model, _fn, None)
+            if not _field:
+                return None
+
+            pattern = f'%{_v}%'
+            return _field.like(pattern)
+
+        for k, v in _fields_search.items():
+            search_expr = _field_search(k, v)
+            if search_expr is not None:
+                self.query = self.query.filter(search_expr)
+
+        return self
 
     def calc_total(self):
         self.total = self.query.count()
@@ -49,15 +78,17 @@ class AdvResource(PageResourceMixin, Resource):
         # 过滤
         self.filter(params)
 
-        # todo 添加 模糊查询s_{field},支持排序 o_{field}
+        # 模糊查询
+        self.search(params)
+
+        # todo 支持排序 o_{field}
         return self
 
     def get_list_data(self, model):
-
         return model.to_dict(
-            exclude_fields=self.exclude_fields,
             include_fields=self.include_fields,
-            extend_fields=self.extend_fields,
+            exclude_fields=self.exclude_fields,
+            extend_fields=self.extend_fields
         )
 
     def get_page(self, req, query=None):
