@@ -8,7 +8,8 @@ from .base_ctl import BaseCtl
 from common import logmode
 from werkzeug.exceptions import BadRequest
 from flask import request
-from common.util import get_email,get_config
+from common.util import get_email,get_config,thread_pool
+
 
 
 class UserCtl(BaseCtl):
@@ -28,7 +29,7 @@ class UserCtl(BaseCtl):
         if cls.exist_user_name(args.name):
             raise BadRequest("用户名已注册，请更换名字再重试")
         user = cls.model_cls.create(**args.model_dump(exclude_none=True))
-        cls.send_welcome_email(user)
+        thread_pool.thread_pool_submit(cls.send_welcome_email,user.id)
         return user
 
     def update(self, args: typing.Union[vm.UserCreateOrPutReq, vm.UserPatchReq]):
@@ -51,14 +52,16 @@ class UserCtl(BaseCtl):
         self.user.delete()
 
     @classmethod
-    def send_welcome_email(cls, user:User):
+    def send_welcome_email(cls, user_id):
+        user = User.where(id=user_id).first()
+        logmode.info("start send welcome email")
         msg = Message(
             subject="欢迎加入我们的网站！",
             recipients=[user.email],
             body=f'尊敬的{user.name}: 您已在本平台注册成功，密码：{user.password}， 请妥善保管。'
         )
         mail = get_email()
-        logmode.info("start send welcome email")
+
         mail.send(msg)
         logmode.info("success send welcome email")
 

@@ -1,13 +1,14 @@
 import os
-
 from flask_mail import Mail
-
 from common import logmode, db
+import flask
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_restx import Api
 from werkzeug.middleware.proxy_fix import ProxyFix
 import pymysql
+from flask.testing import EnvironBuilder
+
 
 class MyApp(Flask):
     NAME = 'test_flask'
@@ -21,6 +22,9 @@ class MyApp(Flask):
 
 
     def __init__(self):
+
+        from gevent import monkey
+        monkey.patch_all()
         super(MyApp, self).__init__(__name__)
         self.wsgi_app = ProxyFix(self.wsgi_app)
         self.init_app()
@@ -36,6 +40,10 @@ class MyApp(Flask):
         self._init_sqlalchemy()
         self.init_route()
         self.inited = True
+
+        self.environ_builder = EnvironBuilder(self)
+        self.ctx_environs = self.environ_builder.get_environ()
+        setattr(flask,"my_app" ,self)
 
     def init_mail(self):
         mail = Mail(self)
@@ -98,7 +106,7 @@ class MyApp(Flask):
 
         from services import user,todo,blog,bookkeeping
         for view in [user,todo,blog,bookkeeping]:
-            root.add_namespace(view.api) # user、todo模型获取api
+            root.add_namespace(view.api) # 模型获取api
 
     def run(self, **kwargs):
         super(MyApp, self).run(**kwargs)
