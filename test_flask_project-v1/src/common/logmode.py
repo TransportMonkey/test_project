@@ -54,7 +54,7 @@ class LogClass(object):
                             )
         if not log_path:
             return
-        logging.warning('init log_path: %s', log_path)
+        logging.info('init log_path: %s', log_path)
         # 设置数据日志输出
         self.logger = server_logger  # logging.getLogger("server")
         self.logger.setLevel(level)

@@ -1,3 +1,5 @@
+import time
+
 from model.user import User
 from services.user import view_model as vm
 from services.user import api
@@ -24,12 +26,11 @@ class UserView(AdvResource):
 
     @api.expect(vm.UserCreateOrPutReq.rest_x_model(api))
     @validate()
-    @require_token
+
     def post(self, body: vm.UserCreateOrPutReq):
         """创建用户"""
         user = self.control.create(body)
         ret = user.to_dict(exclude_fields=self.exclude_fields)
-        # self.control.send_welcome_email(user)
         return ret
 
     @api.expect(vm.UserCreateOrPutReq.rest_x_model(api))

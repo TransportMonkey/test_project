@@ -23,22 +23,38 @@ class User(BaseModel):
     todos = db.relationship(
         'Todo',
         primaryjoin='model.user.User.id==foreign(Todo.user_id)',
-        uselist=True
+        uselist=True,
+        cascade="all, delete-orphan",
     )
     tokens = db.relationship(
         'Token', # 指定关联的模型
         primaryjoin='User.id == foreign(Token.user_id)', # 指定连接条件
         uselist=True, # 指定关系类型
+        cascade="all, delete-orphan",
     )
     categories = db.relationship(
         'Expense',  # 指定关联模型
         primaryjoin='model.user.User.id == foreign(Expense.user_id)',  # 指定关联条件
-        uselist=True  # 指定关联类型
+        uselist=True, # 指定关联类型
+        cascade = "all, delete-orphan",
     )
     files = db.relationship(
         'File',  # 指定关联的模型
         primaryjoin='User.id == foreign(File.user_id)',  # 指定连接条件
-        uselist=False,  # 指定关系类型
+        uselist=True,  # 指定关系类型
+        cascade="all, delete-orphan",
+    )
+    # back_populates 到中间表
+    enrollments = db.relationship("StudentCourse", back_populates="user")
+    # 便捷访问：用户选修的所有课程
+    courses = db.relationship(
+        "Course",
+        secondary="student_course",
+        primaryjoin="User.id == StudentCourse.user_id",
+        secondaryjoin="StudentCourse.course_id == Course.id",
+        viewonly=True,
+        uselist=True,
+        back_populates="students"
     )
 
 class Token(BaseModel):

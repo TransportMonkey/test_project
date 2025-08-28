@@ -8796,3 +8796,102 @@ AttributeError: 'TokenView' object has no attribute 'model'
 [2025-08-14 23:22:18]-p7404-MainThread{migration:211}INFO-Context impl MySQLImpl.
 [2025-08-14 23:22:18]-p7404-MainThread{migration:214}INFO-Will assume non-transactional DDL.
 [2025-08-14 23:22:18]-p7404-MainThread{migration:622}INFO-Running upgrade 86bb479bc437 -> f8ce0e25cb1a, empty message
+[2025-08-26 21:22:31]-p14436-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-26 21:22:31]-p14436-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-26 21:23:21]-p10820-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-26 21:23:21]-p10820-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-26 21:23:21]-p10820-MainThread{migration:622}INFO-Running upgrade f8ce0e25cb1a -> 03419c1bddf9, empty message
+[2025-08-27 15:28:24]-p18100-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-27 15:28:24]-p18100-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-27 15:29:25]-p7904-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-27 15:29:25]-p7904-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-27 15:29:25]-p7904-MainThread{migration:622}INFO-Running upgrade 03419c1bddf9 -> a01bb394153c, empty message
+[2025-08-27 15:31:04]-p22192-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-27 15:31:04]-p22192-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-27 15:31:04]-p22192-MainThread{messaging:71}ERROR-Can't locate revision identified by 'a01bb394153c'
+[2025-08-27 15:33:13]-p22620-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-27 15:33:13]-p22620-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-27 15:33:13]-p22620-MainThread{messaging:71}ERROR-Target database is not up to date.
+[2025-08-27 15:34:36]-p8840-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-27 15:34:36]-p8840-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-27 15:34:36]-p8840-MainThread{compare:190}INFO-Detected added table 'course'
+[2025-08-27 15:34:36]-p8840-MainThread{compare:685}INFO-Detected added index 'ix_course_name' on '('name',)'
+[2025-08-27 15:34:36]-p8840-MainThread{compare:685}INFO-Detected added index 'ix_course_user_id' on '('user_id',)'
+[2025-08-27 15:34:36]-p8840-MainThread{compare:190}INFO-Detected added table 'student_course'
+[2025-08-27 15:35:08]-p11936-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-27 15:35:08]-p11936-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-27 15:35:08]-p11936-MainThread{migration:622}INFO-Running upgrade 03419c1bddf9 -> ca79f35bdabe, empty message
+[2025-08-27 15:51:16]-p2340-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-27 15:51:16]-p2340-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-27 15:51:16]-p2340-MainThread{compare:724}INFO-Detected removed index 'ix_course_user_id' on 'course'
+[2025-08-27 15:51:16]-p2340-MainThread{compare:437}INFO-Detected removed column 'course.user_id'
+[2025-08-27 15:51:41]-p21872-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-27 15:51:41]-p21872-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-27 15:51:41]-p21872-MainThread{migration:622}INFO-Running upgrade ca79f35bdabe -> a909867f1d4a, empty message
+[2025-08-27 16:14:56]-p12804-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-27 16:14:56]-p12804-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-27 16:15:21]-p11996-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-27 16:15:21]-p11996-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-27 16:15:21]-p11996-MainThread{migration:622}INFO-Running upgrade a909867f1d4a -> b0477d63a6ab, empty message
+[2025-08-27 16:26:30]-p3936-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-27 16:26:30]-p3936-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-27 16:26:31]-p3936-MainThread{compare:724}INFO-Detected removed index 'uix_user_course' on 'student_course'
+[2025-08-27 16:26:49]-p10204-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-27 16:26:49]-p10204-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-27 16:26:49]-p10204-MainThread{migration:622}INFO-Running upgrade b0477d63a6ab -> dceddbd12b99, empty message
+[2025-08-27 16:28:48]-p9484-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-27 16:28:48]-p9484-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-27 16:28:48]-p9484-MainThread{compare:724}INFO-Detected removed index 'uix_user_course' on 'student_course'
+[2025-08-27 16:29:09]-p12744-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-27 16:29:09]-p12744-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-27 16:29:09]-p12744-MainThread{migration:622}INFO-Running upgrade 03419c1bddf9 -> 2ebd91075c77, empty message
+[2025-08-27 16:30:35]-p20500-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-27 16:30:35]-p20500-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-27 16:30:35]-p20500-MainThread{migration:622}INFO-Running upgrade 03419c1bddf9 -> 2ebd91075c77, empty message
+[2025-08-27 16:38:31]-p16984-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-27 16:38:31]-p16984-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-27 16:38:31]-p16984-MainThread{compare:190}INFO-Detected added table 'course'
+[2025-08-27 16:38:31]-p16984-MainThread{compare:685}INFO-Detected added index 'ix_course_name' on '('name',)'
+[2025-08-27 16:38:31]-p16984-MainThread{compare:190}INFO-Detected added table 'student_course'
+[2025-08-27 16:39:05]-p23196-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-27 16:39:05]-p23196-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-27 16:39:05]-p23196-MainThread{migration:622}INFO-Running upgrade 03419c1bddf9 -> ef786c36d6bc, empty message
+[2025-08-27 16:41:35]-p15924-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-27 16:41:35]-p15924-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-27 16:42:06]-p10112-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-27 16:42:06]-p10112-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-27 16:42:06]-p10112-MainThread{migration:622}INFO-Running upgrade ef786c36d6bc -> 0c3161127b8f, empty message
+[2025-08-27 16:46:50]-p18764-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-27 16:46:50]-p18764-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-27 16:54:14]-p20072-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-27 16:54:14]-p20072-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-27 16:56:41]-p16020-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-27 16:56:41]-p16020-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-27 16:57:59]-p13892-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-27 16:57:59]-p13892-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-27 17:02:03]-p10596-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-27 17:02:03]-p10596-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-27 17:02:35]-p20716-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-27 17:02:35]-p20716-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-28 10:25:40]-p2664-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-28 10:25:40]-p2664-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-28 10:25:40]-p2664-MainThread{compare:1303}INFO-Detected removed foreign key (course_id)(id) on table student_course
+[2025-08-28 10:25:40]-p2664-MainThread{compare:1303}INFO-Detected removed foreign key (user_id)(id) on table student_course
+[2025-08-28 10:26:04]-p6364-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-28 10:26:04]-p6364-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-28 10:26:04]-p6364-MainThread{migration:622}INFO-Running upgrade 0c3161127b8f -> 97b4b6ad21d7, empty message
+[2025-08-28 10:43:54]-p17276-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-28 10:43:54]-p17276-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-28 10:43:54]-p17276-MainThread{compare:685}INFO-Detected added index 'idx_user_course' on '('user_id', 'course_id')'
+[2025-08-28 10:43:54]-p17276-MainThread{compare:1288}INFO-Detected added foreign key (course_id)(id) on table student_course
+[2025-08-28 10:43:54]-p17276-MainThread{compare:1288}INFO-Detected added foreign key (user_id)(id) on table student_course
+[2025-08-28 10:44:16]-p18484-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-28 10:44:16]-p18484-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-28 10:44:16]-p18484-MainThread{migration:622}INFO-Running upgrade 97b4b6ad21d7 -> dbea9e6f389c, empty message
+[2025-08-28 11:46:16]-p13044-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-28 11:46:16]-p13044-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-28 11:46:16]-p13044-MainThread{compare:685}INFO-Detected added index 'ix_student_course_course_id' on '('course_id',)'
+[2025-08-28 11:46:16]-p13044-MainThread{compare:685}INFO-Detected added index 'ix_student_course_user_id' on '('user_id',)'
+[2025-08-28 11:46:36]-p1400-MainThread{migration:211}INFO-Context impl MySQLImpl.
+[2025-08-28 11:46:36]-p1400-MainThread{migration:214}INFO-Will assume non-transactional DDL.
+[2025-08-28 11:46:36]-p1400-MainThread{migration:622}INFO-Running upgrade dbea9e6f389c -> c132f1e028ce, empty message

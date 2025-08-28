@@ -1,4 +1,4 @@
-from common.verify_token import require_token,get_request_user,get_user_token
+from common.verify_token import require_token,get_request_user
 from model.todo import Todo
 from flask_restx import Resource
 from services.todo import view_model as vm
