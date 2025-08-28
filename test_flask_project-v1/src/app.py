@@ -104,8 +104,8 @@ class MyApp(Flask):
         root = Api(self)
         self.root = root
 
-        from services import user,todo,blog,bookkeeping
-        for view in [user,todo,blog,bookkeeping]:
+        from services import user,todo,blog,bookkeeping,course
+        for view in [user,todo,blog,bookkeeping,course]:
             root.add_namespace(view.api) # 模型获取api
 
     def run(self, **kwargs):
